@@ -26,7 +26,7 @@
 \title{How far can a Kerr-microcomb reservoir computer go?\\Spectral-phase input masks, the noise floor and a fair software reference}
 \author{Changxu Du\\[2pt]
 \small University of Shanghai for Science and Technology, Shanghai, China\\
-\small \href{mailto:yuzhuj520@gmail.com}{yuzhuj520@gmail.com}}
+\small \href{mailto:changxvdu@gmail.com}{changxvdu@gmail.com}}
 \date{\today}
 
 \begin{document}
@@ -39,7 +39,8 @@ with Lugiato--Lefever simulations under one evaluation protocol: identical devic
 operating-point budget, with operating points chosen and tested on independent noise realisations. Feeding the resonator through
 a spectral-phase input mask, in which every line of an input comb carries a random complex bias and modulation weight, gives
 reproducible, coherently seeded dynamics and Mackey--Glass errors one to two orders of magnitude below our implementations of
-single-pump encodings. With ideal detectors about half of the remaining error comes from detuning jitter, which a linear readout
+single-pump encodings. Switching off the Kerr term makes the mask 59 times worse on Mackey--Glass without noise and 3.5 times worse
+with it, but leaves channel equalisation unchanged. With ideal detectors about half of the remaining error comes from detuning jitter, which a linear readout
 cannot remove even when the jitter is known exactly, so the laser linewidth is a hard requirement (a few kilohertz for
 $Q\approx2\times10^{6}$ at $1~\mathrm{GBd}$). Calibrated against software, the best resonator found matches a 31-node echo state
 network fed through a converter with about 7 effective bits, and software stays ahead when the resonator's own 31 readout channels

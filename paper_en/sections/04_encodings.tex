@@ -106,6 +106,47 @@ spectrum with common modulation, amplitudes only, phases only and the full mask,
 $0.58$, $0.57$, $0.60$ and $0.65$. The variants are nearly identical, and the full mask even has the lowest linear diversity. The
 benefit of the mask therefore does not lie in linear decorrelation of the instantaneous features; more likely the features are
 different higher-order nonlinear functions of the input history. Testing this needs a decomposition such as the information
-processing capacity~\cite{dambre2012}, together with a control without the Kerr term, and is left for future work. Note also that
-part of the nonlinearity may come from detection: the input lines interfere with the generated lines before square-law detection and
-the logarithm, so the line features would be nonlinear in $u_t$ even in a linear cavity.
+processing capacity~\cite{dambre2012} and is left for future work. Part of the nonlinearity comes from detection rather than from the
+Kerr term; Section~\ref{sec:linear} separates the two.
+
+\subsection{Linear-cavity control: what the Kerr term contributes}\label{sec:linear}
+
+The input lines interfere with each other inside the cavity and are then detected by square-law detectors and passed through a
+logarithm, so the line features are nonlinear in $u_t$ even without the Kerr term. To separate the two contributions we repeated the
+comparison with $\gamma=0$ and everything else unchanged: the same 256 operating points and masks, readout, noise model and selection
+protocol as in Table~\ref{tab:encodings}. Without the Kerr term each line is only filtered by its resonance and no new lines are
+generated; the input power still sets the signal-to-noise ratio at the detectors. Table~\ref{tab:linear} gives the result.
+
+\begin{table}[htbp]
+\centering
+\caption{Linear-cavity control. Test error (NMSE) with the Kerr term ($\gamma=0.016~\mathrm{W^{-1}m^{-1}}$, from
+Table~\ref{tab:encodings}) and without it ($\gamma=0$), under the same protocol. Channel equalisation under realistic noise uses the
+standard test length here, so its Kerr values differ slightly from Table~\ref{tab:encodings}.}
+\label{tab:linear}
+\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{Mackey--Glass (10 steps)} & \multicolumn{2}{c}{channel equalisation} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & no noise & realistic & no noise & realistic \\
+\midrule
+spectral-phase mask, Kerr & $1.8\times10^{-6}$ & $3.3\times10^{-4}$ & $3.7\times10^{-3}$ & $5.4\times10^{-3}$ \\
+spectral-phase mask, $\gamma=0$ & $1.1\times10^{-4}$ & $1.1\times10^{-3}$ & $3.5\times10^{-3}$ & $5.8\times10^{-3}$ \\
+uniformly modulated comb, Kerr & $8.2\times10^{-5}$ & $4.8\times10^{-3}$ & $5.0\times10^{-3}$ & $7.3\times10^{-3}$ \\
+uniformly modulated comb, $\gamma=0$ & $7.4\times10^{-3}$ & $1.5\times10^{-2}$ & $6.5\times10^{-3}$ & $9.0\times10^{-3}$ \\
+\midrule
+ESN (31 nodes) & $2.4\times10^{-5}$ & $3.2\times10^{-4}$ & $3.8\times10^{-3}$ & $3.9\times10^{-3}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The answer depends on the task. On Mackey--Glass the Kerr term carries most of the gain: removing it makes the mask 59 times worse
+without noise and 3.5 times worse under realistic noise, and the uniform comb 90 and 3.2 times worse. The gap is smaller with noise
+because noise, not the reservoir, then sets most of the error. On channel equalisation the Kerr term does not matter: the linear
+cavity is within 1.1 times of the Kerr cavity for the mask and within 1.3 times for the uniform comb, below the factor of 1.5 that
+we treat as a tie. The nonlinearity this task needs is supplied by detection and the logarithm.
+
+The mask is better than the uniform comb even in the linear cavity: 70 and 13 times on Mackey--Glass without and with noise, 1.9 and
+1.6 times on channel equalisation. So the advantage of the encoding has two parts. One is already present in the linear
+input--cavity--detection chain, where the random line weights make the detected lines different functions of the input; the other,
+on Mackey--Glass only, comes from the Kerr dynamics. We did not test a linear readout in place of the logarithm.

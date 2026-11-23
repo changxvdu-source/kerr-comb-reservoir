@@ -1,6 +1,7 @@
 # large simulation caches (tens of GB); regenerate with the experiment scripts
 results/encodings_spectra/
 results/operating_map_spectra/
+results/linear_spectra/
 results/*.npy
 # third-party data and papers, build outputs, local tooling
 data/

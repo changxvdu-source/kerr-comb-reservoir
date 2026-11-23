@@ -1,0 +1,10 @@
+
+=== mackey_glass_h10   cross-run test NMSE, geometric mean over 3 series, noise: none   (columns: comb lines x readout taps)
+                        31x1      31x8          min..max 31x8  fine 31x8 consist.     SER   point chosen on series 0 for 31x8
+linear AR (best)    1.38e-01  1.38e-01
+ESN, same size      8.49e-03  2.41e-05
+with new noise after the choice (31x8, mean of 6 pairs of runs per series):   ESN 2.41e-05
+lin_comb_mask       1.06e-02  1.06e-04       8.7e-05..1.2e-04        nan    1.000     nan   Q 2.6e+06, 281 mW, zeta -0.7, depth 0.25   new noise 1.06e-04 (pairs differ by 0%); chosen on 3 new pairs, val 1.03e-04, other point than single-run choice in 0/3 series
+lin_comb_uniform    2.24e-01  7.44e-03       5.0e-03..1.0e-02        nan    1.000     nan   Q 7.9e+06, 254 mW, zeta 0.4, depth 0.53   new noise 7.44e-03 (pairs differ by 0%); chosen on 3 new pairs, val 9.46e-03, other point than single-run choice in 0/3 series
+
+saved results/linear_clean_mg_trials.csv, _summary.csv and .png; spectra cached in /content/linear_spectra

@@ -34,10 +34,10 @@ setting where the signal is optical to begin with and the readout is weighted op
 
 \subsection{Limitations}
 
-\emph{The role of the Kerr nonlinearity is not isolated.} The input lines interfere with each other and with the generated lines
-before square-law detection and the logarithm, and the cavity filters them linearly, so part of the benefit of the mask could arise
-without the Kerr term. A control with $\gamma=0$ (and with a linear rather than logarithmic readout) is needed to attribute the gain to
-the Kerr dynamics; until then, the mask's advantage is established as a property of the whole input--cavity--detection chain.
+\emph{The role of the Kerr nonlinearity is isolated only in part.} The $\gamma=0$ control (Section~\ref{sec:linear}) attributes
+the mask's gain on Mackey--Glass mostly to the Kerr dynamics and shows that channel equalisation does not need them. It keeps the
+logarithmic readout, so it does not tell how much of the remaining nonlinearity comes from the logarithm rather than from square-law
+detection, and it covers two encodings and two tasks.
 
 \emph{Comparison with the literature schemes.} The single-pump encodings are our implementations in a common device and protocol, not
 reproductions: the original papers do not give all of the cavity length, the $Q$ split and the sampling interval, the empty-cavity

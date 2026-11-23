@@ -91,7 +91,12 @@ LINK = {"link_sin": 1 / 28e9, "link_silica": 1 / 28e9}
 # (appended last, so that the random draws of every earlier group stay what they were)
 COMBINED = {"mask_delay_drop": 1e-9}
 MASKED = {**MEMORY, **FLOOR, **LINK, **COMBINED}  # groups built on the per-line mask; value: symbol time
-ALL_GROUPS = GROUPS + tuple(ABLATIONS) + tuple(MEMORY) + tuple(FLOOR) + tuple(LINK) + tuple(COMBINED)
+# Linear-cavity controls (opt-in): the same operating points, masks and readout as the named group, but with
+# the Kerr term switched off (gamma = 0). Whatever these still achieve comes from the interference of the input
+# lines, square-law detection, the logarithm and the cavity's linear filtering, not from four-wave mixing.
+LINEAR = {"lin_comb_mask": "comb_mask", "lin_comb_uniform": "comb_uniform"}
+ALL_GROUPS = (GROUPS + tuple(ABLATIONS) + tuple(MEMORY) + tuple(FLOOR) + tuple(LINK) + tuple(COMBINED)
+              + tuple(LINEAR))
 TASKS = ("mackey_glass_h10", "narma10", "channel_eq")
 COMB_LINES = [m for m in range(-8, 9) if m]
 CACHED_LINES = 61
@@ -155,6 +160,7 @@ def cavity(lq1, lq2=LQ2, material=None):
 
 def input_lines(group):
     """Mode numbers (relative to the pump) of the comb lines that carry the signal; none for pump-only groups."""
+    group = LINEAR.get(group, group)
     if not (group.startswith("comb") or group in MASKED):
         return []
     half = ABLATIONS.get(group, len(COMB_LINES)) // 2
@@ -163,6 +169,8 @@ def input_lines(group):
 
 def sample(group, trial):
     """Draw one operating point. Deterministic in (group, trial), so every task sees the same points."""
+    if group in LINEAR:                   # the very same point and mask as the Kerr group, without the Kerr term
+        return {**sample(LINEAR[group], trial), "group": group, "gamma": 0.0}
     rng = np.random.default_rng([ALL_GROUPS.index(group), trial])
     soliton = group.endswith("_soliton")
     encoding = group.split("_")[0]
@@ -220,6 +228,8 @@ def sample(group, trial):
 
 
 def build(cfg, n_modes, steps):
+    if cfg["group"] in LINEAR:            # built like its Kerr group; cfg carries gamma = 0
+        return build({**cfg, "group": LINEAR[cfg["group"]]}, n_modes, steps)
     group, power, depth = cfg["group"], cfg["p_total"], cfg["depth"]
     encoding = "comb" if group in MASKED else group.split("_")[0]
     symbol_time = cfg.get("symbol_time", 1e-9)

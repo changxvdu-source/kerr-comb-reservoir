@@ -1,0 +1,10 @@
+
+=== channel_eq   cross-run test NMSE, geometric mean over 3 series, noise: none   (columns: comb lines x readout taps)
+                        31x1      31x8          min..max 31x8  fine 31x8 consist.     SER   point chosen on series 0 for 31x8
+linear AR (best)    1.12e-02  1.12e-02
+ESN, same size      6.95e-03  3.78e-03
+with new noise after the choice (31x8, mean of 6 pairs of runs per series):   ESN 3.78e-03, SER 0.00e+00
+lin_comb_mask       1.36e-01  3.49e-03       3.4e-03..3.7e-03        nan    1.000  0.0000   Q 6.2e+05, 39 mW, zeta 1.5, depth 0.63   new noise 3.49e-03 (pairs differ by 0%), SER 0.00e+00; chosen on 3 new pairs, val 3.34e-03, other point than single-run choice in 0/3 series
+lin_comb_uniform    3.08e-01  6.54e-03       6.2e-03..6.9e-03        nan    1.000  0.0000   Q 6.2e+05, 232 mW, zeta 2.5, depth 0.42   new noise 6.54e-03 (pairs differ by 0%), SER 0.00e+00; chosen on 3 new pairs, val 6.82e-03, other point than single-run choice in 0/3 series
+
+saved results/linear_clean_ce_trials.csv, _summary.csv and .png; spectra cached in /content/linear_spectra
