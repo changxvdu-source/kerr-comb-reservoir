@@ -24,3 +24,6 @@ __pycache__/
 .pytest_cache/
 .claude/
 *.pyc
+
+# private review notes
+paper_en/review_referee.md

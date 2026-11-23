@@ -43,6 +43,28 @@ GROUP_LABEL = {"power": "power", "detuning": "detuning", "phase": "phase", "powe
 ORDER = list(GROUP_LABEL)
 
 
+def pow10(v):
+    """Tick label in the paper's number format: 10^-4 or 2x10^-4."""
+    e = math.floor(math.log10(v) + 1e-9)
+    m = round(v / 10 ** e)
+    return rf"$10^{{{e}}}$" if m == 1 else rf"${m}\times10^{{{e}}}$"
+
+
+NOISE_TICKS = ["0", r"$10^{-4}$", r"$3\!\times\!10^{-4}$", r"$10^{-3}$", "$3\\!\\times\\!10^{-3}$\n(conv.)"]
+
+
+def point_plot(ax, x, vals, colors, spread=None, open_vals=None):
+    """Values on a log axis as points (not bars, whose length would depend on the axis floor); ``spread``: relative
+    standard deviation between pairs of new runs, drawn as a bar; ``open_vals``: a second set as open markers."""
+    for i, (xi, v, c) in enumerate(zip(x, vals, colors)):
+        if spread is not None and np.isfinite(spread[i]):
+            ax.plot([xi, xi], [v / (1 + spread[i]), v * (1 + spread[i])], color=c, linewidth=1.2, zorder=2)
+        ax.plot(xi, v, "o", color=c, markersize=5, markeredgecolor="white", markeredgewidth=0.6, zorder=3)
+        if open_vals is not None:
+            ax.plot(xi, open_vals[i], "o", markerfacecolor="white", markeredgecolor=c, markersize=4.5,
+                    markeredgewidth=1.0, zorder=3)
+
+
 def family_color(group):
     """Encoding family: CW single pump (blue), soliton single pump (orange), input comb (aqua)."""
     return AQUA if group.startswith("comb") else ORANGE if group.endswith("soliton") else BLUE
@@ -114,8 +136,8 @@ def fig1():
     wire([(3.48, 2.6), (3.85, 2.6), (3.85, 3.65), (4.6, 3.65)], arrow=False)
     wire([(3.85, 2.6), (3.85, 1.55), (4.6, 1.55)])
     box(5.4, 1.55, 1.55, 0.72, "modulator", "one MZM")
-    box(7.2, 3.65, 1.6, 0.72, "phase shaper", r"static: $b_\mu$")
-    box(7.2, 1.55, 1.6, 0.72, "phase shaper", r"signal: $w_\mu$")
+    box(7.2, 3.65, 1.6, 0.72, "spectral shaper", r"static: $b_\mu$, $\mu\neq0$")
+    box(7.2, 1.55, 1.6, 0.72, "spectral shaper", r"signal: $w_\mu$, pump")
     wire([(4.6, 3.65), (6.4, 3.65)])
     wire([(6.18, 1.55), (6.4, 1.55)])
     # signal into the modulator
@@ -209,7 +231,7 @@ def fig1():
             bx.add_patch(FancyArrowPatch((x0 + w + 0.02, yc), (nx - 0.02, yc), arrowstyle="-|>", mutation_scale=7,
                                          color=INK2, linewidth=1.0, zorder=2))
     noises = [  # (x, text) — dashed arrows up into the stage where each noise enters
-        (1.52, "laser intensity noise\n(RIN $10^{-3}$)"),
+        (1.52, "laser intensity noise\n(0.1% rms)"),
         (4.15, "detuning jitter\n(laser frequency noise)"),
         (5.85, "intracavity\nvacuum noise"),
         (10.32, "shot noise +\ndetector noise ($0.3\\,\\mu$W)"),
@@ -234,21 +256,36 @@ def fig2():
         qs = sorted({float(r["log_q_ext1"]) for r in mine})
         ps = sorted({float(r["p_total"]) for r in mine})
         grid = np.full((len(ps), len(qs)), np.nan)
+        cons = np.full((len(ps), len(qs)), np.nan)
         for r in mine:
             v = float(r["test_31x8"])
-            grid[ps.index(float(r["p_total"])), qs.index(float(r["log_q_ext1"]))] = min(v, 1.0) if v == v else 1.0
+            i, j = ps.index(float(r["p_total"])), qs.index(float(r["log_q_ext1"]))
+            grid[i, j] = min(v, 1.0) if v == v else 1.0
+            c = float(r["consistency_31x1"])
+            cons[i, j] = c if c == c else 0.0
         mesh = ax.pcolormesh(10 ** np.array(qs), np.array(ps) * 1e3, grid, cmap=cmap,
                              norm=LogNorm(vmin=1e-6, vmax=1), shading="nearest")
+        cs = ax.contour(10 ** np.array(qs), np.array(ps) * 1e3, cons, levels=[0.5, 0.99],
+                        colors=[ORANGE, INK], linewidths=[1.0, 0.9], linestyles=["-", "--"])
+        best = np.unravel_index(np.nanargmin(grid), grid.shape)
+        ax.plot(10 ** qs[best[1]], ps[best[0]] * 1e3, marker="*", color="white", markeredgecolor=INK,
+                markersize=9, zorder=5)
         ax.set_xscale("log")
         ax.set_yscale("log")
         ax.grid(False)
-        ax.set_xlabel("input coupling $Q_{ext,1}$")
+        ax.set_xlabel(r"input coupling $Q_{\mathrm{ext},1}$")
         ax.set_title(title, loc="left")
         panel_tag(ax, tag)
     axes[0].set_ylabel("total input power (mW)")
     bar = fig.colorbar(mesh, ax=axes, shrink=0.9, pad=0.02)
-    bar.set_label("test NMSE, Mackey-Glass (lower is better)")
+    bar.set_label("test NMSE, Mackey-Glass")
     bar.outline.set_visible(False)
+    from matplotlib.lines import Line2D
+    fig.legend(handles=[Line2D([], [], color=INK, linestyle="--", linewidth=0.9, label="consistency 0.99"),
+                        Line2D([], [], color=ORANGE, linewidth=1.0, label="consistency 0.5"),
+                        Line2D([], [], marker="*", linestyle="", color="white", markeredgecolor=INK, markersize=9,
+                               label="lowest error")],
+               loc="upper center", ncol=3, bbox_to_anchor=(0.45, 1.06), fontsize=6.5)
     save(fig, "fig2_operating_map")
 
 
@@ -265,54 +302,67 @@ def fig3():
     u = torch.tensor(make_task("mackey_glass_h10", 700, seed=0)[0], dtype=torch.float64)
     chaotic = KerrRing(n_modes=256, steps_per_symbol=20)          # the chaotic-comb parameters of the original scheme
     mask = ce.build(ce.sample("comb_mask", 45), 256, 20)          # the mask chosen in the noise-floor study
-    fig, axes = plt.subplots(2, 1, figsize=(SINGLE, 3.8), sharex=True, gridspec_kw={"hspace": 0.45})
-    for ax, ring, title, tag in zip(axes, (chaotic, mask), ("chaotic comb (single pump)", "spectral phase mask"),
-                                    "ab"):
-        spectra = simulate(ring, u, warmup=300, n=300, seeds=(0, 1))
-        line = select_lines(spectra, 31)[..., 15 + 3] * 1e3            # third line beside the pump, mW
+    fig, axes = plt.subplots(3, 1, figsize=(SINGLE, 4.4), sharex=True, gridspec_kw={"hspace": 0.5})
+    runs = {"chaotic": simulate(chaotic, u, warmup=300, n=300, seeds=(0, 1)),
+            "mask": simulate(mask, u, warmup=300, n=300, seeds=(0, 1))}
+    shown = (("chaotic", 3, r"single pump, chaotic comb: generated line $\mu=3$"),
+             ("mask", 3, r"phase mask: input line $\mu=3$"),
+             ("mask", 12, r"phase mask: four-wave-mixing line $\mu=12$"))
+    for ax, (key, mu, title), tag in zip(axes, shown, "abc"):
+        line = select_lines(runs[key], 31)[..., 15 + mu] * 1e3            # line mu beside the pump, mW
+        unit = "mW"
+        if line.max() < 1e-2:
+            line, unit = line * 1e3, r"$\mu$W"
         t = np.arange(line.shape[1])
         ax.plot(t, line[0], color=BLUE, linewidth=1.0, label="run 1")
         ax.plot(t, line[1], color=ORANGE, linewidth=1.0, linestyle=(0, (3, 1.5)), label="run 2 (other initial noise)")
         c = np.corrcoef(line[0], line[1])[0, 1]
-        ax.set_title(f"{title}: correlation of the two runs {c:.2f}", loc="left")
-        ax.set_ylabel("line power (mW)")
+        ax.set_title(f"{title}; correlation {c:.2f}", loc="left", fontsize=7)
+        ax.set_ylabel(f"power ({unit})")
         panel_tag(ax, tag)
+        print(f"fig3 {key} mu={mu}: correlation {c:.3f}")
     handles, labels = axes[0].get_legend_handles_labels()
     fig.legend(handles, labels, loc="upper center", ncol=2, bbox_to_anchor=(0.55, 1.0))
-    fig.subplots_adjust(top=0.86)
-    axes[1].set_xlabel("symbol")
+    fig.subplots_adjust(top=0.9)
+    axes[-1].set_xlabel("symbol")
     save(fig, "fig3_two_runs")
 
 
 # ---- figure 4: equal-budget encoding comparison ------------------------------------------------
 
 def fig4():
-    tasks = (("robust_noisy_mg_summary.csv", "Mackey-Glass, 10 steps ahead", None),
-             ("robust_noisy_ce_summary.csv", "channel equalisation", None),
-             ("robust_noisy_narma_summary.csv", "NARMA-10", None))
+    tasks = (("robust_noisy_mg_summary.csv", "Mackey-Glass, 10 steps ahead", ("robust_clean_summary.csv", "mackey_glass_h10")),
+             ("colab_robust_noisy_ce_long_summary.csv", "channel equalisation", ("robust_clean_summary.csv", "channel_eq")),
+             ("robust_noisy_narma_summary.csv", "NARMA-10", ("robust_clean_narma_summary.csv", "narma10")))
     fig, axes = plt.subplots(1, 3, figsize=(DOUBLE, 2.6))
-    for ax, (name, title, _), tag in zip(axes, tasks, "abc"):
+    for ax, (name, title, (clean_name, task)), tag in zip(axes, tasks, "abc"):
         rows = {r["group"]: r for r in read(name)}
+        clean = {r["group"]: float(r["fresh_test"]) for r in read(clean_name) if r["task"] == task}
         groups = [g for g in ORDER if g in rows]
         x = np.arange(len(groups))
         vals = [float(rows[g]["fresh_test"]) for g in groups]
-        ax.bar(x, vals, width=0.62, color=[family_color(g) for g in groups], zorder=2)
+        spread = [float(rows[g].get("fresh_spread") or "nan") for g in groups]
+        point_plot(ax, x, vals, [family_color(g) for g in groups], spread, [clean.get(g, np.nan) for g in groups])
         any_row = rows[groups[0]]
         esn = ref_line(ax, float(any_row["baseline_esn_fresh"]), "ESN, same size", "--")
         lin = ref_line(ax, float(any_row["baseline_linear"]), "best linear autoregression", ":")
         ax.set_yscale("log")
-        low = min(vals + [float(any_row["baseline_esn_fresh"])])
-        ax.set_ylim(low / 2.5, max(vals) * 1.6)
+        low = min(vals + [float(any_row["baseline_esn_fresh"])] + [v for v in clean.values() if v > 0])
+        ax.set_ylim(low / 2.5, max(vals) * 2.5)
         ax.set_xticks(x)
         ax.set_xticklabels([GROUP_LABEL[g].replace("\n", " ") for g in groups], fontsize=6, rotation=90)
         ax.set_title(title, loc="left")
         ax.grid(axis="x", visible=False)
         panel_tag(ax, tag)
-    axes[0].set_ylabel("test NMSE, new runs (lower is better)")
-    from matplotlib.patches import Patch
-    fig.legend(handles=[Patch(color=BLUE, label="single pump, CW start"), Patch(color=ORANGE, label="single pump, soliton"),
-                        Patch(color=AQUA, label="input comb"), esn, lin], loc="upper center", ncol=5,
-               bbox_to_anchor=(0.5, 1.07))
+    axes[0].set_ylabel("test NMSE, new runs")
+    from matplotlib.lines import Line2D
+    mk = dict(marker="o", linestyle="", markersize=5, markeredgecolor="white")
+    fig.legend(handles=[Line2D([], [], color=BLUE, label="single pump, CW start", **mk),
+                        Line2D([], [], color=ORANGE, label="single pump, soliton", **mk),
+                        Line2D([], [], color=AQUA, label="input comb", **mk),
+                        Line2D([], [], marker="o", linestyle="", markerfacecolor="white", markeredgecolor=INK2,
+                               label="no noise"), esn, lin], loc="upper center", ncol=6,
+               bbox_to_anchor=(0.5, 1.07), fontsize=6)
     fig.tight_layout()
     save(fig, "fig4_encodings")
 
@@ -335,8 +385,7 @@ def fig5():
     ax.set_xticklabels([GROUP_LABEL[g] for g in ORDER], fontsize=6)
     ax.grid(axis="x", visible=False)
     ax.set_ylabel("test NMSE, Mackey-Glass\n(realistic noise)")
-    ax.set_title("all 256 random operating points per encoding and series (3 series); black: median; "
-                 "values above 10 drawn at 10", loc="left")
+    ax.set_xticklabels([GROUP_LABEL[g] for g in ORDER], fontsize=7)
     save(fig, "fig5_distributions")
 
 
@@ -346,12 +395,13 @@ def fig6():
     fig, axes = plt.subplots(1, 2, figsize=(DOUBLE, 2.5), gridspec_kw={"width_ratios": [1.1, 1]})
     ax = axes[0]
     row = {r["group"]: r for r in read("floor_breakdown.csv")}["comb_mask"]
-    names = [("none", "none"), ("rin", "laser\nRIN"), ("detuning", "detuning\njitter"),
-             ("field", "vacuum\nin cavity"), ("shot", "shot\nnoise"), ("optical + shot", "all")]
+    names = [("none", "none"), ("rin", "laser\nintensity"), ("detuning", "detuning\njitter"),
+             ("field", "vacuum\n(cavity)"), ("shot", "shot\nnoise"), ("optical + shot", "all")]
     vals = [float(row[k]) for k, _ in names]
-    ax.bar(range(len(vals)), vals, width=0.6, color=BLUE, zorder=2)
+    point_plot(ax, range(len(vals)), vals, [BLUE] * len(vals))
+    ax.axhline(vals[0], color=MUTED, linewidth=0.8, linestyle=":", zorder=1)
     ax.set_yscale("log")
-    ax.set_yticks([1e-5, 2e-5, 5e-5, 1e-4, 2e-4], ["1e-5", "2e-5", "5e-5", "1e-4", "2e-4"])
+    ax.set_yticks([1e-5, 2e-5, 5e-5, 1e-4, 2e-4], [r"$10^{-5}$", r"$2\times10^{-5}$", r"$5\times10^{-5}$", r"$10^{-4}$", r"$2\times10^{-4}$"])
     ax.set_xticks(range(len(vals)))
     ax.set_xticklabels([n for _, n in names], fontsize=6)
     ax.grid(axis="x", visible=False)
@@ -374,7 +424,7 @@ def fig6():
         sweep.setdefault((0.01, r["group"]), float(r["fresh_test"]))
     esn = float(read("colab_detuning_sweep_0.03.csv")[0]["esn"])
     x = np.arange(len(levels))
-    for g, color, label in (("comb_mask", BLUE, "phase mask"), ("mask_drop", ORANGE, "stronger drop coupling"),
+    for g, color, label in (("comb_mask", BLUE, "plain mask"), ("mask_drop", ORANGE, "stronger drop coupling"),
                             ("mask_slow2", AQUA, "2 ns symbols")):
         y = [sweep.get((lv, g), np.nan) for lv in levels]
         ax.plot(x, y, color=color, marker="o", markersize=4, markeredgecolor="white", markeredgewidth=0.8,
@@ -384,8 +434,12 @@ def fig6():
     ax.set_xticks(x)
     ax.set_xticklabels(["0", "0.1", "0.3", "1", "3"])
     ax.minorticks_off()
-    ax.set_yticks([5e-5, 1e-4, 2e-4, 5e-4], ["5e-5", "1e-4", "2e-4", "5e-4"])
-    ax.set_xlabel("detuning jitter (% of half-linewidth, white)")
+    ax.set_yticks([5e-5, 1e-4, 2e-4, 5e-4], [r"$5\times10^{-5}$", r"$10^{-4}$", r"$2\times10^{-4}$", r"$5\times10^{-4}$"])
+    ax.set_xlabel("detuning jitter (% of half-linewidth, rms per symbol)")
+    top = ax.secondary_xaxis("top")
+    top.set_xticks(x, ["0", "16 Hz", "150 Hz", "1.6 kHz", "14 kHz"])
+    top.tick_params(labelsize=6, colors=INK2)
+    top.set_xlabel(r"intrinsic linewidth at the stronger-drop point ($Q=1.9\times10^6$, 1 ns)", fontsize=6, color=INK2)
     ax.set_ylabel("test NMSE, PIN detectors")
     ax.set_title("readout-side design vs assumed jitter", loc="left")
     ax.legend(loc="center left", bbox_to_anchor=(1.01, 0.5))
@@ -410,7 +464,7 @@ def fig7():
     ax.set_yticks(y)
     ax.set_yticklabels([labels.get(r["method"], r["method"]) for r in rows], fontsize=6.5)
     ax.set_xscale("log")
-    ax.set_xticks([2e-4, 5e-4, 1e-3, 2e-3, 5e-3, 1e-2], ["2e-4", "5e-4", "1e-3", "2e-3", "5e-3", "1e-2"])
+    ax.set_xticks([2e-4, 5e-4, 1e-3, 2e-3, 5e-3, 1e-2], [r"$2\times10^{-4}$", r"$5\times10^{-4}$", r"$10^{-3}$", r"$2\times10^{-3}$", r"$5\times10^{-3}$", r"$10^{-2}$"])
     ax.minorticks_off()
     ax.set_ylim(y.min() - 0.5, y.max() + 0.5)
     ax.grid(axis="y", visible=False)
@@ -462,13 +516,13 @@ def figS4():
              ("ring mask_drop, PIN detectors", "strong\ndrop port", ORANGE),
              ("ring mask_slow2, PIN detectors", "2 ns\nsymbols", AQUA)]
     vals = [float(rows[k]["tracking_nmse"]) for k, _, _ in items]
-    ax.bar(range(len(items)), vals, width=0.6, color=[c for _, _, c in items], zorder=2)
+    point_plot(ax, range(len(items)), vals, [c for _, _, c in items])
     ax.set_yscale("log")
     ax.set_xticks(range(len(items)))
     ax.set_xticklabels([n for _, n, _ in items], fontsize=6)
     ax.grid(axis="x", visible=False)
-    ax.set_ylabel("tracking NMSE (lower is better)")
-    ax.set_title("tracking error over 8 trials", loc="left")
+    ax.set_ylabel("tracking NMSE")
+    ax.set_title("tracking error, one training record (8 trials)", loc="left")
     panel_tag(ax, "b")
 
     ax = fig.add_subplot(bottom[1])
@@ -485,7 +539,7 @@ def figS4():
             if line.startswith("ring mask_slow2, PIN detectors"):
                 return float(re.search(r"tracking_nmse (\S+)", line).group(1))
     esn = float(rows["ESN, 31 nodes"]["tracking_nmse"])
-    for series, color, label in ((white, AQUA, "white jitter"), (drift, ORANGE, "slow drift (1000 symbols)")):
+    for series, color, label in ((white, AQUA, "jitter correlated over 1 symbol"), (drift, ORANGE, "slow drift (1000 symbols)")):
         xs = sorted(series)
         ax.plot([x * 100 for x in xs], [slow2(series[x]) for x in xs], color=color, marker="o", markersize=4,
                 markeredgecolor="white", markeredgewidth=0.8, label=f"2 ns ring, {label}", zorder=3)
@@ -494,7 +548,7 @@ def figS4():
     ax.set_yscale("log")
     ax.set_xticks([0.1, 0.3, 1, 3], ["0.1", "0.3", "1", "3"])
     ax.minorticks_off()
-    ax.set_yticks([3e-4, 1e-3, 3e-3, 1e-2], ["3e-4", "1e-3", "3e-3", "1e-2"])
+    ax.set_yticks([3e-4, 1e-3, 3e-3, 1e-2], [r"$3\times10^{-4}$", r"$10^{-3}$", r"$3\times10^{-3}$", r"$10^{-2}$"])
     ax.set_xlabel("detuning jitter (% of half-linewidth)")
     ax.set_ylabel("tracking NMSE")
     ax.set_title("sensitivity to the detuning jitter", loc="left")
@@ -513,7 +567,8 @@ def figS1():
                                     ("Mackey-Glass", "channel equalisation"), "ab"):
         rows = {r["group"]: r for r in read(name)}
         groups = [g for g in labels if g in rows]
-        ax.bar(range(len(groups)), [float(rows[g]["fresh_test"]) for g in groups], width=0.6, color=AQUA, zorder=2)
+        point_plot(ax, range(len(groups)), [float(rows[g]["fresh_test"]) for g in groups], [AQUA] * len(groups),
+                   [float(rows[g].get("fresh_spread") or "nan") for g in groups])
         ref_line(ax, float(rows[groups[0]]["baseline_esn_fresh"]), "ESN, same size", "--")
         ax.legend(loc="upper right")
         ax.set_yscale("log")
@@ -524,7 +579,7 @@ def figS1():
         ax.minorticks_off()
         lo, hi = ax.get_ylim()
         ticks = [t for t in (2e-4, 3e-4, 5e-4, 1e-3, 2e-3, 3e-3, 4e-3, 5e-3, 6e-3, 7e-3) if lo <= t <= hi]
-        ax.set_yticks(ticks, [f"{t:.0e}".replace("e-0", "e-") for t in ticks])
+        ax.set_yticks(ticks, [pow10(t) for t in ticks])
         panel_tag(ax, tag)
     axes[0].set_ylabel("test NMSE, realistic noise")
     fig.tight_layout()
@@ -539,7 +594,14 @@ def figS2():
              ("link_silica", "silica ring\n(28 GBd)", ORANGE), ("link_sin", "Si$_3$N$_4$ ring\n(28 GBd)", ORANGE)]
     fig, ax = plt.subplots(figsize=(SINGLE * 1.3, 2.4))
     vals = [float(rows[g]["fresh_ser"]) for g, _, _ in items]
-    ax.bar(range(len(items)), vals, width=0.6, color=[c for _, _, c in items], zorder=2)
+    from scipy.stats import chi2
+    n_sym = 3 * 6 * 5000                       # symbols behind each symbol error rate (series x pairs x test part)
+    for i, (v, (_, _, c)) in enumerate(zip(vals, items)):
+        k = round(v * n_sym)                   # 95 % Poisson interval of the error count
+        lo = chi2.ppf(0.025, 2 * k) / 2 / n_sym if k > 0 else 0
+        hi = chi2.ppf(0.975, 2 * k + 2) / 2 / n_sym
+        ax.plot([i, i], [max(lo, 1e-4), hi], color=c, linewidth=1.2, zorder=2)
+    point_plot(ax, range(len(items)), vals, [c for _, _, c in items])
     any_row = rows["comb_mask"]
     ref_line(ax, float(any_row["baseline_esn_fresh_ser"]), "ESN, same size", "--")
     ref_line(ax, float(any_row["baseline_linear_ser"]), "linear equaliser", ":")
@@ -549,7 +611,7 @@ def figS2():
     ax.set_xticks(range(len(items)))
     ax.set_xticklabels([n for _, n, _ in items], fontsize=5.8)
     ax.grid(axis="x", visible=False)
-    ax.set_yticks([1e-3, 2e-3, 5e-3, 1e-2, 2e-2], ["1e-3", "2e-3", "5e-3", "1e-2", "2e-2"])
+    ax.set_yticks([1e-3, 2e-3, 5e-3, 1e-2, 2e-2], [r"$10^{-3}$", r"$2\times10^{-3}$", r"$5\times10^{-3}$", r"$10^{-2}$", r"$2\times10^{-2}$"])
     ax.set_ylim(1e-3, 2.5e-2)
     ax.set_ylabel("symbol error rate (lower is better)")
     ax.set_title("28 GBd PAM-4 over 17 km SSMF (IM/DD)", loc="left")
@@ -580,14 +642,14 @@ def figS3():
         ax.axvspan(len(levels) - 1.3, len(levels) - 0.7, color=GRID, alpha=0.6, zorder=0, linewidth=0)
         ax.set_yscale("log")
         ax.set_xticks(x)
-        ax.set_xticklabels(["0", "1e-4", "3e-4", "1e-3", "3e-3\n(paper)"])
+        ax.set_xticklabels(NOISE_TICKS, fontsize=6)
         ax.minorticks_off()
         ax.set_xlabel("software input noise (rms)")
         ax.set_ylabel("test NMSE")
         ax.set_title(rf"$\bf{{{tag}}}$  {title}", loc="left")     # tag in the title: the top axis takes its place
-    axes[0].set_yticks([1e-8, 1e-7, 1e-6, 1e-5, 1e-4], ["1e-8", "1e-7", "1e-6", "1e-5", "1e-4"])
+    axes[0].set_yticks([1e-8, 1e-7, 1e-6, 1e-5, 1e-4], [r"$10^{-8}$", r"$10^{-7}$", r"$10^{-6}$", r"$10^{-5}$", r"$10^{-4}$"])
     axes[0].set_ylim(top=8e-4)
-    axes[1].set_yticks([3e-3, 4e-3, 5e-3, 6e-3], ["3e-3", "4e-3", "5e-3", "6e-3"])
+    axes[1].set_yticks([3e-3, 4e-3, 5e-3, 6e-3], [r"$3\times10^{-3}$", r"$4\times10^{-3}$", r"$5\times10^{-3}$", r"$6\times10^{-3}$"])
 
     # c: the closed loop (Henon map, tracking), software baselines against their input noise
     ax = axes[2]
@@ -606,11 +668,11 @@ def figS3():
     ax.axvspan(len(levels) - 1.3, len(levels) - 0.7, color=GRID, alpha=0.6, zorder=0, linewidth=0)
     ax.set_yscale("log")
     ax.set_xticks(x)
-    ax.set_xticklabels(["0", "1e-4", "3e-4", "1e-3", "3e-3\n(paper)"])
+    ax.set_xticklabels(NOISE_TICKS, fontsize=6)
     ax.minorticks_off()
     ax.set_xlabel("software input noise (rms)")
     ax.set_ylabel("tracking NMSE")
-    ax.set_yticks([1e-8, 1e-6, 1e-4, 1e-2], ["1e-8", "1e-6", "1e-4", "1e-2"])
+    ax.set_yticks([1e-8, 1e-6, 1e-4, 1e-2], [r"$10^{-8}$", r"$10^{-6}$", r"$10^{-4}$", r"$10^{-2}$"])
     ax.set_title(r"$\bf{c}$  closed loop, tracking", loc="left")
     # top axis: the input noise read as the quantisation noise of an ADC whose full scale is the symbol range,
     # rms = 2^-N / sqrt(12), so N = log2(1 / (rms sqrt(12))) effective bits
@@ -654,7 +716,7 @@ def fig9():
     ax.set_yscale("log")
     ax.minorticks_off()
     ax.set_xticks([30, 100, 300, 1000], ["30", "100", "300", "1000"])
-    ax.set_yticks([1e-6, 3e-6, 1e-5, 3e-5, 1e-4], ["1e-6", "3e-6", "1e-5", "3e-5", "1e-4"])
+    ax.set_yticks([1e-6, 3e-6, 1e-5, 3e-5, 1e-4], [r"$10^{-6}$", r"$3\times10^{-6}$", r"$10^{-5}$", r"$3\times10^{-5}$", r"$10^{-4}$"])
     ax.set_xlabel("comb lines read out (rings) or reservoir nodes (ESN)")
     ax.set_ylabel("test NMSE, Mackey-Glass")
     ax.set_title("readout size, 16k training symbols", loc="left")

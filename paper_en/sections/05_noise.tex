@@ -3,11 +3,11 @@
 Realistic noise raises the Mackey--Glass error of the spectral-phase mask from $1.8\times10^{-6}$ to $3.3\times10^{-4}$, a factor of
 about 180 (Table~\ref{tab:encodings}). Section~\ref{sec:mechanism} showed that the mask operates in the coherently seeded regime, so
 its error comes from noise, not from non-reproducible dynamics. This section separates the five noise sources to answer three
-questions: which of them set the floor; whether a different platform or more power lowers it; and whether it can be removed in the
-readout. The answer: about half of the floor comes from detuning jitter and half from shot noise. The first half does not depend on
-the photon number; the second falls with more photons, but then the first half quickly dominates, so neither a different platform
-nor more power helps much. The jitter cannot be removed in the readout either and must be suppressed at the source, which sets a
-hard requirement on the laser linewidth.
+questions: which of them set the floor; whether a more nonlinear material or more power lowers it; and whether it can be removed
+in the readout. The answer: about half of the floor comes from detuning jitter and half from shot noise. The first half does not
+depend on the photon number; the second falls with more photons, but then the first half quickly dominates, so neither
+Si$_3$N$_4$ nor more power helps much. A linear readout cannot remove the jitter even when it knows the exact jitter sequence, so it
+has to be suppressed at the source, which sets a requirement on the laser linewidth.
 
 \subsection{Breakdown}\label{sec:breakdown}
 
@@ -37,16 +37,16 @@ removed with an optical amplifier, and what remains is the floor above.
 \caption{Noise and readout-side design (Mackey--Glass).
 (a) Test error at the best of 256 operating points with ideal detectors, one noise source at a time; ``all'' has the four sources
 (laser intensity noise, detuning jitter, intracavity vacuum noise, shot noise) on together.
-(b) Test error, with the operating point re-selected at each level, against the assumed detuning jitter (percent of the
-half-linewidth, white from symbol to symbol), PIN detectors: plain spectral-phase mask, stronger drop coupling, $2~\mathrm{ns}$
-symbols; dashed: ESN with the same readout dimension (input noise $3\times10^{-3}$).
-By Eq.~\eqref{eq:linewidth}, for the stronger-drop-coupling point ($Q=1.9\times10^{6}$, $1~\mathrm{ns}$) 0.1\%, 0.3\%, 1\% and 3\%
-correspond to intrinsic laser linewidths of about $16~\mathrm{Hz}$, $150~\mathrm{Hz}$, $1.6~\mathrm{kHz}$ and $14~\mathrm{kHz}$; for the
-$2~\mathrm{ns}$ point ($Q=5\times10^{6}$) about 0.3 times these.}
+(b) Test error, with the operating point re-selected at each level, against the assumed detuning jitter (rms per symbol in percent
+of the half-linewidth, correlation $e^{-1}$ between neighbouring symbols; the horizontal axis is categorical), PIN detectors: plain
+spectral-phase mask, stronger drop coupling, $2~\mathrm{ns}$ symbols; dashed: ESN with the same readout dimension (input noise
+$3\times10^{-3}$, one random reservoir). The top axis gives the intrinsic laser linewidth that produces the same jitter at the
+stronger-drop-coupling point ($Q=1.9\times10^{6}$, $1~\mathrm{ns}$, Eq.~\eqref{eq:linewidth}); for the $2~\mathrm{ns}$ point
+($Q=5\times10^{6}$) the linewidths are about 0.3 times these.}
 \label{fig:noise}
 \end{figure}
 
-\subsection{Neither a different platform nor more power lowers the floor}\label{sec:platform}
+\subsection{Neither a more nonlinear material nor more power lowers the floor}\label{sec:platform}
 
 Shot noise can be reduced with more photons; detuning jitter cannot, because it is defined relative to the resonance linewidth and
 does not depend on how many photons are in the cavity. We changed the photon number in two ways, re-searching 256 operating points
@@ -72,7 +72,7 @@ What does lower the floor is the readout side: stronger drop coupling (more ligh
 integration per reading) bring it to $8.7\times10^{-5}$ and $6.9\times10^{-5}$ with ideal detectors, and $1.55\times10^{-4}$ and
 $1.58\times10^{-4}$ with ordinary detectors (Section~\ref{sec:readout}).
 
-\subsection{Detuning jitter cannot be removed in the readout}\label{sec:reference}
+\subsection{A linear readout cannot remove the detuning jitter}\label{sec:reference}
 
 If the detuning jitter comes mainly from the frequency noise of the pump laser, all rings on one chip driven by the same laser see
 the same jitter. A natural idea is a reference ring without signal that measures this common-mode noise so the readout can subtract
@@ -86,8 +86,9 @@ noise unchanged, gives $5.7\times10^{-5}$, 2.8 times better.
 So the jitter is indeed the larger part of the floor, but even when it is known exactly a linear readout cannot remove it.
 The reason is that the jitter is not additive noise on the readings: it changes the intracavity detuning, which changes the state of
 the whole comb through the nonlinear dynamics and persists over the following symbols; its effect on each line depends on the state
-at the time and cannot be subtracted linearly by the readout. A shared reference ring therefore does not work, and the jitter has to
-be suppressed physically.
+at the time and cannot be subtracted linearly by the readout. A shared reference ring read out linearly therefore does not work. We
+did not test nonlinear readouts, or feeding the reference ring's own 31 line features (which are nonlinear functions of the jitter
+history) to the readout; these could recover part of the gap, but the jitter is most simply suppressed physically.
 
 \subsection{Requirement on the intrinsic laser linewidth}\label{sec:laser}
 
@@ -118,21 +119,24 @@ $1~\mathrm{ns}$ symbol corresponds to a bandwidth of about $500~\mathrm{MHz}$, a
 while the flicker noise is concentrated at low frequencies; adding flicker noise with a $1~\mathrm{MHz}$ corner and a
 $1~\mathrm{MHz}$ lock leaves the $100~\mathrm{kHz}$ row nearly unchanged, and only very strong flicker noise ($10~\mathrm{MHz}$
 corner) without any lock moves the $1.6~\mathrm{kHz}$ row from $1.3\times10^{-4}$ to $1.8\times10^{-4}$.
-Second, our 1\% jitter model (correlated between neighbouring symbols) gives $1.60\times10^{-4}$, about 25\% more pessimistic than
-white frequency noise of the same rms ($1.27\times10^{-4}$), so the main results are slightly conservative.
+Second, our 1\% jitter model (correlation $e^{-1}$ between neighbouring symbols) gives $1.60\times10^{-4}$ at this point, about 25\%
+more pessimistic than white frequency noise of the same rms ($1.27\times10^{-4}$), so at this point the main results are slightly
+conservative. (The same point evaluated with other noise realisations gives $1.5$ to $1.6\times10^{-4}$; we use $1.55\times10^{-4}$
+from Section~\ref{sec:readout} as its reference value.)
 Third, changing the operating point does not avoid the requirement: at $1.6~\mathrm{kHz}$ and $16~\mathrm{kHz}$ re-selection returns
 the original point; at $100~\mathrm{kHz}$ two series move to a point with $Q=2.5\times10^{6}$ and the error improves by about 1.3
 times, more than the 9\% spread of one point between noise realisations but still modest; only at $1~\mathrm{MHz}$ does the choice
 move clearly to lower $Q$ ($1.2\times10^{6}$), improving the error 3.3 times, yet the lowest $Q$ among the candidates (about
 $5\times10^{5}$) is never chosen, because low-$Q$ points have weak nonlinearity and memory, which cancels the benefit of smaller
 jitter.
-Fourth, the position relative to software: the 31-node ESN with the same readout dimension reaches $1.9\times10^{-4}$ under the
-convention of Section~\ref{sec:software}; by log interpolation the intrinsic linewidth must be below about $5~\mathrm{kHz}$ for the
-best single ring not to lose to it; a $100~\mathrm{kHz}$ laser is about 4 times worse, and a $1~\mathrm{MHz}$ laser about 8 times
-worse even after re-selection.
+Fourth, the position relative to software: the 31-node ESN with the same readout dimension and input noise $3\times10^{-3}$ reaches
+$1.9\times10^{-4}$ (three reservoirs) to $3.2\times10^{-4}$ (one reservoir); by log interpolation of Table~\ref{tab:laser} the
+intrinsic linewidth must be below about $5$ to $17~\mathrm{kHz}$ for the best single ring not to lose to it. Against
+$1.9\times10^{-4}$, a $100~\mathrm{kHz}$ laser makes the ring about 4 times worse than the ESN, and a $1~\mathrm{MHz}$ laser about 8
+times worse even after re-selection.
 
-This gives the second design rule: \emph{half of the error floor is set by the laser's frequency noise relative to the resonance; it
-cannot be removed in the readout or avoided by choosing another operating point, only by a narrow-linewidth source}.
+This gives the second design rule: \emph{half of the error floor is set by the laser's frequency noise relative to the resonance; a
+linear readout cannot remove it and another operating point does not avoid it, so it calls for a narrow-linewidth source}.
 For our device ($Q\sim2\times10^{6}$, $1~\mathrm{GBd}$) the intrinsic laser linewidth should be below a few kilohertz.
 Self-injection locking of a laser to a microresonator is a known way to narrow semiconductor lasers by orders of
 magnitude~\cite{shen2020,jin2021}: for example, self-injection locking an ordinary DFB laser to a silicon-nitride resonator with

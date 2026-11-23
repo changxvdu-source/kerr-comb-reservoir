@@ -22,7 +22,9 @@ at least as good as the full mask, random amplitudes in phase are clearly worse,
 \includegraphics[width=\linewidth]{figS1_mask_ablation}
 \caption{Mask ablation under realistic noise. Test error of the uniform comb, a random static spectrum with one common modulation
 ($w_\mu\propto b_\mu$), random amplitudes with all lines in phase, random phases at equal amplitudes, and the full mask; dashed: ESN
-with the same readout dimension (input noise $3\times10^{-3}$). (a) Mackey--Glass; (b) channel equalisation.}
+with the same readout dimension (input noise $3\times10^{-3}$). Bars: $\pm1$ relative standard deviation between pairs of new runs.
+The full mask gives $3.8\times10^{-4}$ in this batch ($3.3\times10^{-4}$ in Table~\ref{tab:encodings}). (a) Mackey--Glass;
+(b) channel equalisation.}
 \label{fig:ablation}
 \end{figure}
 
@@ -45,8 +47,10 @@ the linear equaliser in symbol error rate. Without readout taps all encodings ar
 \centering
 \includegraphics[width=0.6\linewidth]{figS2_fibre_link}
 \caption{Symbol error rate on 28~GBd PAM-4 over 17~km of standard single-mode fibre (IM/DD). Blue: single-pump power encoding; green:
-input combs at 1~GBd or 0.5~GBd; orange: low-$Q$ rings operated at the link rate. Dashed: ESN with the same readout dimension; dotted:
-linear equaliser; dash-dotted: hard-decision FEC threshold.}
+input combs processing the received samples offline at 1~GBd or 0.5~GBd (a test of equalisation capability, not of rate); orange:
+low-$Q$ rings operated at the link rate (here orange does not denote soliton encodings as in Fig.~\ref{fig:encodings}). Bars: 95\%
+Poisson intervals of the error count over 90\,000 symbols. Dashed: ESN with the same readout dimension; dotted: linear equaliser;
+dash-dotted: hard-decision FEC threshold.}
 \label{fig:fibre}
 \end{figure}
 
@@ -57,26 +61,28 @@ prediction. Two tasks are considered: tracking a commanded trajectory and holdin
 a linear predictor, NG-RC, a 31-node ESN and the exact model; the three resonator variants are each chosen from 64 candidate points and
 the ESN from 96.
 
-With PIN detectors the tracking error (Fig.~\ref{fig:closedloop}b) is $1.0$ for the linear predictor, $7.0\times10^{-4}$ for the ESN,
+With PIN detectors the tracking error on the first training record (eight trials, Fig.~\ref{fig:closedloop}b) is $1.0$ for the linear predictor, $7.0\times10^{-4}$ for the ESN,
 $6.2\times10^{-3}$ for the plain mask, $2.3\times10^{-3}$ with stronger drop coupling and $4.4\times10^{-4}$ with $2~\mathrm{ns}$ symbols
 ($2.3\times10^{-5}$ without noise). Holding the unstable fixed point, the $2~\mathrm{ns}$ resonator stays stabilised 99.6\% of the time with
 0.4 losses per thousand steps, the same as the exact model; the ESN reaches 99.5\% and 1.6, the plain mask 86\% and 97.
 The decision quality is set by the prediction noise: the software predictors' error is set entirely by their input noise
 (Fig.~\ref{fig:software}c), and below about $2.4\times10^{-3}$ (tracking) and $1.7\times10^{-3}$ (holding) the ESN and NG-RC are better
 than the resonator; at $10^{-3}$ the ESN and NG-RC track with $8.6\times10^{-5}$ and $7.5\times10^{-5}$, about 5 times better.
-White detuning jitter up to 3\% leaves the $2~\mathrm{ns}$ resonator's tracking error between $4.2\times10^{-4}$ and $5.1\times10^{-4}$
+Detuning jitter with the correlation of the main noise model (one symbol) up to 3\% leaves the $2~\mathrm{ns}$ resonator's tracking error between $4.2\times10^{-4}$ and $5.1\times10^{-4}$
 (Fig.~\ref{fig:closedloop}c), but a slow drift (correlation time 1000 symbols) of 1\% makes it 2.4 times worse than the ESN and of 3\%
 12 times worse; at 0.1\% and 0.3\% it is still better ($4.2\times10^{-4}$ and $5.6\times10^{-4}$ against $6.9\times10^{-4}$). Slow
-detuning drift must therefore be locked to within about 0.3\% of the half-linewidth (about 0.4~MHz at this point). The result holds over
-four training records and starting points (32 trials) but uses a single textbook map.
+detuning drift must therefore be locked to within about 0.3\% of the half-linewidth (about 0.4~MHz at this point). The ranking holds
+over four training records with eight trials each (32 trials; mean tracking error of the $2~\mathrm{ns}$ resonator $4.5\times10^{-4}$)
+but uses a single textbook map.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{figS4_closed_loop}
 \caption{Closed-loop tracking of the Hénon map with PIN detectors.
 (a) First trial: commanded trajectory (grey line) and controlled state (dots) for the ESN, the plain phase-mask resonator and the
-resonator with $2~\mathrm{ns}$ symbols. (b) Tracking error over eight trials for the linear predictor, the ESN and three resonator
-variants. (c) Tracking error of the $2~\mathrm{ns}$ resonator against detuning jitter that is white from symbol to symbol or drifts
-slowly (correlation time 1000 symbols); dashed: ESN. Software predictors receive input noise $3\times10^{-3}$ here.}
+resonator with $2~\mathrm{ns}$ symbols. (b) Tracking error over the eight trials of the first training record for the linear
+predictor, the ESN and three resonator variants. (c) Tracking error of the $2~\mathrm{ns}$ resonator against detuning jitter with a
+correlation time of one symbol (as in the main noise model) or a slow drift (correlation time 1000 symbols); dashed: ESN. Software
+predictors receive input noise $3\times10^{-3}$ here.}
 \label{fig:closedloop}
 \end{figure}

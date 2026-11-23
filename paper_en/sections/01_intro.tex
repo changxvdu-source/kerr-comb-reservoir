@@ -2,53 +2,66 @@
 
 Reservoir computing trains only a linear readout: the input drives a fixed nonlinear dynamical system that unfolds the input
 history into high-dimensional features~\cite{jaeger2001,jaeger2004}. Because the dynamical system itself is not trained, it is
-well suited to physical hardware, and optics is one of the most studied platforms~\cite{vandersande2017}.
-Frequency-multiplexed schemes use the longitudinal modes of a single optical cavity as reservoir nodes, obtaining tens of
-features from one cavity and one set of wavelengths~\cite{butschek2020,lupo2023}; optical next-generation reservoir computing
-follows a similar idea~\cite{cox2024,wang2025ngrc}.
+well suited to physical hardware~\cite{tanaka2019}, and photonics is one of the most studied platforms~\cite{vandersande2017},
+from delay systems with a single nonlinear node~\cite{appeltant2011} to passive silicon chips~\cite{vandoorne2014}.
+Frequency-multiplexed schemes use the frequency components of light as nodes, obtaining tens of features from one optical path;
+programmable spectral filters then set input and output weights per frequency
+component~\cite{butschek2020,lupo2021,lupo2023}. Optical next-generation reservoir computing follows a related
+idea~\cite{cox2024,wang2025ngrc}.
 
-Kerr microresonators are natural candidates for such schemes: four-wave mixing transfers pump power to tens of comb lines,
-providing a strong on-chip nonlinearity, and the line spacing is wide enough to demultiplex and detect the lines one by one.
-Several microcomb reservoirs have been proposed recently: a chaotic comb whose pump power is modulated~\cite{shishavan2025},
-a single soliton whose pump detuning is modulated~\cite{cuevas2025}, a cavity soliton whose pump phase is
-modulated~\cite{arabieh2026soliton}, and a frequency-multiplexed cavity driven by a synchronous pulse train modulated as a
-whole~\cite{arabieh2026pulse}.
-They have one thing in common: the signal enters the device through a single degree of freedom (the power, detuning or phase of
-the pump, or all lines together). This causes two problems. In the chaotic regime the comb lines grow out of noise through
-modulation instability, and the same input can give completely different outputs in two runs (Section~\ref{sec:mechanism}).
-In the soliton regime the output is reproducible, but the device must be held inside the soliton existence range, which limits
-how strongly the input may perturb it.
+Kerr microresonators are natural candidates for such schemes. Four-wave mixing transfers pump power to tens of comb lines,
+providing a strong on-chip nonlinearity, and the line spacing is wide enough to demultiplex and detect the lines one by
+one~\cite{kippenberg2018,pasquazi2018}. Several microcomb reservoirs have been proposed recently (Table~\ref{tab:related}): a chaotic
+comb whose pump power is modulated~\cite{shishavan2025}, a single soliton whose pump detuning is modulated~\cite{cuevas2025}, a
+cavity soliton whose pump phase is modulated~\cite{arabieh2026soliton}, and a frequency-multiplexed fibre cavity driven by a
+synchronous pulse train~\cite{arabieh2026pulse}. In all of them the signal enters through a single degree of freedom of the drive.
+In the chaotic regime the comb lines grow out of noise through modulation instability, so the same input can give different
+outputs in two runs, which violates the consistency a reservoir needs~\cite{uchida2004,jaeger2001}
+(Section~\ref{sec:mechanism}). In the soliton regime the output is reproducible, but the device must stay inside the soliton
+existence range~\cite{herr2014}, which limits how strongly the input may perturb it.
 
-A more basic problem is that these works compare with software under different conditions: how operating points are chosen,
-on which noise realisation the result is reported, and how much noise the software baseline receives all differ, and we find
-that each of these choices can reverse the conclusion of the comparison.
-So a basic question remains open: \emph{under realistic noise, how good can a Kerr-microcomb reservoir be, what limits it, and how
-should it be compared with software?} How far single-degree-of-freedom schemes are from that limit is then also unclear.
+\begin{table}[htbp]
+\centering
+\caption{Microcomb and frequency-multiplexed reservoirs related to this work. ``Input'' is the degree of freedom carrying the signal.}
+\label{tab:related}
+\footnotesize
+\begin{tabular}{p{3.3cm}p{2.9cm}p{2.6cm}p{1.6cm}p{3.6cm}}
+\toprule
+work & input & comb state & experiment & relation to this work \\
+\midrule
+Shaabani Shishavan et al.~\cite{shishavan2025} & pump power & chaotic (MI) & no & reimplemented as ``power'' encoding \\
+Cuevas et al.~\cite{cuevas2025} & pump detuning & single soliton & yes & reimplemented as ``detuning'' encoding \\
+Arabieh et al.~\cite{arabieh2026soliton} & pump phase & cavity soliton & yes & reimplemented as ``phase'' encoding \\
+Arabieh et al.~\cite{arabieh2026pulse} & synchronous pulse train & pulse-driven cavity & no & closest to our uniform comb \\
+Butschek, Lupo et al.~\cite{butschek2020,lupo2021,lupo2023} & spectral weights on comb lines & fibre loop, no Kerr comb & yes & per-line weighting, not in a Kerr resonator \\
+this work & random complex weight per input line & coherently seeded Kerr comb & no & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
 
-We answer this question with simulations. To approach the limit we propose a spectral-phase input mask: the 16 lines of an input
-comb aligned with the resonator each receive a random complex bias and modulation weight and enter the resonator together with
-the pump. The input lines sit on resonances and the sidebands are seeded coherently by the input, so the resonator works in a
-coherently seeded regime where the output is set by the input.
-We compare eight encodings with the same simulator, the same device-parameter and optical-power ranges, the same readout, the same
-noise model and the same operating-point budget, and choose and report operating points on several independent noise
-realisations. The main results are:
+Per-line spectral weighting is therefore not new in itself~\cite{butschek2020,lupo2021}; what has not been studied is driving a
+Kerr resonator with many coherent input lines that sit on its resonances, a configuration known from pulse- and
+comb-driven Kerr cavities~\cite{obrzud2017}. A second gap is the comparison with software. The works above use different
+operating-point selection, report on different noise realisations and give the software baseline different amounts of noise, and
+we find that at least the last choice reverses the conclusion of the comparison (Section~\ref{sec:software}). So it remains
+unclear \emph{how well a Kerr-microcomb reservoir performs under realistic noise, what limits it, and how it compares with
+software when the comparison is made under one protocol}.
+
+We study these questions with simulations. Our contributions are:
 \begin{enumerate}
-\item \emph{The encoding decides whether the limit can be approached} (Sections~\ref{sec:mechanism} and~\ref{sec:encodings}).
-      The spectral-phase mask beats single-pump encodings and a uniformly modulated comb by one to two orders of magnitude on
-      Mackey--Glass prediction, leads slightly on channel equalisation and does not work on NARMA-10 with a single resonator.
-      What matters is the randomness of the line phases, so one modulator and two spectral phase shapers suffice.
-\item \emph{What sets the limit} (Sections~\ref{sec:noise} and~\ref{sec:readout}). With ideal detectors about half of the error
-      floor comes from detuning jitter and half from shot noise; changing the platform or adding power does not lower it.
-      The jitter cannot be removed in the readout, so the intrinsic linewidth of the laser is a hard requirement: below about
-      $5~\mathrm{kHz}$ for our device. Two readout-side changes lower the error by another factor of about two.
-      The resonator contributes nonlinear features, not memory; memory must be added with delay lines.
-\item \emph{Where the limit lies in software terms} (Section~\ref{sec:software}). The best single resonator matches a 31-node echo
-      state network (ESN) fed through a converter with about 7 effective bits; with the resonator's own readout quantized, software
-      stays ahead at equal bit depth. On the tasks studied, the accuracy ceiling of a microcomb reservoir is below that of
-      software of the same size.
-\item \emph{A design tool} (Section~\ref{sec:gradient}). Differentiable simulation fine-tunes device parameters and the mask under
-      noise and reliably halves the error of its starting point, but it ties with an enlarged random search that costs far less
-      computation; at the size of our problem random search alone is the better choice.
+\item \emph{A common benchmark} (Sections~\ref{sec:methods} and~\ref{sec:encodings}): eight encodings compared with one simulator,
+      one set of device and power ranges, one readout, one noise model and one operating-point budget, with points chosen and
+      reported on independent noise realisations.
+\item \emph{A spectral-phase input mask for Kerr resonators} (Sections~\ref{sec:mechanism} and~\ref{sec:encodings}): random complex
+      weights on 16 input lines give coherently seeded, reproducible dynamics and Mackey--Glass errors one to two orders of
+      magnitude below our implementations of single-pump encodings; the randomness of the line phases matters more than per-line
+      amplitudes. On channel equalisation the mask is comparable to a uniformly modulated comb, and with a single resonator it does
+      not help NARMA-10.
+\item \emph{The noise floor and the laser requirement} (Sections~\ref{sec:noise} and~\ref{sec:readout}): with ideal detectors about
+      half of the floor is detuning jitter, which a linear readout cannot remove even with the exact jitter sequence, so the laser
+      linewidth must be a few kilohertz or less for our device; readout-side changes lower the error by about two.
+\item \emph{A software calibration} (Section~\ref{sec:software}): the best resonator found matches a 31-node echo state network (ESN)
+      fed through a converter with about 7 effective bits, and software stays ahead when the resonator's readout is quantized too.
 \end{enumerate}
-Section~\ref{sec:methods} describes the model, the noise and the evaluation protocol; Section~\ref{sec:discussion} discusses an
-experimental implementation, power consumption and limitations, and briefly reports several directions that did not work out.
+Section~\ref{sec:gradient} reports a negative result on gradient-based design, and Section~\ref{sec:discussion} discusses an
+experimental implementation, limitations and unmodelled effects.

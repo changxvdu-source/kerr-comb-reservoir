@@ -53,12 +53,12 @@ def main():
             re_text = sci(float(r["reselected_test"]))
         else:
             q_text, re_text = "--", "--"
-        lines.append(f"{label} & {100 * float(f['jitter_rms']):.2f}\\% & {sci(float(f['test_nmse']))} & {re_text} & {q_text} \\\\")
+        lines.append(f"{label} & {100 * float(f['jitter_rms']):.2g}\\% & {sci(float(f['test_nmse']))} & {re_text} & {q_text} \\\\")
     fl = fixed["lw100k_flicker"]
     fl2 = fixed["lw1600_flicker10M"]
     lines += [r"\midrule",
-              rf"100~kHz，加闪烁噪声（转折 1~MHz）和 1~MHz 锁定 & {100 * float(fl['jitter_rms']):.2f}\% & {sci(float(fl['test_nmse']))} & -- & -- \\",
-              rf"1.6~kHz，加闪烁噪声（转折 10~MHz），不锁定 & {100 * float(fl2['jitter_rms']):.2f}\% & {sci(float(fl2['test_nmse']))} & -- & -- \\",
+              rf"100~kHz，加闪烁噪声（转折 1~MHz）和 1~MHz 锁定 & {100 * float(fl['jitter_rms']):.2g}\% & {sci(float(fl['test_nmse']))} & -- & -- \\",
+              rf"1.6~kHz，加闪烁噪声（转折 10~MHz），不锁定 & {100 * float(fl2['jitter_rms']):.2g}\% & {sci(float(fl2['test_nmse']))} & -- & -- \\",
               r"\bottomrule", r"\end{tabular}", r"\end{table}"]
     if EN:
         lines[2] = CAPTION_EN

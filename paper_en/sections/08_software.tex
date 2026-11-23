@@ -45,18 +45,23 @@ better than the single ring's $0.19$.
 
 \emph{Closed-loop decisions.} Appendix~\ref{app:closedloop} uses the resonator to predict the next step of the Hénon map and applies a
 bounded control based on the prediction. When tracking a commanded trajectory, the resonator with $2~\mathrm{ns}$ symbols reaches a
-tracking error of $4.5\times10^{-4}$; the error of the software predictors is set entirely by their input noise and crosses the
+tracking error of $4.5\times10^{-4}$ (mean over four training records; $4.4\times10^{-4}$ for the first record shown in
+Appendix~\ref{app:closedloop}); the error of the software predictors is set entirely by their input noise and crosses the
 resonator at about $2.4\times10^{-3}$, and at $10^{-3}$ the 31-node ESN and NG-RC reach $8.6\times10^{-5}$ and $7.5\times10^{-5}$,
 about 5 times better. Holding the unstable fixed point needs only linear feedback, so the software's modelling capacity is not the
 limit, which makes it the cleanest calibration: the crossing is at about $1.7\times10^{-3}$.
 
 The three directly comparable tasks agree: the best single ring matches a 31-node ESN with input noise of about $1.7\times10^{-3}$ to
-$2.5\times10^{-3}$, i.e.\ by the conversion above an ADC with about \emph{7 effective bits} (6.9 to 7.4).
+$2.5\times10^{-3}$, i.e.\ by the conversion above an ADC with about \emph{7 effective bits} (6.9 to 7.4). The ESN curves are medians of
+three random reservoirs, and the reservoir-to-reservoir spread (a factor of about 1.7 at $3\times10^{-3}$) moves these crossings by
+roughly half a bit. The conversion assumes that the full scale spans the input range $[0,1]$; ENOB as specified for converters refers
+to a full-scale sine wave, which differs from this by a fraction of a bit.
 
 \subsection{What 7 bits mean}
 
 This number must be read at the rate at which the resonator works. Our resonator needs $Q\sim10^{6}$ for enough Kerr nonlinearity,
-i.e.\ symbol rates of about $0.5$ to $1~\mathrm{GBd}$. At these rates off-the-shelf converters offer about 9 effective bits (for
+i.e.\ symbol rates of about $0.5$ to $1~\mathrm{GBd}$. Converter resolution falls with sampling rate~\cite{walden1999}; at these rates
+off-the-shelf converters offer about 9 effective bits (for
 example, a 12-bit converter sampling at $3.2~\mathrm{GSa/s}$ is specified at about 9 effective bits~\cite{ti_adc12dj3200}); converters
 with 5 to 6 effective bits are acquisition systems at above $100~\mathrm{GSa/s}$ with tens of gigahertz of bandwidth (for example about
 5.9 bits at $33~\mathrm{GHz}$ and 5.0 bits at $110~\mathrm{GHz}$ bandwidth~\cite{keysight_uxr}), and at those rates the resonator's $Q$
@@ -102,7 +107,7 @@ drop coupling reach $1.27\times10^{-4}$, $3.4\times10^{-5}$, $1.36\times10^{-5}$
 $6.9\times10^{-6}$: no further gain beyond 16 rings, i.e.\ the error saturates at about 1/19 of a single ring. Letting all rings share
 the same laser intensity noise (one input comb split among all rings) barely changes this ($6.8\times10^{-6}$ for 16 rings), so the
 saturation does not come from common-mode source noise. With the same training length, ESNs with 100, 300 and 1000 nodes and input noise
-$3\times10^{-3}$ reach $3.9\times10^{-5}$, $2.1\times10^{-5}$ and $1.4\times10^{-5}$, so the array is 2 to 3 times better; but with input
+$3\times10^{-3}$ reach $3.9\times10^{-5}$, $2.1\times10^{-5}$ and $1.4\times10^{-5}$, so 16 rings are 2 to 6 times better; but with input
 noise $10^{-3}$ (one series) they reach $6.8\times10^{-6}$, $3.2\times10^{-6}$ and $1.65\times10^{-6}$: a 100-node ESN already ties with
 16 rings and a 1000-node ESN is about 4 times better. An array thus only moves the limit somewhat along the software axis without
 changing the conclusion. More rings help only when the task is limited by the rings' own noise: on channel equalisation at
@@ -119,8 +124,9 @@ this separately). The convention $3\times10^{-3}$ is therefore strict on softwar
 in the previous sections hold under this strict convention; a fairer point is around $10^{-3}$, where software is better on every task
 in this paper.
 
-The conclusion of this section: \emph{on the tasks studied, the accuracy ceiling of a Kerr-microcomb reservoir is below that of a
-software reservoir of the same size; a single resonator matches a 31-node ESN fed through a converter with about 7 effective bits}.
-The evaluation protocol is part of this conclusion: a single noise realisation is optimistic by 10 to 30\%, results in the chaotic
-regime are not reproducible, and the input noise given to software can reverse the comparison, so we give whole curves rather than one
-point.
+The conclusion of this section: \emph{within the design space explored and on the tasks studied, the accuracy of a Kerr-microcomb
+reservoir stays below that of a software reservoir of the same size; the best single resonator found matches a 31-node ESN fed through
+a converter with about 7 effective bits}. This is a statement about one device class (a $200~\mathrm{GHz}$ silica resonator), one
+readout (31 drop-port lines, logarithm, linear ridge regression) and one noise model, not a bound for all microcomb reservoirs. The
+evaluation protocol is part of it: a single noise realisation is optimistic by 10 to 30\%, results in the chaotic regime are not
+reproducible, and the input noise given to software reverses the comparison, so we give whole curves rather than one point.
