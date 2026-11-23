@@ -1,0 +1,138 @@
+\begin{thebibliography}{21}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Jaeger(2001)]{jaeger2001}
+H.~Jaeger.
+\newblock The ``echo state'' approach to analysing and training recurrent
+  neural networks.
+\newblock Technical Report GMD Report 148, German National Research Center for
+  Information Technology, 2001.
+
+\bibitem[Jaeger and Haas(2004)]{jaeger2004}
+H.~Jaeger and H.~Haas.
+\newblock Harnessing nonlinearity: predicting chaotic systems and saving energy
+  in wireless communication.
+\newblock \emph{Science}, 304:\penalty0 78--80, 2004.
+
+\bibitem[Van~der Sande et~al.(2017)Van~der Sande, Brunner, and
+  Soriano]{vandersande2017}
+G.~Van~der Sande, D.~Brunner, and M.~C. Soriano.
+\newblock Advances in photonic reservoir computing.
+\newblock \emph{Nanophotonics}, 6\penalty0 (3):\penalty0 561--576, 2017.
+\newblock \doi{10.1515/nanoph-2016-0132}.
+
+\bibitem[Butschek et~al.(2020)]{butschek2020}
+L.~Butschek et~al.
+\newblock Photonic reservoir computer based on frequency multiplexing.
+\newblock arXiv:2008.11247, 2020.
+
+\bibitem[Lupo et~al.(2023)Lupo, Picco, Zajnulina, and Massar]{lupo2023}
+A.~Lupo, E.~Picco, M.~Zajnulina, and S.~Massar.
+\newblock Deep photonic reservoir computer based on frequency multiplexing with
+  fully analog connection between layers.
+\newblock \emph{Optica}, 10:\penalty0 1478--1485, 2023.
+
+\bibitem[Cox et~al.(2024)Cox, Murray, Hart, and Redding]{cox2024}
+N.~Cox, J.~Murray, J.~Hart, and B.~Redding.
+\newblock Photonic frequency multiplexed next-generation reservoir computer.
+\newblock arXiv:2411.09624, 2024.
+
+\bibitem[Wang et~al.(2025)Wang, Hu, Gigan, et~al.]{wang2025ngrc}
+H.~Wang, J.~Hu, S.~Gigan, et~al.
+\newblock Optical next generation reservoir computing.
+\newblock \emph{Light: Science \& Applications}, 2025.
+\newblock \doi{10.1038/s41377-025-01927-6}.
+
+\bibitem[Shaabani~Shishavan et~al.(2025)Shaabani~Shishavan, Manuylovich,
+  Kamalian-Kopae, and Perego]{shishavan2025}
+N.~Shaabani~Shishavan, E.~Manuylovich, M.~Kamalian-Kopae, and A.~M. Perego.
+\newblock Optical neuromorphic computing based on chaotic frequency combs in
+  nonlinear microresonators.
+\newblock \emph{Physical Review Research}, 7\penalty0 (4):\penalty0 L042008,
+  2025.
+\newblock \doi{10.1103/6tbg-g9fm}.
+
+\bibitem[Cuevas et~al.(2025)Cuevas, Hu, Shi, Liu, Minoshima, and
+  Kuse]{cuevas2025}
+J.~Cuevas, Y.~Hu, B.~Shi, J.~Liu, K.~Minoshima, and N.~Kuse.
+\newblock Frequency-multiplexed optical reservoir computing using a microcomb.
+\newblock \emph{Nanophotonics}, 14\penalty0 (18):\penalty0 3063--3073, 2025.
+\newblock \doi{10.1515/nanoph-2025-0260}.
+
+\bibitem[Arabieh et~al.(2026{\natexlab{a}})Arabieh, Lupo, Gorza, and
+  Massar]{arabieh2026soliton}
+A.~A. Arabieh, A.~Lupo, S.-P. Gorza, and S.~Massar.
+\newblock Cavity solitons as a nonlinear substrate for photonic neuromorphic
+  computing.
+\newblock arXiv:2602.18110, 2026{\natexlab{a}}.
+
+\bibitem[Arabieh et~al.(2026{\natexlab{b}})Arabieh, Gorza, and
+  Massar]{arabieh2026pulse}
+A.~A. Arabieh, S.-P. Gorza, and S.~Massar.
+\newblock Frequency-multiplexed photonic reservoir computing with a
+  synchronously pulse-driven optical cavity.
+\newblock arXiv:2609.12212, 2026{\natexlab{b}}.
+
+\bibitem[Lugiato and Lefever(1987)]{lugiato1987}
+L.~A. Lugiato and R.~Lefever.
+\newblock Spatial dissipative structures in passive optical systems.
+\newblock \emph{Physical Review Letters}, 58:\penalty0 2209--2211, 1987.
+
+\bibitem[Coen et~al.(2013)Coen, Randle, Sylvestre, and Erkintalo]{coen2013}
+S.~Coen, H.~G. Randle, T.~Sylvestre, and M.~Erkintalo.
+\newblock Modeling of octave-spanning {K}err frequency combs using a
+  generalized mean-field {L}ugiato--{L}efever model.
+\newblock \emph{Optics Letters}, 38:\penalty0 37--39, 2013.
+
+\bibitem[Hult(2007)]{hult2007}
+J.~Hult.
+\newblock A fourth-order {R}unge--{K}utta in the interaction picture method for
+  simulating supercontinuum generation in optical fibers.
+\newblock \emph{Journal of Lightwave Technology}, 25:\penalty0 3770--3775,
+  2007.
+
+\bibitem[Gauthier et~al.(2021)Gauthier, Bollt, Griffith, and
+  Barbosa]{gauthier2021}
+D.~J. Gauthier, E.~Bollt, A.~Griffith, and W.~A.~S. Barbosa.
+\newblock Next generation reservoir computing.
+\newblock \emph{Nature Communications}, 12:\penalty0 5564, 2021.
+
+\bibitem[Shen et~al.(2020)Shen, Chang, Liu, et~al.]{shen2020}
+B.~Shen, L.~Chang, J.~Liu, et~al.
+\newblock Integrated turnkey soliton microcombs.
+\newblock \emph{Nature}, 582:\penalty0 365--369, 2020.
+\newblock \doi{10.1038/s41586-020-2358-x}.
+
+\bibitem[Jin et~al.(2021)Jin, Yang, Chang, Shen, et~al.]{jin2021}
+W.~Jin, Q.-F. Yang, L.~Chang, B.~Shen, et~al.
+\newblock Hertz-linewidth semiconductor lasers using {CMOS}-ready
+  ultra-high-{Q} microresonators.
+\newblock \emph{Nature Photonics}, 15:\penalty0 346--353, 2021.
+\newblock \doi{10.1038/s41566-021-00761-7}.
+
+\bibitem[Chuchalin and Tikan(2026)]{chuchalin2026}
+A.~Chuchalin and A.~Tikan.
+\newblock Adjoint inverse design of microresonator frequency combs.
+\newblock arXiv:2605.23688, 2026.
+
+\bibitem[{Texas Instruments}(2020)]{ti_adc12dj3200}
+{Texas Instruments}.
+\newblock {ADC12DJ3200} 6.4-{GSPS} single-channel or 3.2-{GSPS} dual-channel,
+  12-bit, {RF}-sampling analog-to-digital converter.
+\newblock Datasheet SLVSD97A, 2020.
+
+\bibitem[{Keysight Technologies}()]{keysight_uxr}
+{Keysight Technologies}.
+\newblock Infiniium {UXR}-series oscilloscopes.
+\newblock Brochure 7121-1092.
+
+\bibitem[{Coherent}()]{coherent_waveshaper}
+{Coherent}.
+\newblock {WaveShaper} 1000a programmable optical processor.
+\newblock Datasheet.
+
+\end{thebibliography}
