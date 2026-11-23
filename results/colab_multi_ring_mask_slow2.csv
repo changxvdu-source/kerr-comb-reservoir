@@ -1,0 +1,5 @@
+task,group,rings,lines,test_nmse,per_series
+mackey_glass_h10,mask_slow2,1,31,0.00014882189637952921,1.355e-04 1.621e-04 1.501e-04
+mackey_glass_h10,mask_slow2,2,62,8.557652742047841e-05,9.337e-05 9.779e-05 6.864e-05
+mackey_glass_h10,mask_slow2,4,124,5.8430537725820103e-05,6.627e-05 6.220e-05 4.840e-05
+mackey_glass_h10,mask_slow2,8,248,5.090627551014769e-05,6.067e-05 4.521e-05 4.810e-05

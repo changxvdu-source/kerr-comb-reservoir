@@ -1,0 +1,62 @@
+% 中文初稿。编译：xelatex main && bibtex main && xelatex main && xelatex main
+% 图引用项目根目录的 figures/，表 1 由 experiments/make_table1.py 生成到 tables/table1.tex。
+\documentclass[11pt,a4paper]{ctexart}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\graphicspath{{../figures/}}
+% 放宽浮动体比例，避免图都被推到文末
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.8}
+\setcounter{topnumber}{3}
+\setcounter{totalnumber}{4}
+
+\newcommand{\todo}[1]{\textcolor{red!70!black}{［待写：#1］}}
+\newcommand{\Qint}{Q_\mathrm{int}}
+\newcommand{\Qone}{Q_{\mathrm{ext},1}}
+\newcommand{\Qtwo}{Q_{\mathrm{ext},2}}
+
+\title{Kerr 微梳储备池能做到多好？\\谱相位输入掩模、噪声下限与软件对照}
+\author{杜昌旭\\[2pt]
+\small 上海理工大学\\
+\small \href{mailto:yuzhuj520@gmail.com}{yuzhuj520@gmail.com}}
+\date{初稿，\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Kerr 微梳储备池已有几种方案，但它们和软件比较的条件各不相同，所以在现实噪声下它最好能做到什么程度、被什么限制，还不清楚。
+我们用 Lugiato--Lefever 模型的仿真回答这个问题。为了逼近上限，我们提出谱相位输入掩模：给与微环对齐的输入光梳的各根梳齿加上随机的复振幅偏置和调制权重，
+让微环工作在输出由输入决定的相干种子区。在相同的器件参数、光功率、读出、噪声模型和选点预算下，它在 Mackey--Glass 预测上比单泵浦编码和整体调制的光梳好一到两个数量级，
+起作用的是梳齿相位的随机性。逐项拆分噪声表明，理想探测器下的误差下限约一半来自失谐抖动、一半来自散粒噪声；
+失谐抖动即使完全已知也无法在读出端扣除，因此激光本征线宽是硬指标，本文的器件要求在约 $5~\mathrm{kHz}$ 以下。
+把软件储备池的输入噪声从零扫到 $3\times10^{-3}$，最好的单个微环相当于输入接约 7 位模数转换器的 31 节点回声状态网络，
+低于微环工作速率下现成转换器的精度；把微环 31 路读数的量化也计入后，同样位数下软件仍然更好。所以在本文考察的任务上，微梳储备池的精度上限低于同规模软件，它的价值只能来自物理层。
+\end{abstract}
+
+\input{sections/01_intro}
+\input{sections/02_methods}
+\input{sections/03_mechanism}
+\input{sections/04_encodings}
+\input{sections/05_noise}
+\input{sections/06_readout}
+\input{sections/07_gradient}
+\input{sections/08_software}
+\input{sections/09_discussion}
+\input{sections/10_conclusion}
+
+\section*{代码与数据}
+仿真器（\texttt{combrc}）、全部实验脚本、每张表和图所依据的结果汇总以及生成它们的脚本，按 MIT 许可公开在
+\url{https://github.com/changxvdu-source/kerr-comb-reservoir}。
+
+\bibliographystyle{unsrtnat}
+\bibliography{refs}
+
+\end{document}

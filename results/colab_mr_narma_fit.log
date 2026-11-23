@@ -1,0 +1,8 @@
+comb_mask series 0 {1: '1.65e-01', 2: '1.72e-01', 4: '1.51e-01', 8: '1.60e-01'}
+comb_mask series 1 {1: '1.17e-01', 2: '1.09e-01', 4: '1.10e-01', 8: '1.20e-01'}
+comb_mask series 2 {1: '1.10e-01', 2: '1.11e-01', 4: '1.14e-01', 8: '1.11e-01'}
+  comb_mask   1 rings (31 lines): 1.29e-01
+  comb_mask   2 rings (62 lines): 1.28e-01
+  comb_mask   4 rings (124 lines): 1.24e-01
+  comb_mask   8 rings (248 lines): 1.29e-01
+saved results/mr_narma_fit.csv

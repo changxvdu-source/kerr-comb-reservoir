@@ -1,0 +1,6 @@
+hold: exploratory record, Y in [0.04, 5.38]
+no control open-loop       nan  within_tolerance 0.00162  rms_miss 1.41  mean_control 0  rms_miss_last_3_quarters 1.41   (5 s)
+exact      open-loop  0.00e+00  within_tolerance 1  rms_miss 0.0133  mean_control 0.0385  rms_miss_last_3_quarters 0.0133   (11 s)
+ring mask_slow2: draw 26 of 32, 136 mW, 3 taps, validation NMSE 1.54e-02
+ring mask_slow2, PIN open-loop  2.24e-02  within_tolerance 0.768  rms_miss 0.0419  mean_control 0.0985  rms_miss_last_3_quarters 0.0421   (74 s)
+ring mask_slow2, no noise open-loop  2.13e-02  within_tolerance 0.946  rms_miss 0.026  mean_control 0.0605  rms_miss_last_3_quarters 0.0262   (53 s)

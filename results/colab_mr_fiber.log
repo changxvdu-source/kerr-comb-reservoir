@@ -1,0 +1,22 @@
+comb_mask series 0 {1: '2.37e-02', 2: '2.52e-02', 4: '2.48e-02', 8: '2.38e-02'}
+comb_mask series 1 {1: '2.32e-02', 2: '2.35e-02', 4: '2.61e-02', 8: '3.24e-02'}
+comb_mask series 2 {1: '2.31e-02', 2: '2.58e-02', 4: '2.79e-02', 8: '2.36e-02'}
+  comb_mask   1 rings (31 lines): 2.33e-02  SER 3.14e-03
+  comb_mask   2 rings (62 lines): 2.48e-02  SER 4.26e-03
+  comb_mask   4 rings (124 lines): 2.62e-02  SER 4.80e-03
+  comb_mask   8 rings (248 lines): 2.63e-02  SER 6.08e-03
+mask_drop series 0 {1: '2.18e-02', 2: '2.15e-02', 4: '2.45e-02', 8: '2.41e-02'}
+mask_drop series 1 {1: '2.10e-02', 2: '1.97e-02', 4: '2.24e-02', 8: '3.42e-02'}
+mask_drop series 2 {1: '2.28e-02', 2: '2.37e-02', 4: '2.78e-02', 8: '2.38e-02'}
+  mask_drop   1 rings (31 lines): 2.19e-02  SER 2.80e-03
+  mask_drop   2 rings (62 lines): 2.16e-02  SER 2.50e-03
+  mask_drop   4 rings (124 lines): 2.48e-02  SER 3.94e-03
+  mask_drop   8 rings (248 lines): 2.70e-02  SER 6.52e-03
+mask_slow2 series 0 {1: '1.92e-02', 2: '1.88e-02', 4: '2.38e-02', 8: '2.29e-02'}
+mask_slow2 series 1 {1: '1.97e-02', 2: '2.01e-02', 4: '2.06e-02', 8: '2.35e-02'}
+mask_slow2 series 2 {1: '2.05e-02', 2: '1.94e-02', 4: '2.27e-02', 8: '2.24e-02'}
+  mask_slow2  1 rings (31 lines): 1.98e-02  SER 1.67e-03
+  mask_slow2  2 rings (62 lines): 1.94e-02  SER 1.46e-03
+  mask_slow2  4 rings (124 lines): 2.23e-02  SER 2.79e-03
+  mask_slow2  8 rings (248 lines): 2.29e-02  SER 2.62e-03
+saved results/mr_fiber.csv

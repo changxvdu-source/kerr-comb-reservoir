@@ -1,0 +1,26 @@
+# large simulation caches (tens of GB); regenerate with the experiment scripts
+results/encodings_spectra/
+results/operating_map_spectra/
+results/*.npy
+# third-party data and papers, build outputs, local tooling
+data/
+*.pdf
+!figures/*.pdf
+!paper/main.pdf
+!paper_en/main.pdf
+arxiv/
+arxiv_submission.tar.gz
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.blg
+paper/*.bbl
+paper_en/*.aux
+paper_en/*.log
+paper_en/*.out
+paper_en/*.blg
+!paper_en/main.bbl
+__pycache__/
+.pytest_cache/
+.claude/
+*.pyc

@@ -1,0 +1,15 @@
+
+=== fiber_pam4_17km   cross-run test NMSE, geometric mean over 1 series, noise: realistic   (columns: comb lines x readout taps)   test part 5000 symbols
+                        31x1      31x8          min..max 31x8  fine 31x8 consist.     SER   point chosen on series 1 for 31x8
+linear AR (best)    2.47e-02  2.47e-02
+ESN, same size      2.37e-02  1.78e-02
+with new noise after the choice (31x8, mean of 6 pairs of runs per series):   ESN 1.79e-02, SER 2.10e-03
+power               8.97e-01  3.87e-02       3.9e-02..3.9e-02        nan    0.031  0.0210   Q 1.9e+06, 65 mW, zeta 1.1, depth 0.40   new noise 3.68e-02 (pairs differ by 2%), SER 1.72e-02; chosen on 3 new pairs, val 3.18e-02, other point than single-run choice in 1/1 series
+detuning            7.52e-01  6.85e-02       6.9e-02..6.9e-02        nan    0.030  0.0766   Q 6.2e+05, 292 mW, zeta 2.8, depth 0.51   new noise 6.75e-02 (pairs differ by 1%), SER 7.39e-02; chosen on 3 new pairs, val 6.23e-02, other point than single-run choice in 0/1 series
+phase               8.64e-01  9.67e-02       9.7e-02..9.7e-02        nan    0.031  0.1356   Q 8.4e+06, 10 mW, zeta 1.9, depth 0.74   new noise 9.50e-02 (pairs differ by 1%), SER 1.31e-01; chosen on 3 new pairs, val 8.09e-02, other point than single-run choice in 0/1 series
+comb_uniform        3.66e-01  2.41e-02       2.4e-02..2.4e-02        nan    0.991  0.0040   Q 8.2e+05, 216 mW, zeta -0.7, depth 0.51   new noise 2.42e-02 (pairs differ by 2%), SER 3.30e-03; chosen on 3 new pairs, val 2.17e-02, other point than single-run choice in 1/1 series
+comb_mask           4.59e-01  2.23e-02       2.2e-02..2.2e-02        nan    0.850  0.0022   Q 1.1e+06, 233 mW, zeta -0.4, depth 0.53   new noise 2.18e-02 (pairs differ by 1%), SER 1.80e-03; chosen on 3 new pairs, val 1.91e-02, other point than single-run choice in 1/1 series
+mask_drop           4.06e-01  2.08e-02       2.1e-02..2.1e-02        nan    0.995  0.0020   Q 7.2e+05, 217 mW, zeta 2.0, depth 0.79   new noise 2.08e-02 (pairs differ by 3%), SER 2.57e-03; chosen on 3 new pairs, val 1.82e-02, other point than single-run choice in 1/1 series
+mask_slow2          3.60e-01  2.04e-02       2.0e-02..2.0e-02        nan    0.995  0.0028   Q 1.1e+06, 194 mW, zeta -0.1, depth 0.10   new noise 1.99e-02 (pairs differ by 2%), SER 2.17e-03; chosen on 3 new pairs, val 1.59e-02, other point than single-run choice in 0/1 series
+
+saved results/fiber17_s1_trials.csv, _summary.csv and .png; spectra cached in results/fiber17_s1_spectra

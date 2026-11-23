@@ -1,0 +1,5 @@
+lorenz_h10 realistic series 0 {'ESN 31': '5.39e-03', 'ESN 300 + delay': '5.91e-04', 'NG-RC': '4.08e-01'}
+  lorenz_h10         realistic ESN 31   NMSE 5.388e-03
+  lorenz_h10         realistic ESN 300 + delay NMSE 5.910e-04
+  lorenz_h10         realistic NG-RC    NMSE 4.078e-01
+saved results/sbd_lorenz_h10_s0_300.csv

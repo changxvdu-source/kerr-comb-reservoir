@@ -1,0 +1,7 @@
+ESN (no detuning jitter to see): 3.16e-04
+jitter 0.100%  mask_slow2  9.75e-05   (ESN 3.16e-04; points [32, 32, 32])
+
+mackey_glass_h10, cross-run test NMSE (31x8) on new runs, geometric mean over 3 series; ESN 3.16e-04
+  jitter   mask_slow2
+    0.1%     9.75e-05
+saved results/detuning_sweep_0.001.csv

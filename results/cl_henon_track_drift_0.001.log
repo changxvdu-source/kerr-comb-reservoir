@@ -1,0 +1,10 @@
+mask_slow2: chosen draw 26 of 64, 136 mW, Q 7.2e+05, 3 readout taps, validation NMSE 8.26e-04
+no control             open_loop_test_nmse nan   within_tolerance 0.0408   rms_miss 0.917   mean_control 0   tracking_nmse 3.03   largest_miss 2.17   restarts 0
+exact model            open_loop_test_nmse 0   within_tolerance 1   rms_miss 4.61e-17   mean_control 0.225   tracking_nmse 7.65e-33   largest_miss 1.11e-16   restarts 0
+linear predictor       open_loop_test_nmse 0.931   within_tolerance 0.0511   rms_miss 0.528   mean_control 0.173   tracking_nmse 1.01   largest_miss 1.84   restarts 1.07e+03
+ESN, 31 nodes          open_loop_test_nmse 0.00392   within_tolerance 0.997   rms_miss 0.0138   mean_control 0.225   tracking_nmse 0.000689   largest_miss 0.0889   restarts 0
+ring mask_slow2, no noise open_loop_test_nmse 0.00292   within_tolerance 1   rms_miss 0.00256   mean_control 0.225   tracking_nmse 2.35e-05   largest_miss 0.0512   restarts 0
+ring mask_slow2, PIN detectors open_loop_test_nmse 0.00336   within_tolerance 1   rms_miss 0.0108   mean_control 0.226   tracking_nmse 0.00042   largest_miss 0.0517   restarts 0
+ring mask_slow2, pre-amplifier open_loop_test_nmse 0.00342   within_tolerance 1   rms_miss 0.0111   mean_control 0.226   tracking_nmse 0.000443   largest_miss 0.0529   restarts 0
+
+saved results\cl_henon_track_drift_0.001.csv and .png

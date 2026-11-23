@@ -1,0 +1,5 @@
+narma10 realistic series 2 {'ESN 31': '5.20e-02', 'ESN 100 + delay': '1.39e-02', 'NG-RC': '6.08e-02'}
+  narma10            realistic ESN 31   NMSE 5.203e-02
+  narma10            realistic ESN 100 + delay NMSE 1.388e-02
+  narma10            realistic NG-RC    NMSE 6.083e-02
+saved results/sbd_narma10_s2_100.csv

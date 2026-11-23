@@ -1,0 +1,8 @@
+channel_eq_snr40 realistic series 0 {'ESN 31': '1.31e-03', 'ESN 100': '8.66e-04', 'ESN 300': '8.51e-04', 'NG-RC': '5.15e-03'}
+channel_eq_snr40 realistic series 1 {'ESN 31': '1.27e-03', 'ESN 100': '8.93e-04', 'ESN 300': '8.40e-04', 'NG-RC': '5.14e-03'}
+channel_eq_snr40 realistic series 2 {'ESN 31': '1.21e-03', 'ESN 100': '8.33e-04', 'ESN 300': '8.14e-04', 'NG-RC': '5.20e-03'}
+  channel_eq_snr40   realistic ESN 31   NMSE 1.263e-03  SER 0.00e+00
+  channel_eq_snr40   realistic ESN 100  NMSE 8.634e-04  SER 0.00e+00
+  channel_eq_snr40   realistic ESN 300  NMSE 8.348e-04  SER 0.00e+00
+  channel_eq_snr40   realistic NG-RC    NMSE 5.163e-03  SER 2.22e-04
+saved results/sb_ce40_fit.csv

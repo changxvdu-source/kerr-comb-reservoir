@@ -1,0 +1,37 @@
+random search: 256 draws on 3 series; validation ranking of the first 32 on series 0: [18, 22, 27, 8, 1, 29, 12, 10, 21, 13, 11, 19, 6, 23, 14, 15, 24, 25, 4, 16, 7, 5, 28, 2, 31, 26, 17, 20, 3, 30, 9, 0]
+trained t018_s0 (top, rank 1): best validation at iteration 59
+trained t018_s1 (top, rank 1): best validation at iteration 49
+trained t022_s0 (top, rank 2): best validation at iteration 39
+trained t022_s1 (top, rank 2): best validation at iteration 9
+trained t027_s0 (top, rank 3): best validation at iteration 59
+trained t027_s1 (top, rank 3): best validation at iteration 9
+trained t008_s0 (top, rank 4): best validation at iteration 49
+trained t008_s1 (top, rank 4): best validation at iteration 29
+trained t014_s0 (middle, rank 15): best validation at iteration 19
+trained t015_s0 (middle, rank 16): best validation at iteration 19
+trained t024_s0 (middle, rank 17): best validation at iteration 9
+trained t025_s0 (middle, rank 18): best validation at iteration 59
+
+=== mackey_glass_h10, comb_mask, readout 31x8, realistic noise: cross-run test NMSE, geometric mean over 3 series
+                 start seed best it     start   trained  ratio      power mW                   Q consist.
+trial 18 (top, rank 1)    0      59  1.04e-03  5.45e-04   0.52      33 -> 38  6.6e+06 -> 6.9e+06    0.998
+trial 18 (top, rank 1)    1      49  1.04e-03  2.94e-04   0.28      33 -> 38  6.6e+06 -> 6.8e+06    0.998
+trial 22 (top, rank 2)    0      39  1.58e-03  8.25e-04   0.52      14 -> 16  4.3e+06 -> 4.3e+06    0.998
+trial 22 (top, rank 2)    1       9  1.58e-03  1.47e-03   0.93      14 -> 16  4.3e+06 -> 4.4e+06    0.997
+trial 27 (top, rank 3)    0      59  2.02e-03  1.04e-03   0.51    233 -> 243  1.1e+06 -> 1.2e+06    0.997
+trial 27 (top, rank 3)    1       9  2.02e-03  1.40e-03   0.69    233 -> 237  1.1e+06 -> 1.1e+06    0.994
+ trial 8 (top, rank 4)    0      49  4.50e-03  1.07e-03   0.24      72 -> 80  4.7e+06 -> 4.8e+06    0.996
+ trial 8 (top, rank 4)    1      29  4.50e-03  1.84e-03   0.41      72 -> 84  4.7e+06 -> 4.6e+06    0.994
+trial 14 (middle, rank 15)    0      19  1.92e-02  6.12e-03   0.32      38 -> 43  3.0e+06 -> 3.0e+06    0.994
+trial 15 (middle, rank 16)    0      19  2.02e-02  9.78e-03   0.48      22 -> 25  3.7e+06 -> 3.5e+06    0.561
+trial 24 (middle, rank 17)    0       9  1.67e-02  1.28e-02   0.76    115 -> 114  7.0e+06 -> 6.9e+06    0.996
+trial 25 (middle, rank 18)    0      59  2.51e-02  7.19e-03   0.29      22 -> 53  9.6e+05 -> 1.2e+06    0.941
+top: 8 of 8 runs end below their start; geometric mean ratio 0.47, range 0.24..0.93
+middle: 4 of 4 runs end below their start; geometric mean ratio 0.43, range 0.29..0.76
+random search, 32 draws                1.04e-03   (9.9e-04..1.1e-03)
+random search, 256 draws               3.37e-04   (3.2e-04..3.8e-04)
+32 draws + fine-tuning of the best     2.94e-04   (2.8e-04..3.2e-04)
+fine-tuning of middle-ranked draws     6.12e-03   (5.3e-03..7.6e-03)
+draws chosen by the search: [18, 18, 18] of 32, [229, 229, 229] of 256
+
+saved results\finetune_runs.csv and _summary.csv; training logs in results\finetune_runs

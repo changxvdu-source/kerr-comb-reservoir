@@ -1,0 +1,6 @@
+mask_drop trial 211: 178 mW, jitter 1.0% of the half-linewidth, correlation 1.0 symbol(s)
+series 2: lines 1.45e-04   + jitter 1.41e-04   + jitter x lines 1.44e-04   no jitter 5.28e-05
+lines              1.45e-04   (1.00x better than the plain readout)
++ jitter           1.41e-04   (1.03x better than the plain readout)
++ jitter x lines   1.44e-04   (1.00x better than the plain readout)
+no jitter          5.28e-05   (2.74x better than the plain readout)

@@ -1,0 +1,8 @@
+mask_slow2 series 0 {1: '1.42e-04', 2: '7.75e-05', 4: '3.28e-05', 8: '1.93e-05'}
+mask_slow2 series 1 {1: '1.13e-04', 2: '5.54e-05', 4: '2.51e-05', 8: '1.37e-05'}
+mask_slow2 series 2 {1: '1.29e-04', 2: '5.14e-05', 4: '2.09e-05', 8: '1.58e-05'}
+  mask_slow2  1 rings (31 lines): 1.27e-04
+  mask_slow2  2 rings (62 lines): 6.05e-05
+  mask_slow2  4 rings (124 lines): 2.58e-05
+  mask_slow2  8 rings (248 lines): 1.61e-05
+saved results/mr_mg_fit_slow2.csv

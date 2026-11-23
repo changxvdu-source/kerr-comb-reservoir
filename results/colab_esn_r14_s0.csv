@@ -1,0 +1,3 @@
+task,noise,model,test_nmse,ser,chosen
+mackey_glass_h10,realistic,ESN 1000,0.030914726396354304,nan,"(1.4, 0.3, 0)"
+mackey_glass_h10,realistic,NG-RC,0.2540921344626749,nan,"(2, 1)"

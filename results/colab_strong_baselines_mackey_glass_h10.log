@@ -1,0 +1,15 @@
+mackey_glass_h10 realistic series 0 {'ESN 31': '1.90e-04', 'ESN 100': '5.72e-05', 'ESN 300': '4.63e-05', 'NG-RC': '8.64e-04'}
+mackey_glass_h10 realistic series 1 {'ESN 31': '1.69e-04', 'ESN 100': '5.07e-05', 'ESN 300': '4.04e-05', 'NG-RC': '8.31e-04'}
+mackey_glass_h10 realistic series 2 {'ESN 31': '2.10e-04', 'ESN 100': '5.05e-05', 'ESN 300': '3.52e-05', 'NG-RC': '1.19e-03'}
+  mackey_glass_h10   realistic ESN 31   NMSE 1.891e-04
+  mackey_glass_h10   realistic ESN 100  NMSE 5.270e-05
+  mackey_glass_h10   realistic ESN 300  NMSE 4.036e-05
+  mackey_glass_h10   realistic NG-RC    NMSE 9.493e-04
+mackey_glass_h10 none series 0 {'ESN 31': '1.73e-05', 'ESN 100': '1.14e-07', 'ESN 300': '1.07e-08', 'NG-RC': '1.16e-04'}
+mackey_glass_h10 none series 1 {'ESN 31': '1.02e-05', 'ESN 100': '9.45e-08', 'ESN 300': '2.70e-09', 'NG-RC': '8.55e-05'}
+mackey_glass_h10 none series 2 {'ESN 31': '1.04e-05', 'ESN 100': '6.36e-08', 'ESN 300': '2.92e-09', 'NG-RC': '1.31e-04'}
+  mackey_glass_h10   none      ESN 31   NMSE 1.223e-05
+  mackey_glass_h10   none      ESN 100  NMSE 8.813e-08
+  mackey_glass_h10   none      ESN 300  NMSE 4.388e-09
+  mackey_glass_h10   none      NG-RC    NMSE 1.093e-04
+saved results/strong_baselines_mackey_glass_h10.csv

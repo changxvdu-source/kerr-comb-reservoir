@@ -1,0 +1,13 @@
+
+=== mackey_glass_h10   cross-run test NMSE, geometric mean over 3 series, noise: realistic   (columns: comb lines x readout taps)
+                        31x1      31x8          min..max 31x8  fine 31x8 consist.     SER   point chosen on series 0 for 31x8
+linear AR (best)    2.08e-01  2.08e-01
+ESN, same size      2.69e-02  3.54e-04
+with new noise after the choice (31x8, mean of 6 pairs of runs per series):   ESN 3.16e-04
+comb_mask           1.48e-03  1.31e-04       1.2e-04..1.4e-04        nan    1.000     nan   Q 6.0e+06, 23 mW, zeta -0.7, depth 0.87   new noise 1.34e-04 (pairs differ by 13%); chosen on 3 new pairs, val 1.42e-04, other point than single-run choice in 3/3 series
+mask_sin            4.54e-03  1.26e-04       1.0e-04..1.6e-04        nan    0.999     nan   Q 2.2e+06, 5 mW, zeta 0.4, depth 0.10   new noise 1.39e-04 (pairs differ by 14%); chosen on 3 new pairs, val 1.51e-04, other point than single-run choice in 0/3 series
+mask_bright         1.64e-02  1.49e-04       1.2e-04..2.0e-04        nan    0.999     nan   Q 9.5e+05, 194 mW, zeta 0.7, depth 0.31   new noise 1.55e-04 (pairs differ by 12%); chosen on 3 new pairs, val 1.77e-04, other point than single-run choice in 0/3 series
+mask_drop           2.33e-03  9.33e-05       6.8e-05..1.2e-04        nan    0.999     nan   Q 2.5e+06, 114 mW, zeta -0.1, depth 0.52   new noise 8.73e-05 (pairs differ by 14%); chosen on 3 new pairs, val 1.11e-04, other point than single-run choice in 0/3 series
+mask_slow2          2.75e-03  6.59e-05       6.2e-05..7.0e-05        nan    1.000     nan   Q 5.0e+06, 15 mW, zeta 0.4, depth 0.58   new noise 6.88e-05 (pairs differ by 17%); chosen on 3 new pairs, val 6.54e-05, other point than single-run choice in 0/3 series
+
+saved results\floor_mg_ideal_trials.csv, _summary.csv and .png; spectra cached in results/encodings_spectra

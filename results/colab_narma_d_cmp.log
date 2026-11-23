@@ -1,0 +1,9 @@
+
+=== narma10   cross-run test NMSE, geometric mean over 3 series, noise: realistic   (columns: comb lines x readout taps)
+                        31x8     31x12         min..max 31x12 fine 31x12 consist.     SER   point chosen on series 0 for 31x12
+linear AR (best)    1.91e-01  1.91e-01
+ESN, same size      1.01e-01  1.06e-01
+mask_delay          1.02e-01  9.24e-02       4.9e-02..2.2e-01        nan    0.860     nan   Q 9.5e+05, 244 mW, zeta 2.5, depth 0.54
+mask_delay_drop     4.91e-02  4.19e-02       2.4e-02..6.4e-02        nan    0.700     nan   Q 1.3e+06, 268 mW, zeta 0.8, depth 0.36
+
+saved results/narma_d_cmp_trials.csv, _summary.csv and .png; spectra cached in results/narmad_spectra

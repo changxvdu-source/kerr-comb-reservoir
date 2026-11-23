@@ -1,0 +1,6 @@
+/content/comb/combrc/lle.py:405: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  half = torch.exp(lop * (self.h / 2))
+series 0: jitter rms 3.14% of the half-linewidth, test NMSE 3.24e-04
+series 1: jitter rms 3.14% of the half-linewidth, test NMSE 3.04e-04
+series 2: jitter rms 3.18% of the half-linewidth, test NMSE 3.13e-04
+linewidth 16000 Hz, corner 0 Hz, lock 0 Hz: jitter 3.15%, test NMSE 3.14e-04

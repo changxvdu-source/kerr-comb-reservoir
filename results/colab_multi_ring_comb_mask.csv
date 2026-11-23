@@ -1,0 +1,5 @@
+task,group,rings,lines,test_nmse,per_series
+mackey_glass_h10,comb_mask,1,31,0.0003480885830502758,3.384e-04 3.518e-04 3.542e-04
+mackey_glass_h10,comb_mask,2,62,0.0001405177517476428,1.518e-04 1.309e-04 1.396e-04
+mackey_glass_h10,comb_mask,4,124,0.00012375768270554108,1.136e-04 1.441e-04 1.158e-04
+mackey_glass_h10,comb_mask,8,248,0.00012090481098279059,1.280e-04 1.185e-04 1.166e-04

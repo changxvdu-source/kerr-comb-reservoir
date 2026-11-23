@@ -1,0 +1,29 @@
+\section{Conclusion}\label{sec:conclusion}
+
+We used simulations to answer one question: under realistic noise, how good can a Kerr-microcomb reservoir be, what limits it, and how
+should it be compared fairly with software.
+
+First, the encoding decides whether the limit can be approached. Giving every line of an input comb a random spectral phase before
+modulating it lets the resonator operate in a coherently seeded regime, where the output is set by the input rather than by start-up
+noise. Under the same physical conditions and selection budget this spectral-phase mask beats the single-pump encodings of the
+literature and a uniformly modulated comb by one to two orders of magnitude on Mackey--Glass prediction, leads slightly on channel
+equalisation and does not work on NARMA-10 with a single ring. What matters is the randomness of the line phases, so one modulator and
+two spectral phase shapers suffice.
+
+Second, the limit is set by noise, half of it at the source. With ideal detectors about half of the error floor comes from detuning
+jitter and half from shot noise; another platform or more power does not lower it, and the readout-side changes (stronger drop
+coupling, slower symbols) lower it in part. The jitter cannot be removed in the readout or avoided by another operating point, so the
+intrinsic laser linewidth is a hard requirement: below a few kilohertz for our device, while an ordinary $100~\mathrm{kHz}$ laser makes
+the error 5 to 6 times worse. The resonator contributes nonlinear features; memory has to come from external delay lines and readout
+taps.
+
+Third, in software terms the limit is below software of the same size. The best single ring matches a 31-node ESN fed through a
+converter with about 7 effective bits, while at the resonator's rate of about $1~\mathrm{GBd}$ off-the-shelf converters offer about 9;
+with the quantization of the resonator's 31 readings included, an ESN quantized only at its input is better at every depth from 6 to 12
+bits. Reading several rings together lowers the error another 19 times, but large software reservoirs with lower input noise catch up
+as well. The comparison is sensitive to the input noise given to software, so we report whole curves and suggest that future work do
+the same.
+
+The value of a Kerr-microcomb reservoir therefore does not lie in computing accuracy and can only come from the physical layer: a signal
+that is optical to begin with, digitisation to be avoided, or optical latency and energy. This paper does not demonstrate it; doing so
+needs a concrete optical application, an experiment, and a readout weighted in the optical domain that uses a single converter.

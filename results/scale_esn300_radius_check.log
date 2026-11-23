@@ -1,0 +1,4 @@
+mackey_glass_h10 realistic series 0 {'ESN 300': '2.41e-05', 'NG-RC': '2.59e-01'}
+  mackey_glass_h10   realistic ESN 300  NMSE 2.415e-05
+  mackey_glass_h10   realistic NG-RC    NMSE 2.593e-01
+saved results/scale_esn300_radius_check.csv

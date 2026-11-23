@@ -1,0 +1,6 @@
+task,group,rings,lines,fit_symbols,test_nmse,ser,per_series
+mackey_glass_h10,mask_drop,1,31,16320,0.00012697585795452297,nan,1.270e-04
+mackey_glass_h10,mask_drop,2,62,16320,3.190190670879839e-05,nan,3.190e-05
+mackey_glass_h10,mask_drop,4,124,16320,1.2230668466562131e-05,nan,1.223e-05
+mackey_glass_h10,mask_drop,8,248,16320,7.221527514547269e-06,nan,7.222e-06
+mackey_glass_h10,mask_drop,16,496,16320,6.051992324724482e-06,nan,6.052e-06

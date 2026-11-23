@@ -1,0 +1,15 @@
+draw  5: validation NMSE of the one-step prediction 7.54e-03 (3 taps), 7.66e-03 (6 taps)
+draw 12: validation NMSE of the one-step prediction 4.12e-02 (3 taps), 4.29e-02 (6 taps)
+draw 11: validation NMSE of the one-step prediction 4.32e-02 (3 taps), 4.46e-02 (6 taps)
+draw  7: validation NMSE of the one-step prediction 1.04e-01 (3 taps), 1.04e-01 (6 taps)
+draw  4: validation NMSE of the one-step prediction 1.04e-01 (3 taps), 1.09e-01 (6 taps)
+chosen ring: draw 5, 97 mW, Q 6.5e+05, 3 readout taps
+no control             open_loop_test_nmse nan   within_tolerance 0.074   rms_miss 0.808   mean_control 0   rms_miss_while_held 0.0282   losses_per_1000_steps 53.1   restarts 0
+exact model            open_loop_test_nmse 0   within_tolerance 0.996   rms_miss 0.0485   mean_control 0.00518   rms_miss_while_held 0.000713   losses_per_1000_steps 0.375   restarts 0
+linear predictor       open_loop_test_nmse nan   within_tolerance 0.997   rms_miss 0.037   mean_control 0.251   rms_miss_while_held 0.016   losses_per_1000_steps 1.75   restarts 0
+ESN, 31 nodes          open_loop_test_nmse 0.000765   within_tolerance 0.994   rms_miss 0.051   mean_control 0.247   rms_miss_while_held 0.016   losses_per_1000_steps 1.75   restarts 0
+ring, no noise         open_loop_test_nmse 0.000307   within_tolerance 0.996   rms_miss 0.0506   mean_control 0.00595   rms_miss_while_held 0.00082   losses_per_1000_steps 0.375   restarts 0
+ring, PIN detectors    open_loop_test_nmse 0.0124   within_tolerance 0.863   rms_miss 0.104   mean_control 0.51   rms_miss_while_held 0.0244   losses_per_1000_steps 96.6   restarts 0
+ring, pre-amplifier    open_loop_test_nmse 0.00995   within_tolerance 0.965   rms_miss 0.057   mean_control 0.377   rms_miss_while_held 0.0212   losses_per_1000_steps 29.9   restarts 0
+
+saved results\closed_loop_hold.csv and .png

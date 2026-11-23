@@ -1,0 +1,11 @@
+mask_slow2: chosen draw 26 of 64, 136 mW, Q 7.2e+05, 3 readout taps, validation NMSE 1.05e-03
+no control             open_loop_test_nmse nan   within_tolerance 0.0423   rms_miss 0.916   mean_control 0   tracking_nmse 3.02   largest_miss 2.17   restarts 0
+exact model            open_loop_test_nmse 0   within_tolerance 1   rms_miss 4.57e-17   mean_control 0.225   tracking_nmse 7.54e-33   largest_miss 1.11e-16   restarts 0
+linear predictor       open_loop_test_nmse 0.931   within_tolerance 0.0514   rms_miss 0.529   mean_control 0.173   tracking_nmse 1.01   largest_miss 1.84   restarts 263
+NG-RC                  open_loop_test_nmse 0.00396   within_tolerance 0.997   rms_miss 0.0136   mean_control 0.225   tracking_nmse 0.00067   largest_miss 0.0806   restarts 0
+ESN, 31 nodes          open_loop_test_nmse 0.00411   within_tolerance 0.996   rms_miss 0.0138   mean_control 0.225   tracking_nmse 0.000688   largest_miss 0.0741   restarts 0
+ring mask_slow2, no noise open_loop_test_nmse 0.00292   within_tolerance 1   rms_miss 0.00255   mean_control 0.225   tracking_nmse 2.33e-05   largest_miss 0.011   restarts 0
+ring mask_slow2, PIN detectors open_loop_test_nmse 0.00366   within_tolerance 1   rms_miss 0.0111   mean_control 0.226   tracking_nmse 0.00044   largest_miss 0.06   restarts 0
+ring mask_slow2, pre-amplifier open_loop_test_nmse 0.00367   within_tolerance 1   rms_miss 0.0111   mean_control 0.226   tracking_nmse 0.000446   largest_miss 0.0494   restarts 0
+
+saved results/closed_loop_track_ngrc.csv and .png

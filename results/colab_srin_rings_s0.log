@@ -1,0 +1,7 @@
+mask_drop series 0 {1: '1.24e-04', 2: '3.43e-05', 4: '1.39e-05', 8: '8.16e-06', 16: '7.28e-06'}
+  mask_drop   1 rings (31 lines): 1.24e-04
+  mask_drop   2 rings (62 lines): 3.43e-05
+  mask_drop   4 rings (124 lines): 1.39e-05
+  mask_drop   8 rings (248 lines): 8.16e-06
+  mask_drop   16 rings (496 lines): 7.28e-06
+saved results/srin_rings_s0.csv

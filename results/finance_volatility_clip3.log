@@ -1,0 +1,61 @@
+14066 returns 1971-02-08 .. 2026-11-19
+ESN 31: 16 reservoirs
+ESN 100: 16 reservoirs
+
+horizon 1 day(s)
+  model     period           R2    QLIKE  DM t vs HAR
+  mean      1981-2026     0.000    0.000        -8.64
+  GARCH     1981-2026     0.204   -0.639         2.61
+  HAR       1981-2026     0.180   -0.622          nan
+  LHAR      1981-2026     0.144   -0.630         1.28
+  ESN 31    1981-2026     0.165   -0.645         2.31
+  ESN 100   1981-2026     0.190   -0.651         3.03
+  LHAR+ESN  1981-2026     0.181   -0.640         1.35
+  mean      2000-2026     0.000    0.000        -8.22
+  GARCH     2000-2026     0.214   -0.793         2.36
+  HAR       2000-2026     0.197   -0.784          nan
+  LHAR      2000-2026     0.137   -0.785         0.27
+  ESN 31    2000-2026     0.182   -0.827         4.81
+  ESN 100   2000-2026     0.209   -0.834         5.89
+  LHAR+ESN  2000-2026     0.202   -0.836         6.57
+  ESN 31 chosen: r=0.9 s=0.1 leak=0.2 seed=0 x21, r=0.9 s=0.5 leak=0.2 seed=1 x9, r=0.9 s=0.1 leak=0.2 seed=1 x5
+  ESN 100 chosen: r=0.9 s=0.1 leak=0.2 seed=1 x14, r=0.9 s=0.5 leak=0.2 seed=1 x11, r=0.9 s=0.5 leak=0.2 seed=0 x8
+
+horizon 5 day(s)
+  model     period           R2    QLIKE  DM t vs HAR
+  mean      1981-2026     0.000    0.000        -8.22
+  GARCH     1981-2026     0.384   -0.591         1.58
+  HAR       1981-2026     0.355   -0.551          nan
+  LHAR      1981-2026     0.158   -0.566         2.16
+  ESN 31    1981-2026     0.356   -0.619         2.18
+  ESN 100   1981-2026     0.315   -0.622         2.36
+  LHAR+ESN  1981-2026     0.145   -0.616         3.00
+  mean      2000-2026     0.000    0.000        -7.05
+  GARCH     2000-2026     0.426   -0.770         2.56
+  HAR       2000-2026     0.409   -0.758          nan
+  LHAR      2000-2026     0.171   -0.766         3.40
+  ESN 31    2000-2026     0.393   -0.793         4.63
+  ESN 100   2000-2026     0.347   -0.799         5.53
+  LHAR+ESN  2000-2026     0.145   -0.801         6.35
+  ESN 31 chosen: r=0.9 s=0.1 leak=0.2 seed=0 x17, r=0.9 s=0.1 leak=0.2 seed=1 x11, r=0.9 s=0.5 leak=0.2 seed=1 x10
+  ESN 100 chosen: r=0.9 s=0.1 leak=0.2 seed=1 x15, r=0.9 s=0.5 leak=0.2 seed=1 x13, r=0.5 s=0.5 leak=0.2 seed=0 x6
+
+horizon 22 day(s)
+  model     period           R2    QLIKE  DM t vs HAR
+  mean      1981-2026     0.000    0.000        -5.57
+  GARCH     1981-2026     0.357   -0.464         0.56
+  HAR       1981-2026     0.390   -0.459          nan
+  LHAR      1981-2026     0.376   -0.465         2.40
+  ESN 31    1981-2026     0.389   -0.476         1.04
+  ESN 100   1981-2026     0.384   -0.482         1.84
+  LHAR+ESN  1981-2026     0.373   -0.487         2.20
+  mean      2000-2026     0.000    0.000        -4.79
+  GARCH     2000-2026     0.402   -0.650         0.94
+  HAR       2000-2026     0.426   -0.642          nan
+  LHAR      2000-2026     0.410   -0.648         2.80
+  ESN 31    2000-2026     0.425   -0.656         0.59
+  ESN 100   2000-2026     0.417   -0.660         1.11
+  LHAR+ESN  2000-2026     0.401   -0.662         1.30
+  ESN 31 chosen: r=0.9 s=0.1 leak=0.2 seed=0 x20, r=0.9 s=0.1 leak=0.2 seed=1 x12, r=0.9 s=0.5 leak=0.2 seed=0 x6
+  ESN 100 chosen: r=0.9 s=0.1 leak=0.2 seed=1 x10, r=0.9 s=0.5 leak=0.2 seed=1 x9, r=0.9 s=0.5 leak=0.2 seed=0 x9
+saved results/finance_volatility_clip3.csv and _forecasts.npz

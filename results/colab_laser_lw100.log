@@ -1,0 +1,4 @@
+series 0: jitter rms 0.25% of the half-linewidth, test NMSE 7.85e-05
+series 1: jitter rms 0.25% of the half-linewidth, test NMSE 6.07e-05
+series 2: jitter rms 0.25% of the half-linewidth, test NMSE 6.30e-05
+linewidth 100 Hz, corner 0 Hz, lock 0 Hz: jitter 0.25%, test NMSE 6.69e-05

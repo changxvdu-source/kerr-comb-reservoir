@@ -1,0 +1,8 @@
+comb_mask series 0 {1: '3.22e-04', 2: '1.13e-04', 4: '7.18e-05', 8: '3.23e-05'}
+comb_mask series 1 {1: '2.74e-04', 2: '8.39e-05', 4: '5.31e-05', 8: '2.62e-05'}
+comb_mask series 2 {1: '3.42e-04', 2: '1.03e-04', 4: '5.46e-05', 8: '2.82e-05'}
+  comb_mask   1 rings (31 lines): 3.11e-04
+  comb_mask   2 rings (62 lines): 9.91e-05
+  comb_mask   4 rings (124 lines): 5.92e-05
+  comb_mask   8 rings (248 lines): 2.88e-05
+saved results/mr_mg_fit_comb.csv

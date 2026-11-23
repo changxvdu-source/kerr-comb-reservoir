@@ -1,0 +1,7 @@
+[W1119 12:33:34.973928102 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 1109393408 bytes (free: 123404288, total: 23659151360).
+mackey_glass_h10 realistic series 0 {'ESN 100': '4.71e-05', 'ESN 300': '3.14e-05', 'ESN 1000': '1.95e-05', 'NG-RC': '2.54e-01'}
+  mackey_glass_h10   realistic ESN 100  NMSE 4.708e-05
+  mackey_glass_h10   realistic ESN 300  NMSE 3.141e-05
+  mackey_glass_h10   realistic ESN 1000 NMSE 1.947e-05
+  mackey_glass_h10   realistic NG-RC    NMSE 2.541e-01
+saved results/scale_esn_s0.csv

@@ -1,0 +1,2 @@
+linewidth_hz,corner_hz,lock_bw_hz,jitter_rms,test_nmse,per_series
+1000000.0,0.0,0.0,0.24923679458735007,0.00516992231895544,6.488e-03 4.867e-03 4.377e-03

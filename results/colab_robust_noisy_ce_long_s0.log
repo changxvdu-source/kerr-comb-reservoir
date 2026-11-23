@@ -1,0 +1,16 @@
+
+=== channel_eq   cross-run test NMSE, geometric mean over 1 series, noise: realistic   (columns: comb lines x readout taps)   test part 5000 symbols
+                        31x1      31x8          min..max 31x8  fine 31x8 consist.     SER   point chosen on series 0 for 31x8
+linear AR (best)    1.26e-02  1.26e-02
+ESN, same size      7.21e-03  3.87e-03
+with new noise after the choice (31x8, mean of 6 pairs of runs per series):   ESN 3.89e-03, SER 3.33e-05
+power               7.63e-01  1.05e-02       1.0e-02..1.0e-02        nan    0.031  0.0002   Q 6.2e+05, 52 mW, zeta -0.1, depth 0.79   new noise 9.96e-03 (pairs differ by 2%), SER 2.33e-04; chosen on 3 new pairs, val 9.26e-03, other point than single-run choice in 0/1 series
+detuning            6.82e-01  3.18e-02       3.2e-02..3.2e-02        nan    0.030  0.0138   Q 6.2e+05, 292 mW, zeta 2.8, depth 0.51   new noise 3.08e-02 (pairs differ by 3%), SER 1.13e-02; chosen on 3 new pairs, val 2.75e-02, other point than single-run choice in 0/1 series
+phase               6.26e-01  7.63e-02       7.6e-02..7.6e-02        nan    0.031  0.0866   Q 8.4e+06, 10 mW, zeta 1.9, depth 0.74   new noise 7.68e-02 (pairs differ by 5%), SER 8.78e-02; chosen on 3 new pairs, val 7.33e-02, other point than single-run choice in 0/1 series
+power_soliton       4.32e-01  2.06e+01       2.1e+01..2.1e+01        nan    0.984  0.4978   Q 4.4e+06, 48 mW, zeta 2.3, depth 0.43   new noise 2.06e-02 (pairs differ by 2%), SER 3.43e-03; chosen on 3 new pairs, val 2.10e-02, other point than single-run choice in 1/1 series
+detuning_soliton    6.13e-01  1.78e-01       1.8e-01..1.8e-01        nan    0.639  0.2768   Q 2.7e+06, 276 mW, zeta 4.8, depth 0.52   new noise 1.72e-01 (pairs differ by 4%), SER 2.62e-01; chosen on 3 new pairs, val 1.55e-01, other point than single-run choice in 1/1 series
+phase_soliton       5.01e-01  6.20e-02       6.2e-02..6.2e-02        nan    0.520  0.0594   Q 4.5e+06, 55 mW, zeta 2.4, depth 0.32   new noise 6.06e-02 (pairs differ by 7%), SER 6.06e-02; chosen on 3 new pairs, val 5.70e-02, other point than single-run choice in 1/1 series
+comb_uniform        1.23e-01  7.53e-03       7.5e-03..7.5e-03        nan    0.994  0.0000   Q 1.3e+06, 176 mW, zeta -0.2, depth 0.77   new noise 7.69e-03 (pairs differ by 1%), SER 3.33e-05; chosen on 3 new pairs, val 6.39e-03, other point than single-run choice in 0/1 series
+comb_mask           1.81e-01  5.69e-03       5.7e-03..5.7e-03        nan    0.876  0.0000   Q 6.2e+05, 39 mW, zeta 1.5, depth 0.63   new noise 5.85e-03 (pairs differ by 4%), SER 1.33e-04; chosen on 3 new pairs, val 4.98e-03, other point than single-run choice in 1/1 series
+
+saved results/colab_robust_noisy_ce_long_s0_trials.csv, _summary.csv and .png; spectra cached in results/colab_robust_noisy_ce_long_s0_spectra

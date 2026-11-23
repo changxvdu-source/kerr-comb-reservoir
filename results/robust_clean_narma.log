@@ -1,0 +1,16 @@
+
+=== narma10   cross-run test NMSE, geometric mean over 3 series, noise: none   (columns: comb lines x readout taps)
+                        31x1      31x8     31x12         min..max 31x12 fine 31x12 consist.     SER   point chosen on series 0 for 31x12
+linear AR (best)    1.90e-01  1.90e-01  1.90e-01
+ESN, same size      2.88e-01  1.05e-01  1.06e-01
+with new noise after the choice (31x12, mean of 6 pairs of runs per series):   ESN 1.06e-01
+power               6.91e-01  4.98e-01  2.09e-01       1.6e-01..3.3e-01        nan    1.000     nan   Q 2.3e+06, 14 mW, zeta 0.5, depth 0.08   new noise 2.09e-01 (pairs differ by 0%); chosen on 3 new pairs, val 1.62e-01, other point than single-run choice in 0/3 series
+detuning            8.56e-01  4.19e-01  2.11e-01       1.6e-01..3.2e-01        nan    1.000     nan   Q 7.7e+06, 10 mW, zeta 2.7, depth 0.07   new noise 2.11e-01 (pairs differ by 0%); chosen on 3 new pairs, val 1.69e-01, other point than single-run choice in 0/3 series
+phase               1.10e+00  9.40e-01  6.56e-01       5.5e-01..8.8e-01        nan    1.000     nan   Q 5.0e+06, 17 mW, zeta 1.5, depth 0.07   new noise 6.56e-01 (pairs differ by 0%); chosen on 3 new pairs, val 4.32e-01, other point than single-run choice in 0/3 series
+power_soliton       4.50e-01  3.50e-01  1.99e-01       1.7e-01..2.8e-01        nan    1.000     nan   Q 4.3e+06, 56 mW, zeta 2.4, depth 0.07   new noise 1.99e-01 (pairs differ by 0%); chosen on 3 new pairs, val 1.49e-01, other point than single-run choice in 0/3 series
+detuning_soliton    6.00e-01  2.94e-01  1.93e-01       1.5e-01..3.0e-01        nan    1.000     nan   Q 5.5e+06, 52 mW, zeta 2.9, depth 0.23   new noise 1.93e-01 (pairs differ by 0%); chosen on 3 new pairs, val 1.47e-01, other point than single-run choice in 0/3 series
+phase_soliton       9.12e-01  8.32e-01  6.84e-01       4.2e-01..1.2e+00        nan    1.000     nan   Q 3.6e+06, 76 mW, zeta 2.4, depth 0.21   new noise 6.84e-01 (pairs differ by 0%); chosen on 3 new pairs, val 3.18e-01, other point than single-run choice in 0/3 series
+comb_uniform        3.51e-01  2.17e-01  1.84e-01       1.3e-01..3.1e-01        nan    1.000     nan   Q 1.7e+06, 17 mW, zeta -0.5, depth 0.17   new noise 1.84e-01 (pairs differ by 0%); chosen on 3 new pairs, val 1.23e-01, other point than single-run choice in 0/3 series
+comb_mask           4.18e-01  2.56e-01  1.64e-01       1.3e-01..2.0e-01        nan    1.000     nan   Q 1.8e+06, 33 mW, zeta 0.2, depth 0.46   new noise 1.64e-01 (pairs differ by 0%); chosen on 3 new pairs, val 1.28e-01, other point than single-run choice in 0/3 series
+
+saved results\robust_clean_narma_trials.csv, _summary.csv and .png; spectra cached in results/encodings_spectra

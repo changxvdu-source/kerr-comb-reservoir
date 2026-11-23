@@ -1,0 +1,6 @@
+channel_eq realistic series 0 {'ESN 31': '3.69e-03', 'ESN 100': '3.55e-03', 'ESN 300': '3.60e-03', 'NG-RC': '9.68e-01'}
+  channel_eq         realistic ESN 31   NMSE 3.687e-03  SER 0.00e+00
+  channel_eq         realistic ESN 100  NMSE 3.554e-03  SER 0.00e+00
+  channel_eq         realistic ESN 300  NMSE 3.598e-03  SER 0.00e+00
+  channel_eq         realistic NG-RC    NMSE 9.684e-01  SER 7.38e-01
+saved results/sw_channel_eq_1e-3_s0.csv

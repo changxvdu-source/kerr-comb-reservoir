@@ -1,0 +1,6 @@
+track: exploratory record, Y in [0.04, 5.44]
+no control open-loop       nan  within_tolerance 0.0346  rms_miss 1.73  mean_control 0  tracking_nmse 2.98   (5 s)
+exact      open-loop  0.00e+00  within_tolerance 0.996  rms_miss 0.0622  mean_control 0.191  tracking_nmse 0.00384   (30 s)
+linear     open-loop  1.21e-01  within_tolerance 0.176  rms_miss 0.326  mean_control 0.224  tracking_nmse 0.105   (8 s)
+NG-RC      open-loop  3.13e-02  within_tolerance 0.263  rms_miss 0.267  mean_control 0.211  tracking_nmse 0.0707   (8 s)
+ESN 31     open-loop  1.17e-02  within_tolerance 0.382  rms_miss 0.149  mean_control 0.199  tracking_nmse 0.0221   (8 s)

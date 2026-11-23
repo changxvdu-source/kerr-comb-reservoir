@@ -1,0 +1,8 @@
+mask_drop series 1 {1: '1.29e-04', 2: '3.40e-05', 4: '1.41e-05', 8: '9.37e-06', 16: '7.28e-06', 32: '6.58e-06'}
+  mask_drop   1 rings (31 lines): 1.29e-04
+  mask_drop   2 rings (62 lines): 3.40e-05
+  mask_drop   4 rings (124 lines): 1.41e-05
+  mask_drop   8 rings (248 lines): 9.37e-06
+  mask_drop   16 rings (496 lines): 7.28e-06
+  mask_drop   32 rings (992 lines): 6.58e-06
+saved results/scale_rings_s1.csv

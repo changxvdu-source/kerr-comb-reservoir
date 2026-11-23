@@ -1,0 +1,40 @@
+14066 returns 1971-02-08 .. 2026-11-19; std of the first 2520 days 0.0077
+ESN 31: 27 reservoirs simulated
+ESN 100: 27 reservoirs simulated
+
+forecast days 1981-02-02 .. 2026-11-19 (11545); share of up days 0.554
+model    period   days  R2 vs zero  hit rate   DM t
+zero     all     11545      0.0000     0.500    nan
+zero     1980s    2254      0.0000     0.500    nan
+zero     1990s    2528      0.0000     0.500    nan
+zero     2000s    2515      0.0000     0.500    nan
+zero     2010s    2517      0.0000     0.500    nan
+zero     2020s    1731      0.0000     0.500    nan
+mean     all     11545      0.0008     0.554   1.50
+mean     1980s    2254      0.0015     0.567   0.79
+mean     1990s    2528      0.0041     0.568   2.84
+mean     2000s    2515     -0.0011     0.522  -1.39
+mean     2010s    2517      0.0021     0.560   1.83
+mean     2020s    1731      0.0011     0.553   1.05
+AR       all     11545      0.0087     0.567   2.91
+AR       1980s    2254      0.0826     0.608   2.28
+AR       1990s    2528      0.0182     0.591   2.08
+AR       2000s    2515     -0.0012     0.523  -1.48
+AR       2010s    2517      0.0021     0.560   1.83
+AR       2020s    1731      0.0011     0.553   1.05
+ESN 31   all     11545      0.0035     0.562   0.72
+ESN 31   1980s    2254      0.0030     0.595   0.05
+ESN 31   1990s    2528      0.0245     0.581   2.44
+ESN 31   2000s    2515     -0.0018     0.522  -1.67
+ESN 31   2010s    2517      0.0021     0.560   1.83
+ESN 31   2020s    1731      0.0011     0.553   1.04
+ESN 100  all     11545     -0.0245     0.566  -0.88
+ESN 100  1980s    2254     -0.3783     0.612  -1.00
+ESN 100  1990s    2528      0.0280     0.588   3.56
+ESN 100  2000s    2515     -0.0029     0.518  -1.61
+ESN 100  2010s    2517      0.0021     0.560   1.82
+ESN 100  2020s    1731      0.0011     0.553   1.01
+AR: chosen p=1 x19, p=20 x18, p=5 x6, p=2 x2
+ESN 31: chosen r=0.95 s=0.1 seed=1 x22, r=0.5 s=1.0 seed=0 x5, r=0.5 s=1.0 seed=2 x3, r=0.95 s=1.0 seed=0 x3
+ESN 100: chosen r=0.95 s=0.1 seed=0 x17, r=0.95 s=0.1 seed=1 x7, r=0.5 s=1.0 seed=2 x5, r=0.95 s=0.3 seed=1 x3
+saved results/finance_walkforward.csv and _forecasts.npz

@@ -1,0 +1,9 @@
+
+=== lorenz_h10   cross-run test NMSE, geometric mean over 3 series, noise: realistic   (columns: comb lines x readout taps)
+                        31x8          min..max 31x8  fine 31x8 consist.     SER   point chosen on series 0 for 31x8
+linear AR (best)    4.09e-01
+ESN, same size      5.31e-03
+mask_delay          2.65e-02       2.2e-02..3.4e-02        nan    0.913     nan   Q 8.5e+05, 118 mW, zeta -0.9, depth 0.84
+mask_delay_drop     1.30e-02       1.1e-02..1.4e-02        nan    0.953     nan   Q 6.0e+05, 157 mW, zeta -0.7, depth 0.77
+
+saved results/lor_d_cmp_trials.csv, _summary.csv and .png; spectra cached in results/lord_spectra

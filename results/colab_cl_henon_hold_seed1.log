@@ -1,0 +1,16 @@
+/content/comb/combrc/lle.py:405: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  half = torch.exp(lop * (self.h / 2))
+comb_mask: chosen draw 27 of 64, 233 mW, Q 1.1e+06, 6 readout taps, validation NMSE 8.71e-03
+mask_slow2: chosen draw 26 of 64, 136 mW, Q 7.2e+05, 3 readout taps, validation NMSE 8.34e-04
+no control             open_loop_test_nmse nan   within_tolerance 0.0675   rms_miss 0.813   mean_control 0   rms_miss_while_held 0.0288   losses_per_1000_steps 51.5   restarts 0
+exact model            open_loop_test_nmse 0   within_tolerance 0.995   rms_miss 0.0528   mean_control 0.00605   rms_miss_while_held 0.000561   losses_per_1000_steps 0.328   restarts 0
+linear predictor       open_loop_test_nmse nan   within_tolerance 0.994   rms_miss 0.0484   mean_control 0.255   rms_miss_while_held 0.016   losses_per_1000_steps 1.91   restarts 0
+ESN, 31 nodes          open_loop_test_nmse 0.000855   within_tolerance 0.991   rms_miss 0.0641   mean_control 0.25   rms_miss_while_held 0.0158   losses_per_1000_steps 2.11   restarts 0
+ring comb_mask, no noise open_loop_test_nmse 0.00123   within_tolerance 0.37   rms_miss 0.423   mean_control 0.768   rms_miss_while_held 0.0251   losses_per_1000_steps 92.6   restarts 0
+ring comb_mask, PIN detectors open_loop_test_nmse 0.00675   within_tolerance 0.451   rms_miss 0.412   mean_control 0.778   rms_miss_while_held 0.0267   losses_per_1000_steps 123   restarts 0
+ring comb_mask, pre-amplifier open_loop_test_nmse 0.0065   within_tolerance 0.419   rms_miss 0.427   mean_control 0.802   rms_miss_while_held 0.0271   losses_per_1000_steps 127   restarts 0
+ring mask_slow2, no noise open_loop_test_nmse 4.97e-05   within_tolerance 0.995   rms_miss 0.0534   mean_control 0.00816   rms_miss_while_held 0.000607   losses_per_1000_steps 0.344   restarts 0
+ring mask_slow2, PIN detectors open_loop_test_nmse 0.000494   within_tolerance 0.994   rms_miss 0.056   mean_control 0.163   rms_miss_while_held 0.00925   losses_per_1000_steps 0.359   restarts 0
+ring mask_slow2, pre-amplifier open_loop_test_nmse 0.000437   within_tolerance 0.994   rms_miss 0.0575   mean_control 0.154   rms_miss_while_held 0.00891   losses_per_1000_steps 0.391   restarts 0
+
+saved results/cl_henon_hold_seed1.csv and .png

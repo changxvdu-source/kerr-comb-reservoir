@@ -1,0 +1,4 @@
+mackey_glass_h10 realistic series 0 {'ESN 31': '3.03e-04', 'NG-RC': '8.07e-04'}
+  mackey_glass_h10   realistic ESN 31   NMSE 3.028e-04
+  mackey_glass_h10   realistic NG-RC    NMSE 8.073e-04
+saved results/sb_tiny.csv

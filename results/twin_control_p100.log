@@ -1,0 +1,4 @@
+period   100  nominal  gains (0.8, -0.2, 0.0)  tracking NMSE 0.0690  within 0.282
+period   100  pid      gains (0.8, -0.2, 0.1)  tracking NMSE 0.0372  within 0.314
+period   100  twin     gains (0.8, -0.2, 0.0)  tracking NMSE 0.0338  within 0.369
+period   100  true     gains (0.8, -0.2, 0.0)  tracking NMSE 0.0229  within 0.590

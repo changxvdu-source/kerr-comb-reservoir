@@ -1,0 +1,13 @@
+
+=== narma10   cross-run test NMSE, geometric mean over 3 series, noise: realistic   (columns: comb lines x readout taps)
+                        31x1      31x4      31x8     31x12         min..max 31x12 fine 31x12 consist.     SER   point chosen on series 0 for 31x12
+linear AR (best)    1.91e-01  1.91e-01  1.91e-01  1.91e-01
+ESN, same size      2.87e-01  1.37e-01  1.01e-01  1.06e-01
+with new noise after the choice (31x12, mean of 6 pairs of runs per series):   ESN 1.06e-01
+comb_mask           4.16e-01  3.86e-01  3.05e-01  1.91e-01       1.6e-01..2.3e-01        nan    0.991     nan   Q 7.0e+06, 19 mW, zeta 0.1, depth 0.80   new noise 1.84e-01 (pairs differ by 3%); chosen on 3 new pairs, val 1.44e-01, other point than single-run choice in 2/3 series
+mask_fast2          4.30e-01  3.93e-01  3.55e-01  2.08e-01       1.7e-01..2.6e-01        nan    0.986     nan   Q 8.7e+05, 196 mW, zeta 1.1, depth 0.53   new noise 2.18e-01 (pairs differ by 7%); chosen on 3 new pairs, val 1.44e-01, other point than single-run choice in 0/3 series
+mask_fast4          4.45e-01  4.82e-01  4.46e-01  1.92e-01       1.4e-01..2.5e-01        nan    0.897     nan   Q 1.5e+06, 87 mW, zeta 1.7, depth 0.67   new noise 1.98e-01 (pairs differ by 6%); chosen on 3 new pairs, val 1.66e-01, other point than single-run choice in 3/3 series
+mask_delay          1.03e-01  8.28e-02  7.42e-02  7.01e-02       4.5e-02..1.2e-01        nan    0.993     nan   Q 9.5e+05, 244 mW, zeta 2.5, depth 0.54   new noise 8.26e-02 (pairs differ by 9%); chosen on 3 new pairs, val 5.70e-02, other point than single-run choice in 1/3 series
+mask_loop           3.69e-01  3.42e-01  2.75e-01  1.99e-01       1.7e-01..2.6e-01        nan    0.952     nan   Q 4.7e+06, 11 mW, zeta 1.4, depth 0.07   new noise 1.94e-01 (pairs differ by 4%); chosen on 3 new pairs, val 1.46e-01, other point than single-run choice in 2/3 series
+
+saved results\memory_noisy_narma_trials.csv, _summary.csv and .png; spectra cached in results/encodings_spectra

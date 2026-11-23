@@ -1,0 +1,8 @@
+comb_mask series 0 {1: '2.82e-03', 2: '1.89e-03', 4: '1.48e-03', 8: '1.64e-03'}
+comb_mask series 1 {1: '2.77e-03', 2: '2.25e-03', 4: '1.92e-03', 8: '1.89e-03'}
+comb_mask series 2 {1: '1.95e-03', 2: '1.50e-03', 4: '1.54e-03', 8: '1.51e-03'}
+  comb_mask   1 rings (31 lines): 2.48e-03  SER 1.11e-05
+  comb_mask   2 rings (62 lines): 1.85e-03  SER 0.00e+00
+  comb_mask   4 rings (124 lines): 1.63e-03  SER 0.00e+00
+  comb_mask   8 rings (248 lines): 1.67e-03  SER 0.00e+00
+saved results/mr_ce40_fit.csv

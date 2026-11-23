@@ -1,0 +1,6 @@
+ESN (no detuning jitter to see): 3.16e-04
+jitter 0.000%  comb_mask   2.23e-04   (ESN 3.16e-04; points [102, 167, 167])
+jitter 0.000%  mask_drop   5.73e-05   (ESN 3.16e-04; points [211, 211, 211])
+jitter 0.000%  mask_slow2  9.45e-05   (ESN 3.16e-04; points [32, 32, 32])
+jitter 0.100%  comb_mask   2.38e-04   (ESN 3.16e-04; points [229, 167, 167])
+jitter 0.100%  mask_drop   6.35e-05   (ESN 3.16e-04; points [211, 211, 211])

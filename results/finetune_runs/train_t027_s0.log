@@ -1,0 +1,68 @@
+baselines (test NMSE): {'persistence': '1.52e+00', 'linear_ar4': '1.81e-01', 'linear_ar8': '1.51e-01', 'linear_ar16': '1.39e-01', 'linear_ar32': '1.25e-01', 'esn51': '4.90e-04', 'esn200': '5.17e-06'}
+before training, test: {'nmse': 0.0018226383005342085, 'nmse_cross': 0.002181136794455945, 'val_nmse_cross': 0.0025952208929372242, 'consistency': 0.9807646357588078, 'comb_lines': 109}
+it   0 step   loss 2.536e-02 (task 5.883e-03, incons 1.95e-02)  Q 1.08e+06  d0 -1.02e-03  P 48 mW  swing 52 mW  (18s)
+it   1 step   loss 2.131e-02 (task 6.773e-03, incons 1.45e-02)  Q 1.09e+06  d0 -1.02e-03  P 48 mW  swing 52 mW  (18s)
+it   2 step   loss 1.789e-02 (task 5.061e-03, incons 1.28e-02)  Q 1.10e+06  d0 -1.02e-03  P 49 mW  swing 53 mW  (18s)
+it   3 step   loss 1.723e-02 (task 5.789e-03, incons 1.14e-02)  Q 1.10e+06  d0 -1.01e-03  P 49 mW  swing 53 mW  (18s)
+it   4 step   loss 1.484e-02 (task 5.548e-03, incons 9.29e-03)  Q 1.11e+06  d0 -1.01e-03  P 49 mW  swing 53 mW  (19s)
+it   5 step   loss 1.542e-02 (task 7.232e-03, incons 8.18e-03)  Q 1.12e+06  d0 -1.01e-03  P 49 mW  swing 53 mW  (18s)
+it   6 step   loss 1.170e-02 (task 4.176e-03, incons 7.52e-03)  Q 1.12e+06  d0 -1.00e-03  P 49 mW  swing 53 mW  (17s)
+it   7 step   loss 1.273e-02 (task 5.565e-03, incons 7.17e-03)  Q 1.13e+06  d0 -1.00e-03  P 49 mW  swing 54 mW  (17s)
+it   8 step   loss 1.177e-02 (task 5.721e-03, incons 6.05e-03)  Q 1.14e+06  d0 -1.00e-03  P 49 mW  swing 54 mW  (17s)
+it   9 step   loss 1.115e-02 (task 5.671e-03, incons 5.48e-03)  Q 1.14e+06  d0 -9.97e-04  P 49 mW  swing 54 mW  (18s)  | val cross-seed NMSE 1.475e-03 consistency 0.995
+it  10 step   loss 9.926e-03 (task 4.148e-03, incons 5.78e-03)  Q 1.15e+06  d0 -9.95e-04  P 49 mW  swing 54 mW  (18s)
+it  11 step   loss 9.223e-03 (task 4.167e-03, incons 5.06e-03)  Q 1.15e+06  d0 -9.93e-04  P 49 mW  swing 54 mW  (18s)
+it  12 step   loss 8.755e-03 (task 4.109e-03, incons 4.65e-03)  Q 1.16e+06  d0 -9.90e-04  P 49 mW  swing 54 mW  (17s)
+it  13 step   loss 8.124e-03 (task 3.557e-03, incons 4.57e-03)  Q 1.16e+06  d0 -9.88e-04  P 49 mW  swing 54 mW  (17s)
+it  14 step   loss 8.385e-03 (task 3.720e-03, incons 4.66e-03)  Q 1.17e+06  d0 -9.86e-04  P 49 mW  swing 54 mW  (18s)
+it  15 step   loss 8.963e-03 (task 3.880e-03, incons 5.08e-03)  Q 1.18e+06  d0 -9.84e-04  P 49 mW  swing 54 mW  (17s)
+it  16 step   loss 8.673e-03 (task 4.645e-03, incons 4.03e-03)  Q 1.18e+06  d0 -9.82e-04  P 49 mW  swing 54 mW  (17s)
+it  17 step   loss 8.874e-03 (task 4.848e-03, incons 4.03e-03)  Q 1.19e+06  d0 -9.80e-04  P 49 mW  swing 54 mW  (17s)
+it  18 step   loss 8.298e-03 (task 4.646e-03, incons 3.65e-03)  Q 1.19e+06  d0 -9.78e-04  P 49 mW  swing 54 mW  (17s)
+it  19 step   loss 8.530e-03 (task 4.277e-03, incons 4.25e-03)  Q 1.19e+06  d0 -9.76e-04  P 49 mW  swing 54 mW  (18s)  | val cross-seed NMSE 1.292e-03 consistency 0.996
+it  20 step   loss 8.568e-03 (task 4.861e-03, incons 3.71e-03)  Q 1.20e+06  d0 -9.74e-04  P 49 mW  swing 54 mW  (17s)
+it  21 step   loss 7.569e-03 (task 3.589e-03, incons 3.98e-03)  Q 1.20e+06  d0 -9.72e-04  P 49 mW  swing 54 mW  (17s)
+it  22 step   loss 7.772e-03 (task 4.141e-03, incons 3.63e-03)  Q 1.20e+06  d0 -9.71e-04  P 49 mW  swing 54 mW  (17s)
+it  23 step   loss 8.837e-03 (task 5.190e-03, incons 3.65e-03)  Q 1.21e+06  d0 -9.69e-04  P 49 mW  swing 54 mW  (17s)
+it  24 step   loss 8.126e-03 (task 4.545e-03, incons 3.58e-03)  Q 1.21e+06  d0 -9.67e-04  P 49 mW  swing 54 mW  (17s)
+it  25 step   loss 8.401e-03 (task 4.951e-03, incons 3.45e-03)  Q 1.21e+06  d0 -9.66e-04  P 49 mW  swing 55 mW  (17s)
+it  26 step   loss 6.681e-03 (task 3.234e-03, incons 3.45e-03)  Q 1.21e+06  d0 -9.64e-04  P 49 mW  swing 55 mW  (17s)
+it  27 step   loss 6.891e-03 (task 3.244e-03, incons 3.65e-03)  Q 1.22e+06  d0 -9.63e-04  P 49 mW  swing 55 mW  (17s)
+it  28 step   loss 6.959e-03 (task 3.437e-03, incons 3.52e-03)  Q 1.22e+06  d0 -9.62e-04  P 49 mW  swing 55 mW  (17s)
+it  29 step   loss 7.430e-03 (task 3.973e-03, incons 3.46e-03)  Q 1.22e+06  d0 -9.61e-04  P 49 mW  swing 55 mW  (17s)  | val cross-seed NMSE 1.227e-03 consistency 0.997
+it  30 step   loss 6.861e-03 (task 3.572e-03, incons 3.29e-03)  Q 1.22e+06  d0 -9.60e-04  P 49 mW  swing 55 mW  (18s)
+it  31 step   loss 8.616e-03 (task 5.109e-03, incons 3.51e-03)  Q 1.22e+06  d0 -9.59e-04  P 49 mW  swing 55 mW  (17s)
+it  32 step   loss 7.617e-03 (task 4.270e-03, incons 3.35e-03)  Q 1.22e+06  d0 -9.58e-04  P 49 mW  swing 55 mW  (17s)
+it  33 step   loss 7.367e-03 (task 3.947e-03, incons 3.42e-03)  Q 1.22e+06  d0 -9.57e-04  P 49 mW  swing 55 mW  (18s)
+it  34 step   loss 6.584e-03 (task 3.071e-03, incons 3.51e-03)  Q 1.23e+06  d0 -9.56e-04  P 49 mW  swing 55 mW  (18s)
+it  35 step   loss 6.139e-03 (task 2.792e-03, incons 3.35e-03)  Q 1.23e+06  d0 -9.55e-04  P 49 mW  swing 55 mW  (19s)
+it  36 step   loss 6.661e-03 (task 3.224e-03, incons 3.44e-03)  Q 1.23e+06  d0 -9.55e-04  P 49 mW  swing 55 mW  (18s)
+it  37 step   loss 6.015e-03 (task 2.589e-03, incons 3.43e-03)  Q 1.23e+06  d0 -9.54e-04  P 49 mW  swing 55 mW  (17s)
+it  38 step   loss 5.711e-03 (task 2.556e-03, incons 3.16e-03)  Q 1.23e+06  d0 -9.53e-04  P 49 mW  swing 55 mW  (17s)
+it  39 step   loss 7.242e-03 (task 4.077e-03, incons 3.17e-03)  Q 1.23e+06  d0 -9.53e-04  P 49 mW  swing 55 mW  (17s)  | val cross-seed NMSE 1.199e-03 consistency 0.997
+it  40 step   loss 6.558e-03 (task 3.166e-03, incons 3.39e-03)  Q 1.23e+06  d0 -9.52e-04  P 49 mW  swing 55 mW  (18s)
+it  41 step   loss 5.759e-03 (task 2.756e-03, incons 3.00e-03)  Q 1.23e+06  d0 -9.52e-04  P 49 mW  swing 55 mW  (19s)
+it  42 step   loss 7.399e-03 (task 4.253e-03, incons 3.15e-03)  Q 1.23e+06  d0 -9.51e-04  P 49 mW  swing 55 mW  (19s)
+it  43 step   loss 8.320e-03 (task 5.178e-03, incons 3.14e-03)  Q 1.23e+06  d0 -9.51e-04  P 49 mW  swing 55 mW  (19s)
+it  44 step   loss 8.061e-03 (task 4.777e-03, incons 3.28e-03)  Q 1.23e+06  d0 -9.50e-04  P 49 mW  swing 54 mW  (17s)
+it  45 step   loss 9.662e-03 (task 6.416e-03, incons 3.25e-03)  Q 1.23e+06  d0 -9.50e-04  P 49 mW  swing 55 mW  (18s)
+it  46 step   loss 5.546e-03 (task 2.436e-03, incons 3.11e-03)  Q 1.23e+06  d0 -9.49e-04  P 49 mW  swing 55 mW  (18s)
+it  47 step   loss 6.127e-03 (task 2.943e-03, incons 3.18e-03)  Q 1.23e+06  d0 -9.49e-04  P 49 mW  swing 55 mW  (18s)
+it  48 step   loss 6.556e-03 (task 3.414e-03, incons 3.14e-03)  Q 1.24e+06  d0 -9.49e-04  P 49 mW  swing 55 mW  (18s)
+it  49 step   loss 7.924e-03 (task 4.482e-03, incons 3.44e-03)  Q 1.24e+06  d0 -9.49e-04  P 49 mW  swing 55 mW  (18s)  | val cross-seed NMSE 1.194e-03 consistency 0.997
+it  50 step   loss 7.229e-03 (task 3.848e-03, incons 3.38e-03)  Q 1.24e+06  d0 -9.48e-04  P 49 mW  swing 55 mW  (17s)
+it  51 step   loss 6.151e-03 (task 3.105e-03, incons 3.05e-03)  Q 1.24e+06  d0 -9.48e-04  P 49 mW  swing 55 mW  (17s)
+it  52 step   loss 8.283e-03 (task 5.175e-03, incons 3.11e-03)  Q 1.24e+06  d0 -9.48e-04  P 49 mW  swing 55 mW  (17s)
+it  53 step   loss 6.308e-03 (task 3.109e-03, incons 3.20e-03)  Q 1.24e+06  d0 -9.48e-04  P 49 mW  swing 55 mW  (17s)
+it  54 step   loss 5.956e-03 (task 2.646e-03, incons 3.31e-03)  Q 1.24e+06  d0 -9.48e-04  P 49 mW  swing 55 mW  (17s)
+it  55 step   loss 6.102e-03 (task 2.931e-03, incons 3.17e-03)  Q 1.24e+06  d0 -9.47e-04  P 49 mW  swing 55 mW  (18s)
+it  56 step   loss 6.052e-03 (task 2.787e-03, incons 3.27e-03)  Q 1.24e+06  d0 -9.47e-04  P 49 mW  swing 55 mW  (18s)
+it  57 step   loss 5.607e-03 (task 2.346e-03, incons 3.26e-03)  Q 1.24e+06  d0 -9.47e-04  P 49 mW  swing 55 mW  (18s)
+it  58 step   loss 6.222e-03 (task 3.215e-03, incons 3.01e-03)  Q 1.24e+06  d0 -9.47e-04  P 49 mW  swing 55 mW  (18s)
+it  59 step   loss 7.570e-03 (task 4.253e-03, incons 3.32e-03)  Q 1.24e+06  d0 -9.47e-04  P 49 mW  swing 55 mW  (18s)  | val cross-seed NMSE 1.182e-03 consistency 0.997
+best validation at iteration 59
+after training, test:            {'nmse': 0.0008916452961786715, 'nmse_cross': 0.0010080996924728013, 'val_nmse_cross': 0.0012728363399103788, 'consistency': 0.9968323772254379, 'comb_lines': 172}
+same device, noise switched off: {'nmse': 8.083300997281387e-05, 'nmse_cross': 8.083300032198273e-05, 'val_nmse_cross': 6.202208061222512e-05, 'consistency': 0.9999999999999998, 'comb_lines': 172}
+same device on a finer grid:     skipped
+trained parameters: {'delta0': '-0.000947', 'beta2': '-4e-27', 'q_int': '1e+08', 'q_ext1': '1.33e+06', 'q_ext2': '2.22e+07', 'q_total': '1.24e+06', 'p_avg': '0.0486', 'p_swing': '0.0547', 'mean_input_power': '0.243', 'photon_lifetime_ns': '1.02'}
+saved results\finetune_runs\train_t027_s0.json and .pt

@@ -1,0 +1,8 @@
+mask_drop series 0 {1: '1.26e-04', 2: '4.59e-05', 4: '2.10e-05', 8: '1.65e-05'}
+mask_drop series 1 {1: '1.16e-04', 2: '3.72e-05', 4: '1.49e-05', 8: '1.34e-05'}
+mask_drop series 2 {1: '1.25e-04', 2: '3.75e-05', 4: '1.55e-05', 8: '1.17e-05'}
+  mask_drop   1 rings (31 lines): 1.22e-04
+  mask_drop   2 rings (62 lines): 4.00e-05
+  mask_drop   4 rings (124 lines): 1.69e-05
+  mask_drop   8 rings (248 lines): 1.37e-05
+saved results/mr_mg_fit_drop.csv

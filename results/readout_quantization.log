@@ -1,0 +1,33 @@
+mask_drop trial 211: 178 mW; ADC bits [4, 5, 6, 7, 8, 9, 10, 12, 14]
+series 0: ring none 1.71e-04; lin6 1.52e-03  lin8 3.89e-04  lin10 2.22e-04  log6 6.68e-04  log8 3.22e-04  log10 2.02e-04; ESN31 8 bit 1.50e-04
+series 1: ring none 1.50e-04; lin6 9.87e-04  lin8 3.48e-04  lin10 1.89e-04  log6 5.30e-04  log8 2.48e-04  log10 1.70e-04; ESN31 8 bit 9.79e-05
+series 2: ring none 1.42e-04; lin6 1.03e-03  lin8 3.32e-04  lin10 1.78e-04  log6 4.95e-04  log8 2.36e-04  log10 1.56e-04; ESN31 8 bit 1.37e-04
+ring    none        bits  1.54e-04
+ring    linear    4 bits  4.24e-03
+ring    linear    5 bits  2.22e-03
+ring    linear    6 bits  1.16e-03
+ring    linear    7 bits  5.97e-04
+ring    linear    8 bits  3.56e-04
+ring    linear    9 bits  2.69e-04
+ring    linear   10 bits  1.96e-04
+ring    linear   12 bits  1.61e-04
+ring    linear   14 bits  1.54e-04
+ring    log       4 bits  1.89e-03
+ring    log       5 bits  1.07e-03
+ring    log       6 bits  5.60e-04
+ring    log       7 bits  3.49e-04
+ring    log       8 bits  2.66e-04
+ring    log       9 bits  2.08e-04
+ring    log      10 bits  1.75e-04
+ring    log      12 bits  1.56e-04
+ring    log      14 bits  1.54e-04
+ESN 31  none        bits  2.41e-05
+ESN 31  input     4 bits  3.49e-03
+ESN 31  input     5 bits  1.26e-03
+ESN 31  input     6 bits  4.49e-04
+ESN 31  input     7 bits  2.27e-04
+ESN 31  input     8 bits  1.26e-04
+ESN 31  input     9 bits  9.33e-05
+ESN 31  input    10 bits  6.77e-05
+ESN 31  input    12 bits  4.56e-05
+ESN 31  input    14 bits  3.08e-05

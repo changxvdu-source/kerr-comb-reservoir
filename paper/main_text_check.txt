@@ -1,0 +1,343 @@
+===== page 1
+KerrĤ
+ᅶ
+ק
+đ2026 ୍ 11 ᄅ 23 ರ
+ᅋေ
+ᄜཿᅋေb ᇶཌğ ᄝགྷൌᄮല༯Kerra
+༯ Mackey–
+GlassЧ
+ࢤ7֥31ׄࢫESNb ł
+1 ႄ࿽
+ğ č1གྷሑ [1–6]Ġ č2่
+҂๤၂Ġ č3Ďิԛ໙ีğᄝགྷൌᄮല
+༯ KerrĠ č4σᆺႨ
+ჹѩ҂ౢԣĠ č5ĎิԛႨ
+ངb ł
+2مٚ
+2.1ა Lugiato–Lefever ଆ྘
+ຶč FSRĎ200 GHzđಕᅼഝੱ 1.45Ӊ
+L ≈ 1.03 mmཌྟ༢ඔ γ = 0 .016 W−1m−1೤೛ β2 = −4 × 10−27 s2/mӈ೤
+೛Ď đЬ௵ѯӉ1550 nm༯ᄛčdrop१đЧᆘ௖ᇉၹඔ
+Qint = 10 8௖ᇉၹඔ Qext,1ҕඔđ౼ᆴ 105.8֞107.2đ༯
+௖ᇉၹඔଏಪູ Qext,2 = 2.2 × 107ֻ6pэุᄝ 106֞
+2.2 × 107౼Ď bሹ௖ᇉၹඔᄝ5 × 105֞8 × 106϶ཌॺჿ 12֞190 MHzܻ
+ሰ൰ଁჿ 0.4֞7 nsb
+֥Lugiato–LefeverӱčLLEĎ૭ඍ [7, 8]Ցඔ n = t/tR ູતൈ
+ֻ࠺µູ ˜Eµ௔ੱொ၍ູ ωµ = 2π FSR µđᄵ
+d ˜Eµ
+dn =
+[
+− α − iδ0 + i Lβ2
+2 ω2
+µ
+]
+˜Eµ + iγL Fµ
+[
+|E|2E
+]
++
+√
+θ1 ˜Ein,µ(ut), (1)
+ఃᇏ E(τ )సଽӆč|E|2 ၛຐູֆ໊Ď đFµֻµਈđθ1aθ2
+ੱđα = (αi + θ1 + θ2)/2č϶ཌॺĎ đδ0ؓ
+1
+===== page 2
+2مٚ2
+ാཾ ζ = δ0/αᄝζ ∈ [−1, 4]ࠏ
+༢ູQ = ω0tR/(2α)ֻµੱູ Pµ = θ2| ˜Eµ|2b
+ӱ (1)۬–čRK4IPĎ [9]ބߐ
+ֻ7Ď bଏಪႨ512۱1 nsژ֥
+čჿ 200ٳࠒ20ᄝ 512 ა 1024၂ᇁđ
+ჿ 30%čҀԉҋਘĎ b
+2.2 ൻೆщ઒
+ݼژut ∈ [0, 1]ӻ࿃ T = 1 nsࢠ
+ϖᇕϜ utൔb
+௶ཌྷ໊ൻೆဃଆ čЧ໓Ď bൻೆӆႮЬ௵ čµ = 0۲8ൻೆ൸Ԃ čµ = ±1, . . . ,±8Ď ቆ
+Ӯğ
+˜Ein,0 =
+√
+Pp [1 + 2d (ut − 1
+2 )], ˜Ein,µ = bµ + wµ (ut − 1
+2 ) ( µ = ±1, . . . ,±8). (2)
+ொᇂ bµᇅಃᇗ wµཌྷ໊Ġ෱ૌ
+ੱ ∑
+µ
+(
+|bµ|2 + |wµ|2/12
+)
+ੱ Pб২ fsੱ
+Pp = (1 − fs)Pੱ Pč10֞300 mWඔनᄋĎ afs ∈ [0.1, 0.9]a
+؇d ∈ [0.05, 0.9]aζބQext,1Ӯਆਫ਼đ၂ਫ਼Ќӻ
+ԛ bµԛwµඏb
+ֻ4.5ཌྷ໊b
+σĎ bੱ P [1 + d(ut − 1
+2 )] [1]aാཾ
+ζ + d(ut − 1
+2 ) [2]ཌྷ໊ exp[id(ut − 1
+2 )] [3]؇d ∈ [0.05, 1]֥d
+ᄝ 10−1.3֞100.5ؿ
+֥ζଽđQext,1 ∈ [106.5, 107.2]đP ∈ [30, 300] mWĎ b
+൸b֥16ཌྷ๝a ཌྷ໊ཌྷ๝đ ෮Ⴕ൸Ԃ၂ఏФ๝၂
+๝҄ઝԊ [4]b
+ބQ۽ࠏ
+ֻ2.6Ď b
+2.3ԛ
+ᇏྏ 31൸Ԃ čµ = −15, . . . ,15ؓ
+ඔđxµ = log10( ˆPµ + Pfloor)đఃᇏ ˆPµඔđPfloor ౼ฐҩఖᄮലა 1 nWնᆀđ
+֥ݼژ31ुభ 7֥ݼژ۱
+ඔ č8܋248หᆘĠNARMA-10 Ⴈ 12߄
+ᄝ {10−8, 10−6, 10−4, 10−2, 1}ֻ6.1ၫb
+===== page 3
+2مٚ3
+2.4 ᄮലଆ྘
+ਆཛğ
+•۴ٚ0.1%ႨĠ
+•֥1%Ġ
+ႿЧᆘཌॺჿ1.6 kHzֻ5.2௔ੱᄮല
+Ď Ġ
+•ሰĠ
+•č1 nsĎ Ġ
+•൸Ԃ 0.3 µWĎ b1 GHz֥ࠩInGaAs PIN
+൸Ԃ 0.13֞0.63 µWđ0.3 µW ंᇏb
+ֻ5ངb
+2.5ཌ
+ሙ಩ༀğ č1ĎMackey–Glass྽ਙčτ = 17đβ = 0.2đγ = 0.1đᆷඔ 10ࡗ
+ۯ1֥10 ҄ყҩĠ č2ޙ[10]٤
+ྐᄮб 28 dBđԢ NMSEБ
+ੱĠ č3ĎNARMA-10đ෱ླေჿ 10༸৽
+ਫ਼಩ༀč28 GBd PAM-4 a17 kmฐҩĎ b
+ലሑ෿ຩ઎čESNĎ [11]ğ31۱tanhཌྷ
+ֻ8ԛ 100֞1000
+֥ׄࢫ۱ESNෘčNG-RCĎ [12]؟32ൻೆb
+۴ٚ3 × 10−3؇0.33 ᅼෘ
+ֻ8ೡ૭b
+2.6ླྀၰ
+ఙ 300đᄜႨ 1700đο 60/20/20ҩ൫೘
+֞5000न
+༂ҵčNMSEԛҪሹ൞ᄝ၂Ցᄎྛഈ
+ᄎྛഈҩ൫čॴᄎྛ NMSEĎ b
+ૄᇕщ઒Ԏ 256đ
+ᄎྛđοဒᆣ༂ҵ౼భ 16Ġᄜಞᆃ 16஝ 3ᄎྛđ࿊௜नဒᆣ༂ҵቋཬ
+෱ᄝਸ਼ຓ 6௜नҩ൫༂ҵbૄᇕഡᇂቓ 3ࠫۡ
+ܴ10%֞30%čҀԉҋਘĎ b
+===== page 4
+3৘ 4
+і 1:ҩ൫༂ҵčNMSEԎ256۽ࠏ
+ਸ਼ຓ 6௜नҩ൫༂ҵđᄜ౼ 3֥ࠫ
+щ઒Ⴈՙ
+ุѓԛbESNཌྷ๝č31ԥСӽđགྷ
+ൻೆᄮലູ 3 × 10−3ֻ࡮8ҩ൫
+ູ 5000b
+Mackey–Glassč10ޙNARMA-10
+щ઒ ໭ᄮല གྷൌᄮല ໭ᄮല གྷൌᄮല ໭ᄮല གྷൌᄮല
+ੱ [1] 0.20 0.33 7.6 × 10−3 1.0 × 10−2 0.21 0 .35
+Ь௵ാཾ [2] 5.6 × 10−2 9.3 × 10−2 1.2 × 10−2 3.0 × 10−2 0.21 0 .45
+Ь௵ཌྷ໊ [3] 0.14 0.20 4.8 × 10−2 7.7 × 10−2 0.66 1.0
+ׄ1.9 × 10−3 5.3 × 10−2 1.1 × 10−2 2.1 × 10−2 0.20 0 .32
+ׄ1.7 × 10−3 9.5 × 10−2 1.2 × 10−2 0.17 0.19 0 .39
+ׄ2.8 × 10−3 5.0 × 10−2 3.5 × 10−2 6.0 × 10−2 0.68 0 .74
+൸ 8.2 × 10−5 4.8 × 10−3 5.0 × 10−3 7.6 × 10−3 0.18 0 .21
+௶ཌྷ໊ဃଆčЧ໓Ď 1.8 × 10−6 3.3 × 10−4 3.7 × 10−3 5.7 × 10−3 0.16 0 .19
+ESNč31Ď 2.4 × 10−5 3.2 × 10−4 3.8 × 10−3 4.0 × 10−3 0.11 0 .11
+݂߭0.14 0.21 1.1 × 10−2 1.3 × 10−2 0.19 0 .19
+3৘
+č๭3ᚧ౵ਆ
+ྟ 0.08ᇕሰ౵1.00ቔ౵๭ č๭2ކQ၂ᇁྟა
+౵đ
+ᅶb ł
+4б
+ੱ
+ԛ č31൸Ԃa8๝ဢ
+ֻ2.6Ď bі1đ๭ 1֥
+ඔሳb
+4.1 Mackey–Glass ყҩ
+௶ཌྷ໊ဃଆᄝ Mackey–Glassҩ൫༂ҵູ 1.8 × 10−6đбᆜุ
+൸ č8.2 × 10−5ჿ45ാཾщ઒đ1.7 × 10−3Ď
+ჿ 900эҵđ֌Ց
+྽҂эğဃଆູ 3.3 × 10−4൸ູ 4.8 × 10−3čҵჿ 15ֆЬ௵щ઒ູ
+5.0 × 10−2čҵჿ 150 ПĎ b
+֥؇ESN ᄝ໭ᄮലൈູ 2.4 × 10−5ჿ 13 ПĠགྷൌᄮല༯ ESN ູ
+===== page 5
+4б 5
+power
+detuning
+phase
+power (soliton)
+detuning (soliton)
+phase (soliton)
+uniform comb
+spectral phase mask
+10 3
+10 2
+10 1
+test NMSE, new runs (lower is better)
+a Mackey-Glass, 10 steps ahead
+power
+detuning
+phase
+power (soliton)
+detuning (soliton)
+phase (soliton)
+uniform comb
+spectral phase mask
+10 2
+10 1
+b channel equalisation
+power
+detuning
+phase
+power (soliton)
+detuning (soliton)
+phase (soliton)
+uniform comb
+spectral phase mask
+10 1
+100
+c NARMA-10
+single pump, CW start single pump, soliton input comb ESN, same size best linear autoregression
+๭ 1:ҩđ3؇
+֥ESNbŀրཿğ๭ᇿοቋᇔ๭ϱҀಆł
+power detuning phase power
+(soliton)
+detuning
+(soliton)
+phase
+(soliton)
+uniform
+comb
+spectral
+phase mask
+10 3
+10 2
+10 1
+100
+101
+test NMSE, Mackey-Glass
+(realistic noise)
+all 256 random operating points per encoding and series (3 series); black: median; values above 10 drawn at 10
+๭ 2: ૄᇕщ઒ 256č3֥Mackey–Glassb
+ŀրཿğ๭ᇿοቋᇔ๭ϱҀಆł
+3.2 × 10−4۳ESN൞ 3 × 10−3ط
+౏ ESNުESN֞ࢆ1.9 × 10−4֞ࢆ10−3
+֞ࢆ۷5.3 × 10−5ֻ8ཚ๝
+႕ཙb
+4.2ׄ
+đॖିᆺ൞ᄝ 256b๭ 2ԛૄᇕ
+֥Mackey–Glassđ3܋768֥
+ᇏ໊ඔູ 4.3 × 10−2ପ 10%֥ׄ
+č0.14֞0.38֥ݺ10%Ⴟ 1.9 × 10−3֥ݺ10%č2.5 × 10−2Ď
+ҕඔቆ
+b
+===== page 6
+4б 6
+4.3ޙ
+࿐щ઒đ໭ᄮലൈູ 3.7 × 10−3đགྷൌᄮല༯
+ູ 5.7 × 10−3ჿ 1.3ჿ 2 Пđб
+č1.1 × 10−2ބ1.3 × 10−2ݺ2֞3 Пb໭ᄮലൈဃଆა ESNč3.8 × 10−3Ďӻ௜Ġ
+གྷൌᄮല༯ ESN ູ 4.0 × 10−3ჿ 1.4ᄮലđ
+ֻ8ཁൕđϜ ESN೿ჿ 7%bŀրཿğҀ 5000֥
+ੱğဃଆა ESNł
+4.4 NARMA-10২ሰ
+NARMA-10 ླေჿ 10ၛଽbֆ
+ഈđ ဃଆ č໭ᄮല0.16đ གྷൌᄮല0.19č0.19֥
+ֆЬ௵щ઒đ֌б ESNč0.11Ďҵჿ 1.5֞1.8b
+ߌ֥
+đNARMA-10֞ࢆ0.011֥100ׄࢫESNč0.010ֻ6.1ࢫ
+ҀԉҋਘĎ b
+4.5ྟ
+ဃଆčགྷ
+ൌᄮലđაі 1ੀӱĠҀԉ๭ S1Ď bᄝMackey–Glass ഈğ
+•ဃଆູ2.4×10−4đ აປᆜဃଆ čᆃቆᄎྛᇏູ3.8×10−4Ď
+Ġ
+•ဃଆູ 1.3 × 10−3đҵ 3֞6 ПĠ
+•ᇅčwµ ∝ bµĎູ 6.5 × 10−4Ġ
+•ᇅູ 5.0 × 10−3b
+ཌྷ໊ 5.0 × 10−3đປᆜဃଆ 5.4 × 10−3؇ږט5.8 × 10−3đᆜุ
+ᇅ 7.3 × 10−3ඔਈ္Ⴕ႕ཙğMackey–Glass ഈ 4a8a16a32a64
+љູ 1.9 × 10−3a1.4 × 10−3a3.8 × 10−4a2.4 × 10−4a2.1 × 10−4đ32೿Ġ
+ഈ 32č4.0 × 10−3Ď đ64эҵč5.6 × 10−3Ď b
+ᄵğᇅb
+ࠏ
+҂ཌྷ๝đႿ൞ૄ
+൸
+bइᆔটᆦӪđҀ
+ඔł
+===== page 7
+5 ᄮല༯ཋ 7
+5 ᄮല༯ཋ
+ࠗ
+ߐSi3N4ࡆ
+౷ཌč๭6aĎ b ł
+5.1ו
+ŀրཿğ ৘མҕॉҩ൫ čexperiments/reference_ring.pyࢌ
+ԛҪđ༂ҵᆺՖ 1.60 × 10−4֞ࢆ1.58 × 10−4׵ו
+֞ࢆ5.7 × 10−5č2.8 ПĎ b ł
+5.2ေ౰
+ෘ ∆ν = 2πT (εν/2Q)2ğ
+100 Hz / 1.6 kHz / 16 kHz / 100 kHz / 1 MHz ཌॺ༯ູ 6.7 × 10−5 / 1.27 × 10−4 / 3.1 × 10−4 /
+8.1 × 10−4 / 5.2 × 10−3ᆺ
+ᄝ 1 MHz ൈႵૼཁϺᇹč3.3 ПĎ Ġေ҂ൻႿ3 × 10−3֥ESN 31 đЧᆘཌॺླᄝჿ
+5 kHzק[13]b ł
+6࠹
+֞2 ns֥Mackey–
+Glass֞ࢆ1.6 × 10−4ഡč0֞3%ྟč๭ 6b֥ࠗ
+ေ౰b ł
+6.1ၫՖଧ৚ট
+ŀրཿğNARMA-10čႵᄮലđ31×12ԛԎ๨0.42→0.19Ġ
+ൻೆ࿼Ӿཌ 0.083ުߌ؟ࡆ0.011֥ESN 100č0.010൞
+b ł
+7࠹
+ཊፗ č128
+ჿ၂϶đ ֌ა
+ੀӱč๭ 7Ď b ł
+8໊ᇂ
+ൻೆᄮലೡ૭ č๭8đ ჰҀԉ๭S3ൻೆᄮലğ
+Mackey–Glass ჿ 2.5 × 10−3ሶჿ 2.4 × 10−3໗ᇾჿ 1.7 × 10−3ఖႵ
+ކ7 ໊Ġ0.5֞1 GBdఖჿ 9 ໊đ100 GSa/s֞ࢆ5.5֞6ପ৚
+===== page 8
+9 ษં 8
+Kerrᆔਙჿ 16๔ᄝ 7 × 10−6Ġ3e-3֥
+b ł
+9 ษં
+ਆਫ਼a௶ཌྷ໊ᆜྙఖadropႨ
+؀
+ଆč31֌
+ඍb ł
+10ં
+ཿb ł
+ҕॉ໓ང
+[1] N. Shishavan, E. Manuylovich, M. Kamalian-Kopae, and A. Perego. Optical neuromorphic
+computing based on chaotic frequency combs in nonlinear microresonators. Physical Review
+Research, 7, 2025. doi: 10.1103/6tbg-g9fm. arXiv:2501.17113ൌ.
+[2] A. Cuevas, Hu, Shi, Liu, K. Minoshima, and N. Kuse. Frequency-multiplexed opti-
+cal reservoir computing using a microcomb. Nanophotonics, 14(18):3063, 2025. doi:
+10.1515/nanoph-2025-0260.ൌ.
+[3] Arabieh, A. Lupo, S.-P. Gorza, and S. Massar. Cavity solitons as a nonlinear substrate for
+photonic neuromorphic computing. Optics Express , 34(13):24768, 2026. arXiv:2602.18110 Ġ
+ൌ.
+[4] Arabieh, S.-P. Gorza, and S. Massar. Frequency-multiplexed photonic reservoir computing
+with a synchronously pulse-driven optical cavity. arXiv:2609.12212, 2026.ൌ.
+[5] L. Butschek et al. Photonic reservoir computer based on frequency multiplexing.
+arXiv:2008.11247, 2020.
+[6] A. Lupo et al. Deep photonic reservoir computer based on frequency multiplexing with fully
+analog connection between layers. Optica, 10:1478, 2023.ൌ.
+[7] L. A. Lugiato and R. Lefever. Spatial dissipative structures in passive optical systems.
+Physical Review Letters , 58:2209–2211, 1987.
+[8] S. Coen, H. G. Randle, T. Sylvestre, and M. Erkintalo. Modeling of octave-spanning Kerr
+frequency combs using a generalized mean-field Lugiato–Lefever model. Optics Letters , 38:
+37–39, 2013.
+===== page 9
+ҕॉ໓ང 9
+[9] J. Hult. A fourth-order Runge–Kutta in the interaction picture method for simulating su-
+percontinuum generation in optical fibers. Journal of Lightwave Technology , 25:3770–3775,
+2007.
+[10] H. Jaeger and H. Haas. Harnessing nonlinearity: predicting chaotic systems and saving
+energy in wireless communication. Science, 304:78–80, 2004.
+[11] H. Jaeger. The “echo state” approach to analysing and training recurrent neural networks.
+Technical Report GMD Report 148, German National Research Center for Information Tech-
+nology, 2001.
+[12] D. J. Gauthier, E. Bollt, A. Griﬀith, and W. A. S. Barbosa. Next generation reservoir
+computing. Nature Communications, 12:5564, 2021.
+[13] B. Shen, L. Chang, J. Liu, et al. Integrated turnkey soliton microcombs. Nature, 582:
+365–369, 2020. doi: 10.1038/s41586-020-2358-x.

@@ -1,0 +1,16 @@
+/content/comb/combrc/lle.py:405: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  half = torch.exp(lop * (self.h / 2))
+comb_mask: chosen draw 27 of 64, 233 mW, Q 1.1e+06, 6 readout taps, validation NMSE 1.52e-02
+mask_slow2: chosen draw 26 of 64, 136 mW, Q 7.2e+05, 3 readout taps, validation NMSE 9.42e-04
+no control             open_loop_test_nmse nan   within_tolerance 0.0408   rms_miss 0.917   mean_control 0   tracking_nmse 3.03   largest_miss 2.17   restarts 0
+exact model            open_loop_test_nmse 0   within_tolerance 1   rms_miss 4.58e-17   mean_control 0.225   tracking_nmse 7.54e-33   largest_miss 1.11e-16   restarts 0
+linear predictor       open_loop_test_nmse 0.931   within_tolerance 0.0512   rms_miss 0.528   mean_control 0.173   tracking_nmse 1.01   largest_miss 1.84   restarts 1.04e+03
+ESN, 31 nodes          open_loop_test_nmse 0.00392   within_tolerance 0.997   rms_miss 0.0138   mean_control 0.225   tracking_nmse 0.000689   largest_miss 0.0889   restarts 0
+ring comb_mask, no noise open_loop_test_nmse 0.00703   within_tolerance 0.996   rms_miss 0.0136   mean_control 0.222   tracking_nmse 0.000667   largest_miss 0.109   restarts 0
+ring comb_mask, PIN detectors open_loop_test_nmse 0.0154   within_tolerance 0.419   rms_miss 0.0932   mean_control 0.226   tracking_nmse 0.0313   largest_miss 0.5   restarts 0
+ring comb_mask, pre-amplifier open_loop_test_nmse 0.0149   within_tolerance 0.367   rms_miss 0.11   mean_control 0.229   tracking_nmse 0.0434   largest_miss 1.29   restarts 1
+ring mask_slow2, no noise open_loop_test_nmse 0.00292   within_tolerance 1   rms_miss 0.00256   mean_control 0.225   tracking_nmse 2.35e-05   largest_miss 0.0512   restarts 0
+ring mask_slow2, PIN detectors open_loop_test_nmse 0.00415   within_tolerance 0.713   rms_miss 0.0484   mean_control 0.226   tracking_nmse 0.00844   largest_miss 0.247   restarts 0
+ring mask_slow2, pre-amplifier open_loop_test_nmse 0.00411   within_tolerance 0.844   rms_miss 0.0365   mean_control 0.226   tracking_nmse 0.0048   largest_miss 0.204   restarts 0
+
+saved results/cl_henon_track_drift3.csv and .png

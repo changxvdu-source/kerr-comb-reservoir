@@ -1,0 +1,7 @@
+comb_low R1 pump line       rms error 0.0543 half-linewidths (|Delta| < 0.5: 0.0543)
+comb_low R2 pump + ref      rms error 0.0015 half-linewidths (|Delta| < 0.5: 0.0015)
+comb_low R2b pump + ref, degree 6 rms error 0.0015 half-linewidths (|Delta| < 0.5: 0.0015)
+comb_low R2c pump + ref, nearest neighbours rms error 0.0066 half-linewidths (|Delta| < 0.5: 0.0066)
+comb_low R3 31 lines        rms error 0.0087 half-linewidths (|Delta| < 0.5: 0.0087)
+comb_low R4 31 lines + ref  rms error 0.0015 half-linewidths (|Delta| < 0.5: 0.0015)
+   comb_low: pump line spans 0.35 decades; lines above the floor: 17

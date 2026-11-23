@@ -1,0 +1,8 @@
+hold: exploratory record, Y in [0.03, 5.41]
+no control open-loop       nan  within_tolerance 0.00156  rms_miss 1.41  mean_control 0  rms_miss_last_3_quarters 1.41   (3 s)
+exact      open-loop  0.00e+00  within_tolerance 1  rms_miss 0.0132  mean_control 0.0384  rms_miss_last_3_quarters 0.0133   (11 s)
+/content/comb/combrc/lle.py:405: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  half = torch.exp(lop * (self.h / 2))
+ring mask_slow2: draw 26 of 32, 136 mW, 3 taps, validation NMSE 1.71e-02
+ring mask_slow2, PIN open-loop  2.89e-02  within_tolerance 0.783  rms_miss 0.0405  mean_control 0.0929  rms_miss_last_3_quarters 0.0405   (74 s)
+ring mask_slow2, no noise open-loop  2.96e-02  within_tolerance 0.928  rms_miss 0.0278  mean_control 0.064  rms_miss_last_3_quarters 0.028   (65 s)

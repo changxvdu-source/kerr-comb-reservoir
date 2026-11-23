@@ -1,0 +1,8 @@
+fiber_pam4_17km realistic series 0 {'ESN 31': '1.84e-02', 'ESN 100': '1.91e-02', 'ESN 300': '1.87e-02', 'NG-RC': '1.89e-02'}
+fiber_pam4_17km realistic series 1 {'ESN 31': '1.78e-02', 'ESN 100': '1.73e-02', 'ESN 300': '1.76e-02', 'NG-RC': '1.93e-02'}
+fiber_pam4_17km realistic series 2 {'ESN 31': '1.80e-02', 'ESN 100': '1.85e-02', 'ESN 300': '1.80e-02', 'NG-RC': '2.01e-02'}
+  fiber_pam4_17km    realistic ESN 31   NMSE 1.808e-02  SER 1.27e-03
+  fiber_pam4_17km    realistic ESN 100  NMSE 1.831e-02  SER 1.33e-03
+  fiber_pam4_17km    realistic ESN 300  NMSE 1.812e-02  SER 1.24e-03
+  fiber_pam4_17km    realistic NG-RC    NMSE 1.943e-02  SER 1.69e-03
+saved results/strong_baselines_fiber_pam4_17km.csv

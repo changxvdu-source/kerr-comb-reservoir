@@ -1,0 +1,16 @@
+/content/comb/combrc/lle.py:405: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  half = torch.exp(lop * (self.h / 2))
+comb_mask: chosen draw 27 of 64, 233 mW, Q 1.1e+06, 3 readout taps, validation NMSE 3.68e-01
+mask_slow2: chosen draw 28 of 64, 289 mW, Q 1.0e+06, 6 readout taps, validation NMSE 3.44e-01
+no control             open_loop_test_nmse nan   within_tolerance 0.0531   rms_miss 0.719   mean_control 0   tracking_nmse 1.86   largest_miss 2.01   restarts 0
+exact model            open_loop_test_nmse 0   within_tolerance 1   rms_miss 2.19e-17   mean_control 0.195   tracking_nmse 1.73e-33   largest_miss 2.22e-16   restarts 0
+linear predictor       open_loop_test_nmse 0.943   within_tolerance 0.0454   rms_miss 0.76   mean_control 0.145   tracking_nmse 2.08   largest_miss 2.19   restarts 5.2e+03
+ESN, 31 nodes          open_loop_test_nmse 0.397   within_tolerance 0.216   rms_miss 0.397   mean_control 0.205   tracking_nmse 0.567   largest_miss 3.35   restarts 405
+ring comb_mask, no noise open_loop_test_nmse 0.471   within_tolerance 0.261   rms_miss 0.356   mean_control 0.196   tracking_nmse 0.457   largest_miss 3.09   restarts 67
+ring comb_mask, PIN detectors open_loop_test_nmse 0.531   within_tolerance 0.191   rms_miss 0.329   mean_control 0.178   tracking_nmse 0.39   largest_miss 3.39   restarts 52
+ring comb_mask, pre-amplifier open_loop_test_nmse 0.507   within_tolerance 0.208   rms_miss 0.306   mean_control 0.186   tracking_nmse 0.336   largest_miss 3.36   restarts 43
+ring mask_slow2, no noise open_loop_test_nmse 0.5   within_tolerance 0.225   rms_miss 0.437   mean_control 0.187   tracking_nmse 0.688   largest_miss 3.39   restarts 584
+ring mask_slow2, PIN detectors open_loop_test_nmse 0.587   within_tolerance 0.123   rms_miss 0.608   mean_control 0.247   tracking_nmse 1.33   largest_miss 3.23   restarts 45
+ring mask_slow2, pre-amplifier open_loop_test_nmse 0.533   within_tolerance 0.151   rms_miss 0.462   mean_control 0.202   tracking_nmse 0.768   largest_miss 3.39   restarts 297
+
+saved results/cl_ikeda_track_seed0.csv and .png

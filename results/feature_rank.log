@@ -1,0 +1,5 @@
+comb_uniform    chosen PR  2.17 |r| 0.58   draws: median PR   nan |r| nan
+comb_static     chosen PR  2.34 |r| 0.58   draws: median PR   nan |r| nan
+comb_amplitude  chosen PR  2.37 |r| 0.57   draws: median PR   nan |r| nan
+comb_phase      chosen PR  2.18 |r| 0.60   draws: median PR   nan |r| nan
+comb_mask       chosen PR  2.02 |r| 0.65   draws: median PR   nan |r| nan

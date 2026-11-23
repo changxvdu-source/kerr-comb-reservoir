@@ -1,0 +1,8 @@
+channel_eq realistic series 0 {'ESN 31': '3.85e-03', 'ESN 100': '3.72e-03', 'ESN 300': '3.76e-03', 'NG-RC': '7.75e-03'}
+channel_eq realistic series 1 {'ESN 31': '3.98e-03', 'ESN 100': '3.80e-03', 'ESN 300': '3.90e-03', 'NG-RC': '7.57e-03'}
+channel_eq realistic series 2 {'ESN 31': '4.03e-03', 'ESN 100': '3.86e-03', 'ESN 300': '3.82e-03', 'NG-RC': '7.36e-03'}
+  channel_eq         realistic ESN 31   NMSE 3.953e-03  SER 1.11e-05
+  channel_eq         realistic ESN 100  NMSE 3.793e-03  SER 2.22e-05
+  channel_eq         realistic ESN 300  NMSE 3.825e-03  SER 2.22e-05
+  channel_eq         realistic NG-RC    NMSE 7.559e-03  SER 3.89e-04
+saved results/strong_baselines_channel_eq.csv

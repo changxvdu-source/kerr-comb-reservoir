@@ -1,0 +1,3133 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+Traceback (most recent call last):
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "<string>", line 1, in <module>
+    exitcode = _main(fd, parent_sentinel)
+Traceback (most recent call last):
+    exitcode = _main(fd, parent_sentinel)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    prepare(preparation_data)
+    exitcode = _main(fd, parent_sentinel)
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    prepare(preparation_data)
+    exitcode = _main(fd, parent_sentinel)
+Traceback (most recent call last):
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    exitcode = _main(fd, parent_sentinel)
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    _fixup_main_from_path(data['init_main_from_path'])
+    exitcode = _main(fd, parent_sentinel)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    prepare(preparation_data)
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    exitcode = _main(fd, parent_sentinel)
+    main_content = runpy.run_path(main_path,
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    _fixup_main_from_path(data['init_main_from_path'])
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+    import torch
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    prepare(preparation_data)
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+    import torch
+    main_content = runpy.run_path(main_path,
+    main_content = runpy.run_path(main_path,
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 88, in _run_code
+  File "<frozen runpy>", line 286, in run_path
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "<frozen runpy>", line 286, in run_path
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    main_content = runpy.run_path(main_path,
+  File "<frozen runpy>", line 88, in _run_code
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+    _load_dll_libraries()
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    import torch
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    import torch
+    main_content = runpy.run_path(main_path,
+    main_content = runpy.run_path(main_path,
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    import torch
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+    _load_dll_libraries()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+    import torch
+  File "<frozen runpy>", line 286, in run_path
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    raise err
+  File "<frozen runpy>", line 98, in _run_module_code
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cupti64_2024.1.0.dll" or one of its dependencies.
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    _load_dll_libraries()
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    import torch
+    raise err
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    _load_dll_libraries()
+    _load_dll_libraries()
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cupti64_2024.1.0.dll" or one of its dependencies.
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    import torch
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cupti64_2024.1.0.dll" or one of its dependencies.
+    raise err
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\curand64_10.dll" or one of its dependencies.
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cupti64_2024.1.0.dll" or one of its dependencies.
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    raise err
+    _load_dll_libraries()
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cupti64_2024.1.0.dll" or one of its dependencies.
+    raise err
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cupti64_2024.1.0.dll" or one of its dependencies.
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\curand64_10.dll" or one of its dependencies.
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\curand64_10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cudnn_heuristic64_9.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+    exitcode = _main(fd, parent_sentinel)
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cudnn_adv64_9.dll" or one of its dependencies.
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\shm.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\shm.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cudnn_heuristic64_9.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    exitcode = _main(fd, parent_sentinel)
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    raise err
+    prepare(preparation_data)
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+    raise err
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 45, in <module>
+    import numpy as np
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 144, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 45, in <module>
+    import numpy as np
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 144, in <module>
+    from numpy.__config__ import show as show_config
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy.__config__ import show as show_config
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    from numpy.core._multiarray_umath import (
+    from numpy.core._multiarray_umath import (
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\core\__init__.py", line 178, in <module>
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\core\__init__.py", line 100, in <module>
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 45, in <module>
+    import numpy as np
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 159, in <module>
+    from .core import *
+MemoryError
+    from . import _add_newdocs
+    from numpy._pytesttester import PytestTester
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap_external>", line 1087, in get_code
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1187, in get_data
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+MemoryError
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1087, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1187, in get_data
+MemoryError
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1114] 动态链接库(DLL)初始化例程失败。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\shm.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cudnn_adv64_9.dll" or one of its dependencies.
+OMP: Error #111: Memory allocation failed.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cudnn_heuristic64_9.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\caffe2_nvrtc.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 1932, in <module>
+    from torch._tensor_str import set_printoptions
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1087, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1187, in get_data
+MemoryError
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cudnn_heuristic64_9.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+    raise err
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cudnn_engines_precompiled64_9.dll" or one of its dependencies.
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 45, in <module>
+    import numpy as np
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 144, in <module>
+    from numpy.__config__ import show as show_config
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy.core._multiarray_umath import (
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\core\__init__.py", line 74, in <module>
+    from . import numeric
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\core\numeric.py", line 26, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Microsoft Visual C++ Redistributable is not installed, this may lead to the DLL load failure.
+It can be downloaded at https://aka.ms/vs/16/release/vc_redist.x64.exe
+    from . import shape_base
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\core\shape_base.py", line 12, in <module>
+    from . import fromnumeric as _from_nx
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1124, in get_code
+  File "<frozen importlib._bootstrap_external>", line 753, in _compile_bytecode
+MemoryError
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 45, in <module>
+    import numpy as np
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 171, in <module>
+    from . import random
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\random\__init__.py", line 180, in <module>
+    from . import _pickle
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\random\_pickle.py", line 1, in <module>
+Traceback (most recent call last):
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\core\__init__.py", line 24, in <module>
+    from . import multiarray
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\core\multiarray.py", line 10, in <module>
+    from .mtrand import RandomState
+  File "numpy\\random\\mtrand.pyx", line 1, in init numpy.random.mtrand
+ImportError: DLL load failed while importing bit_generator: 页面文件太小，无法完成操作。
+    from . import overrides
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\core\overrides.py", line 8, in <module>
+    from numpy.core._multiarray_umath import (
+ImportError: DLL load failed while importing _multiarray_umath: 页面文件太小，无法完成操作。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 144, in <module>
+    from numpy.__config__ import show as show_config
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy.core._multiarray_umath import (
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\core\__init__.py", line 50, in <module>
+    raise ImportError(msg)
+ImportError: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.12 from "D:\jupyder-gpu\Scripts\python.exe"
+  * The NumPy version is: "1.26.4"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: DLL load failed while importing _multiarray_umath: 页面文件太小，无法完成操作。
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 45, in <module>
+    import numpy as np
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 149, in <module>
+    raise ImportError(msg) from e
+ImportError: Error importing numpy: you should not try to import numpy from
+        its source directory; please exit the numpy source tree, and relaunch
+        your python interpreter from there.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cudnn_heuristic64_9.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cudnn_heuristic64_9.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\caffe2_nvrtc.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\caffe2_nvrtc.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 45, in <module>
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    import numpy as np
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 144, in <module>
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    from numpy.__config__ import show as show_config
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    from numpy.core._multiarray_umath import (
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\core\__init__.py", line 100, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+    from . import _add_newdocs
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+Microsoft Visual C++ Redistributable is not installed, this may lead to the DLL load failure.
+It can be downloaded at https://aka.ms/vs/16/release/vc_redist.x64.exe
+  File "<frozen importlib._bootstrap_external>", line 1124, in get_code
+  File "<frozen importlib._bootstrap_external>", line 753, in _compile_bytecode
+MemoryError
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 45, in <module>
+    import numpy as np
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 171, in <module>
+    from . import random
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\random\__init__.py", line 180, in <module>
+    from . import _pickle
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\random\_pickle.py", line 1, in <module>
+    from .mtrand import RandomState
+  File "numpy\\random\\mtrand.pyx", line 1, in init numpy.random.mtrand
+  File "bit_generator.pyx", line 1, in init numpy.random.bit_generator
+ImportError: DLL load failed while importing _common: 页面文件太小，无法完成操作。
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\caffe2_nvrtc.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\caffe2_nvrtc.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 45, in <module>
+    import numpy as np
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 171, in <module>
+    from . import random
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\random\__init__.py", line 180, in <module>
+    from . import _pickle
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\random\_pickle.py", line 1, in <module>
+    from .mtrand import RandomState
+  File "numpy\\random\\mtrand.pyx", line 1, in init numpy.random.mtrand
+  File "bit_generator.pyx", line 1, in init numpy.random.bit_generator
+ImportError: DLL load failed while importing _common: 页面文件太小，无法完成操作。
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cudnn_adv64_9.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\__init__.py", line 16, in <module>
+    from . import context
+  File "D:\jupyder\Lib\multiprocessing\context.py", line 6, in <module>
+    from . import reduction
+  File "D:\jupyder\Lib\multiprocessing\reduction.py", line 16, in <module>
+    import socket
+  File "D:\jupyder\Lib\socket.py", line 52, in <module>
+    import _socket
+ImportError: DLL load failed while importing _socket: 页面文件太小，无法完成操作。
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cufft64_11.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 45, in <module>
+    import numpy as np
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 144, in <module>
+    from numpy.__config__ import show as show_config
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy.core._multiarray_umath import (
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\core\__init__.py", line 100, in <module>
+    from . import _add_newdocs
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1087, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1187, in get_data
+MemoryError
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 45, in <module>
+    import numpy as np
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 171, in <module>
+    from . import random
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\random\__init__.py", line 180, in <module>
+    from . import _pickle
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\random\_pickle.py", line 6, in <module>
+    from ._generator import Generator
+ImportError: DLL load failed while importing _generator: 页面文件太小，无法完成操作。
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 45, in <module>
+    import numpy as np
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 169, in <module>
+    from . import fft
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\fft\__init__.py", line 203, in <module>
+    from . import _pocketfft, helper
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\fft\_pocketfft.py", line 36, in <module>
+    from . import _pocketfft_internal as pfi
+ImportError: DLL load failed while importing _pocketfft_internal: 页面文件太小，无法完成操作。
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cudnn_adv64_9.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 45, in <module>
+    import numpy as np
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 144, in <module>
+    from numpy.__config__ import show as show_config
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy.core._multiarray_umath import (
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\core\__init__.py", line 100, in <module>
+    from . import _add_newdocs
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1087, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1187, in get_data
+MemoryError
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cudnn_heuristic64_9.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\caffe2_nvrtc.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\c10.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\caffe2_nvrtc.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\caffe2_nvrtc.dll" or one of its dependencies.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 45, in <module>
+    import numpy as np
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 144, in <module>
+    from numpy.__config__ import show as show_config
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__config__.py", line 4, in <module>
+    from numpy.core._multiarray_umath import (
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\core\__init__.py", line 100, in <module>
+    from . import _add_newdocs
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1087, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1187, in get_data
+MemoryError
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 46, in <module>
+    import torch
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 262, in <module>
+    _load_dll_libraries()
+  File "D:\jupyder-gpu\Lib\site-packages\torch\__init__.py", line 245, in _load_dll_libraries
+    raise err
+OSError: [WinError 1455] 页面文件太小，无法完成操作。 Error loading "D:\jupyder-gpu\Lib\site-packages\torch\lib\cublas64_12.dll" or one of its dependencies.
+Exception in thread Thread-1 (_handle_workers):
+Traceback (most recent call last):
+  File "D:\jupyder\Lib\threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "D:\jupyder\Lib\threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\jupyder\Lib\multiprocessing\pool.py", line 516, in _handle_workers
+    cls._maintain_pool(ctx, Process, processes, pool, inqueue,
+  File "D:\jupyder\Lib\multiprocessing\pool.py", line 340, in _maintain_pool
+    Pool._repopulate_pool_static(ctx, Process, processes, pool,
+  File "D:\jupyder\Lib\multiprocessing\pool.py", line 329, in _repopulate_pool_static
+    w.start()
+  File "D:\jupyder\Lib\multiprocessing\process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\context.py", line 337, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\popen_spawn_win32.py", line 75, in __init__
+    hp, ht, pid, tid = _winapi.CreateProcess(
+                       ^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 1455] 页面文件太小，无法完成操作。
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 45, in <module>
+    import numpy as np
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 171, in <module>
+    from . import random
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\random\__init__.py", line 180, in <module>
+    from . import _pickle
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\random\_pickle.py", line 1, in <module>
+    from .mtrand import RandomState
+ImportError: DLL load failed while importing mtrand: 页面文件太小，无法完成操作。
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 131, in _main
+    prepare(preparation_data)
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 246, in prepare
+    _fixup_main_from_path(data['init_main_from_path'])
+  File "D:\jupyder\Lib\multiprocessing\spawn.py", line 297, in _fixup_main_from_path
+    main_content = runpy.run_path(main_path,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 286, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\光学频率梳\experiments\compare_encodings.py", line 45, in <module>
+    import numpy as np
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\__init__.py", line 171, in <module>
+    from . import random
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\random\__init__.py", line 180, in <module>
+    from . import _pickle
+  File "D:\jupyder-gpu\Lib\site-packages\numpy\random\_pickle.py", line 1, in <module>
+    from .mtrand import RandomState
+  File "numpy\\random\\mtrand.pyx", line 1, in init numpy.random.mtrand
+  File "bit_generator.pyx", line 1, in init numpy.random.bit_generator
+ImportError: DLL load failed while importing _common: 页面文件太小，无法完成操作。

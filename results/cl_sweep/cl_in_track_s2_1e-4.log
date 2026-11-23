@@ -1,0 +1,7 @@
+no control             open_loop_test_nmse nan   within_tolerance 0.0408   rms_miss 0.917   mean_control 0   tracking_nmse 3.03   largest_miss 2.17   restarts 0
+exact model            open_loop_test_nmse 0   within_tolerance 1   rms_miss 4.61e-17   mean_control 0.224   tracking_nmse 7.65e-33   largest_miss 1.11e-16   restarts 0
+linear predictor       open_loop_test_nmse 0.915   within_tolerance 0.078   rms_miss 0.46   mean_control 0.185   tracking_nmse 0.761   largest_miss 1.86   restarts 789
+NG-RC                  open_loop_test_nmse 6.76e-07   within_tolerance 1   rms_miss 0.000455   mean_control 0.224   tracking_nmse 7.45e-07   largest_miss 0.00279   restarts 0
+ESN, 31 nodes          open_loop_test_nmse 1.4e-05   within_tolerance 1   rms_miss 0.00135   mean_control 0.225   tracking_nmse 6.57e-06   largest_miss 0.00688   restarts 0
+
+saved E:\¹âÑ§ÆµÂÊÊá\results\cl_sweep\cl_in_track_s2_1e-4.csv and .png

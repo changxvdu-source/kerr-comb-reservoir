@@ -1,0 +1,7 @@
+hold: exploratory record, Y in [0.02, 5.41]
+no control open-loop       nan  within_tolerance 0.00125  rms_miss 1.41  mean_control 0  rms_miss_last_3_quarters 1.41   (3 s)
+exact      open-loop  0.00e+00  within_tolerance 1  rms_miss 0.0134  mean_control 0.0388  rms_miss_last_3_quarters 0.0135   (11 s)
+linear     open-loop  1.73e-01  within_tolerance 0.0813  rms_miss 0.297  mean_control 0.637  rms_miss_last_3_quarters 0.3   (4 s)
+NG-RC      open-loop  5.97e-02  within_tolerance 0.442  rms_miss 0.065  mean_control 0.108  rms_miss_last_3_quarters 0.0649   (5 s)
+ESN 31     open-loop  2.15e-02  within_tolerance 0.923  rms_miss 0.0283  mean_control 0.0655  rms_miss_last_3_quarters 0.0283   (5 s)
+ESN 100    open-loop  1.59e-02  within_tolerance 0.943  rms_miss 0.0264  mean_control 0.0628  rms_miss_last_3_quarters 0.0263   (4 s)

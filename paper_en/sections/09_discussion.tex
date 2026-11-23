@@ -1,0 +1,71 @@
+\section{Discussion}\label{sec:discussion}
+
+\subsection{Experimental implementation}
+
+The ablation (Section~\ref{sec:ablation}) simplifies the implementation considerably: no per-line modulators are needed. A
+$200~\mathrm{GHz}$ input comb locked to the resonator FSR is split in two; one branch stays static and the other passes one intensity
+or phase modulator carrying the signal. Each branch passes a phase-only (or amplitude-and-phase) spectral shaper that writes the biases
+$b_\mu$ and weights $w_\mu$ of Eq.~\eqref{eq:mask}, and the recombined comb enters the resonator with the pump.
+Commercial liquid-crystal-on-silicon spectral shapers set the amplitude and phase of each channel independently, with passbands down
+to about $10~\mathrm{GHz}$ set in $1~\mathrm{GHz}$ steps, far below the line spacing~\cite{coherent_waveshaper}; C-band models cover
+about $5~\mathrm{THz}$ (1527 to $1568~\mathrm{nm}$), enough for 16 input lines ($3.2~\mathrm{THz}$), while 32 lines or more need wider
+models; their insertion loss (typically about $5~\mathrm{dB}$, up to 6.5 to $7~\mathrm{dB}$) must be included in the input power
+budget. The readout is a demultiplexer after the drop port and 31 photodiodes, the same structure as frequency-multiplexed optical
+reservoirs~\cite{butschek2020,lupo2023}. The hardest part is the input comb itself: it must be aligned with the resonator FSR and
+phase-stable; we did not simulate its noise.
+
+The requirement on the source follows from Section~\ref{sec:laser}: the intrinsic linewidth of the pump laser relative to the
+resonance must be below a few kilohertz. This rules out ordinary DFB lasers ($100~\mathrm{kHz}$ to $1~\mathrm{MHz}$) and calls for a
+narrow-linewidth laser or self-injection locking~\cite{shen2020,jin2021}. Slow frequency drift (much longer than one symbol) must be
+held by a lock to within about 0.3\% of the half-linewidth; otherwise the trained readout fails as the device drifts (in the
+closed-loop experiment of Appendix~\ref{app:closedloop}, a slow drift of 1\% already makes the tracking error 2.4 times worse).
+
+\subsection{Power and rate}
+
+The best single ring needs about $180~\mathrm{mW}$ of total optical input power (stronger drop coupling), and the best points of the
+other mask variants lie between about 20 and $200~\mathrm{mW}$; a Si$_3$N$_4$ ring would need about a quarter of that, but then fewer
+photons reach the detectors as well, requiring better detectors or an optical amplifier (Section~\ref{sec:platform}). The rate is
+limited by the $Q$ needed for the Kerr nonlinearity to about $1~\mathrm{GBd}$. At $1~\mathrm{GBd}$ and $180~\mathrm{mW}$ the optical
+energy per symbol is about $180~\mathrm{pJ}$, before the wall-plug efficiency of the laser, the 31 detection channels and the readout
+computation. We do not compare energy with digital electronics, because that needs a concrete system scenario, and since the resonator
+is not ahead in accuracy (Section~\ref{sec:software}), an energy benefit can only be discussed where the signal is optical and
+digitisation can be avoided.
+
+\subsection{Limitations}
+
+\emph{Simulation only.} Our conclusions rest on the LLE and on the noise model. We chose the detector noise from datasheets
+($0.3~\mu\mathrm{W}$ per line, in the middle of the 0.13 to $0.63~\mu\mathrm{W}$ of 1-GHz-class InGaAs PIN receivers), the laser
+intensity noise and the frequency noise, and checked the latter against realistic spectra; thermorefractive noise of the ring, ASE beat
+noise of optical amplifiers, detector quantum efficiency and the noise of the input comb are not modelled. Our implementation of the
+literature schemes is also uncertain: the original papers do not give all of the cavity length, the $Q$ split and the sampling
+interval, so the comparison should be read as ``in our implementation''.
+
+\emph{Readout.} The readout quantization was computed only for the best single ring and one calibration scheme
+(Section~\ref{sec:quant}); a readout weighted in the optical domain was not simulated.
+
+\emph{Tasks.} The three benchmarks and the fibre-link task are standard; the mask's advantage concentrates on prediction that needs strong
+nonlinearity and short memory, and tasks with long memory rely on external delay lines (Section~\ref{sec:memory}).
+
+\subsection{Directions that did not work out}
+
+Looking for an advantage of the resonator over software, we tried several more directions, all with negative or limited results. We
+summarise them so that others need not repeat them:
+\begin{itemize}
+\item \emph{Closed-loop decisions} (Appendix~\ref{app:closedloop}): the resonator predicts the Hénon map and a controller acts on the
+      prediction. The resonator works in the loop, with decision quality set by the prediction noise; it is slightly ahead of the ESN
+      and NG-RC only when the software input noise is $3\times10^{-3}$, and no longer below about $2.4\times10^{-3}$.
+\item \emph{A resonator controlling another Kerr resonator}: with a single-mode Kerr cavity as the plant, the resonator controller's
+      tracking error ($0.023$) equals that of a 31-node ESN ($0.023$) and of a proportional--derivative controller with feedforward
+      ($0.022$), and is only about 3 times better than a plain proportional--derivative controller ($0.068$); when holding the unstable
+      state, the proportional--derivative controller and the ESN succeed more often (94\% and 91\%) than the resonator (68\%).
+\item \emph{A shared reference ring}: a ring without signal measures the common-mode detuning jitter for subtraction in the readout.
+      Even an ideal reference gains only 2\% (Section~\ref{sec:reference}).
+\item \emph{Sensing}: the same comb estimates an applied detuning offset (rms error in half-linewidths). Over a narrow range ($\pm0.3$
+      half-linewidths) reading 31 lines is only about 1.5 times better than a classical low-power pump-plus-reference reading
+      ($1.0\times10^{-3}$ against $1.5\times10^{-3}$); over a wide range ($\pm2$ half-linewidths) the comb is far better than reading the
+      pump alone ($0.07$ to $0.09$ against above $0.5$), but a low-power comb with almost no Kerr effect is better still ($0.042$), so the
+      benefit comes from probing with many lines, not from the Kerr nonlinearity.
+\end{itemize}
+These results agree with Section~\ref{sec:software}: in accuracy, what a Kerr-microcomb reservoir can reach is close to a small
+software reservoir with quantization noise; its value can only come from the physical layer (an optical signal, latency, energy),
+which this paper does not demonstrate and which we leave as an open question.

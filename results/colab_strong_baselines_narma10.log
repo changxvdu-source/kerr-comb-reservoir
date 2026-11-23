@@ -1,0 +1,8 @@
+narma10 realistic series 0 {'ESN 31': '1.60e-01', 'ESN 100': '1.15e-01', 'ESN 300': '8.82e-02', 'NG-RC': '1.84e-01'}
+narma10 realistic series 1 {'ESN 31': '7.64e-02', 'ESN 100': '1.79e-02', 'ESN 300': '1.13e-02', 'NG-RC': '4.35e-02'}
+narma10 realistic series 2 {'ESN 31': '9.75e-02', 'ESN 100': '3.45e-02', 'ESN 300': '3.41e-02', 'NG-RC': '5.97e-02'}
+  narma10            realistic ESN 31   NMSE 1.060e-01
+  narma10            realistic ESN 100  NMSE 4.139e-02
+  narma10            realistic ESN 300  NMSE 3.239e-02
+  narma10            realistic NG-RC    NMSE 7.822e-02
+saved results/strong_baselines_narma10.csv

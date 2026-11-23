@@ -1,0 +1,6 @@
+fiber_pam4_17km realistic series 0 {'ESN 31': '1.79e-02', 'ESN 100': '1.86e-02', 'ESN 300': '1.81e-02', 'NG-RC': '1.01e+00'}
+  fiber_pam4_17km    realistic ESN 31   NMSE 1.787e-02  SER 4.00e-04
+  fiber_pam4_17km    realistic ESN 100  NMSE 1.861e-02  SER 1.00e-03
+  fiber_pam4_17km    realistic ESN 300  NMSE 1.813e-02  SER 8.00e-04
+  fiber_pam4_17km    realistic NG-RC    NMSE 1.006e+00  SER 7.58e-01
+saved results/sw_fiber_pam4_17km_3e-4_s0.csv

@@ -1,0 +1,5 @@
+task,noise,model,test_nmse,ser,chosen
+channel_eq,none,ESN 31,0.003663883335423954,0.0,"(0.5, 0.3, 1)"
+channel_eq,none,ESN 100,0.003532103781280677,0.0,"(0.5, 1.0, 0)"
+channel_eq,none,ESN 300,0.003574404091596039,0.0,"(0.5, 0.3, 2)"
+channel_eq,none,NG-RC,0.9684628663246552,0.738,"(2, 1)"

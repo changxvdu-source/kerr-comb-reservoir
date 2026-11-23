@@ -1,0 +1,4 @@
+period    30  nominal  gains (0.8, -0.2, 0.0)  tracking NMSE 0.0684  within 0.280
+period    30  pid      gains (0.8, -0.2, 0.1)  tracking NMSE 0.0530  within 0.258
+period    30  twin     gains (0.8, -0.2, 0.0)  tracking NMSE 0.0350  within 0.354
+period    30  true     gains (0.8, -0.2, 0.0)  tracking NMSE 0.0252  within 0.523

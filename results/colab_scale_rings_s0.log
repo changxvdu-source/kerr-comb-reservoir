@@ -1,0 +1,10 @@
+/content/comb/combrc/lle.py:405: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  half = torch.exp(lop * (self.h / 2))
+mask_drop series 0 {1: '1.27e-04', 2: '3.58e-05', 4: '1.43e-05', 8: '8.96e-06', 16: '6.85e-06', 32: '7.63e-06'}
+  mask_drop   1 rings (31 lines): 1.27e-04
+  mask_drop   2 rings (62 lines): 3.58e-05
+  mask_drop   4 rings (124 lines): 1.43e-05
+  mask_drop   8 rings (248 lines): 8.96e-06
+  mask_drop   16 rings (496 lines): 6.85e-06
+  mask_drop   32 rings (992 lines): 7.63e-06
+saved results/scale_rings_s0.csv

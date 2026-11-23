@@ -1,0 +1,10 @@
+
+=== fiber_pam4_17km   cross-run test NMSE, geometric mean over 1 series, noise: realistic   (columns: comb lines x readout taps)   test part 5000 symbols
+                        31x1      31x8          min..max 31x8  fine 31x8 consist.     SER   point chosen on series 2 for 31x8
+linear AR (best)    2.47e-02  2.47e-02
+ESN, same size      2.36e-02  1.78e-02
+with new noise after the choice (31x8, mean of 6 pairs of runs per series):   ESN 1.80e-02, SER 1.27e-03
+link_sin            5.84e-01  2.40e-02       2.4e-02..2.4e-02        nan    0.543  0.0034   Q 4.4e+04, 87 mW, zeta 3.6, depth 0.48   new noise 2.36e-02 (pairs differ by 4%), SER 3.00e-03; chosen on 3 new pairs, val 1.86e-02, other point than single-run choice in 1/1 series
+link_silica         7.61e-01  2.40e-02       2.4e-02..2.4e-02        nan    0.547  0.0036   Q 4.1e+04, 388 mW, zeta 3.4, depth 0.33   new noise 2.33e-02 (pairs differ by 3%), SER 3.20e-03; chosen on 3 new pairs, val 1.89e-02, other point than single-run choice in 1/1 series
+
+saved results/link17_s2_trials.csv, _summary.csv and .png; spectra cached in results/link17_s2_spectra

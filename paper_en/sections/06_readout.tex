@@ -1,0 +1,70 @@
+\section{Readout-side design}\label{sec:readout}
+
+Section~\ref{sec:noise} showed that neither another platform nor more power lowers the error floor with ideal detectors; only the
+readout side and the light source can. This section presents two readout-side changes, how far they lower the error under realistic
+noise and what they imply for the laser, and then asks where the readout's memory comes from.
+
+\subsection{Stronger drop coupling and slower symbols}
+
+The shot-noise half of the floor depends on the number of photons integrated per reading. There are two ways to increase it without
+changing the intracavity dynamics:
+\begin{itemize}
+\item \emph{stronger drop coupling}: widen the range of $\Qtwo$ from a fixed $2.2\times10^{7}$ to $10^{6}$--$2.2\times10^{7}$, so that
+      a larger fraction of the intracavity light leaves through the drop port to the detectors; the price is a lower loaded $Q$ and
+      more power for the same nonlinearity;
+\item \emph{slower symbols}: extend each symbol from $1~\mathrm{ns}$ to $2~\mathrm{ns}$, doubling the integration time per reading and
+      giving the cavity more time to follow the input; the price is half the rate.
+\end{itemize}
+Both re-select among 256 random operating points with the protocol of Section~\ref{sec:protocol}. With ideal detectors they lower
+the Mackey--Glass floor from $1.3\times10^{-4}$ to $8.7\times10^{-5}$ and $6.9\times10^{-5}$; with realistic noise (PIN detectors)
+they reach $1.55\times10^{-4}$ and $1.58\times10^{-4}$, about 2 times better than the mask in Table~\ref{tab:encodings}
+($3.3\times10^{-4}$). Stronger drop coupling selects a point with $Q=1.9\times10^{6}$ and $178~\mathrm{mW}$, the best single ring
+used in Section~\ref{sec:reference} and Table~\ref{tab:laser}; slower symbols select a point with $Q=5\times10^{6}$.
+Against the ESN with the same readout dimension, both tie with it or are slightly better when the ESN's input noise is
+$3\times10^{-3}$ (the ESN reaches $1.9\times10^{-4}$ to $3.2\times10^{-4}$ depending on the random reservoir); below an input noise of
+about $2.5\times10^{-3}$ the ESN is better (Section~\ref{sec:software}).
+
+\subsection{Sensitivity to detuning jitter}
+
+Both changes lower the shot-noise half; the other half (detuning jitter) is unaffected, so the improved error is more sensitive to
+the jitter. Figure~\ref{fig:noise}b sweeps the assumed jitter from 0 to 3\% of the half-linewidth, re-selecting the operating point at
+each level. With stronger drop coupling, jitter of 0, 0.1\%, 0.3\%, 1\% and 3\% gives $5.7\times10^{-5}$, $6.4\times10^{-5}$,
+$8.1\times10^{-5}$, $1.6\times10^{-4}$ and $2.8\times10^{-4}$; with slower symbols $9.5\times10^{-5}$, $9.8\times10^{-5}$,
+$1.1\times10^{-4}$, $1.6\times10^{-4}$ and $3.2\times10^{-4}$; the ESN (input noise $3\times10^{-3}$) stays at $3.2\times10^{-4}$.
+Reducing the jitter from 1\% to 0.3\% and 0.1\% lowers the stronger-drop-coupling error 1.9 and 2.4 times; at 3\% both changes fall
+back to the ESN.
+
+By Eq.~\eqref{eq:linewidth}, at the stronger-drop-coupling point ($Q=1.9\times10^{6}$, $1~\mathrm{ns}$) jitter of 0.1\%, 0.3\%, 1\%
+and 3\% corresponds to intrinsic laser linewidths of about $16~\mathrm{Hz}$, $150~\mathrm{Hz}$, $1.6~\mathrm{kHz}$ and
+$14~\mathrm{kHz}$; the slow-symbol point has a higher $Q$, and the same jitter corresponds to about 0.3 times that linewidth (1\% at
+about $470~\mathrm{Hz}$). Both readout-side changes therefore raise the demands on the laser: the first gains photons through more
+power and stronger coupling at the same $Q$, so its linewidth requirement equals that of Section~\ref{sec:laser}; the second relies on
+a higher $Q$ and longer symbols, a requirement about 3 times tighter. With lasers of tens of kilohertz or more, the jitter eats up the
+benefit of both (Table~\ref{tab:laser}).
+
+\subsection{Where the memory comes from}\label{sec:memory}
+
+The resonator's own memory is its photon lifetime $Q/(2\pi\nu)$ ($1.6$ to $5~\mathrm{ns}$ at the operating points chosen here, i.e.\ a
+few symbols), whereas NARMA-10 needs about ten symbols. Under realistic noise, with a readout of 31 lines $\times$ 12 taps, we tried
+both lengthening the resonator's own memory and adding memory from outside (each variant with the protocol of
+Table~\ref{tab:encodings}: 256 random points, three series, six new pairs):
+\begin{itemize}
+\item Lengthening the resonator's own memory does not help. Unchanged: $0.18$; symbols shortened to $0.5$ and $0.25~\mathrm{ns}$, so
+      that the photon lifetime spans more symbols: $0.22$ and $0.20$; an optical feedback loop that returns the drop-port output to
+      the input through a fibre loop delayed by one symbol: $0.19$.
+\item Memory from outside helps. Without readout taps the error is $0.42$ and 12 taps bring it to $0.19$ (values from the selection
+      step of the same search); also carrying the signal delayed by 1 to 12 symbols on each input line (an input delay line, with the
+      delay drawn at random and chosen on validation error, as for the ESN) brings it to $0.083$. But the ESN with the same delay line
+      reaches $0.029$, so the gap does not close.
+\end{itemize}
+Reading out several rings with different masks and delays together (training four times longer, three series $\times$ six new pairs),
+1, 2, 4 and 8 rings give $0.037$, $0.013$, $0.011$ and $0.012$: four rings tie with a 100-node ESN with the same delay line ($0.010$);
+100- and 300-node ESNs without a delay line give $0.015$ and $0.012$. On Lorenz prediction ten steps ahead, which needs a long memory,
+the same approach goes from $1.3\times10^{-2}$ for one ring to $2.6\times10^{-3}$ for eight, still about 2.5 times worse than a 100-node
+ESN with a delay line ($1.05\times10^{-3}$). Cascading two rings (the first ring's drop-port light driving the second) improves
+Mackey--Glass 1.6 to 4.5 times at equal feature count but barely changes NARMA-10, so it does not add memory either (a preliminary,
+single-series, noise-free result).
+
+This gives the third design rule: \emph{the resonator contributes nonlinear features, not memory; tasks that need memory should add
+delay lines or readout taps outside, and use several rings with different masks for feature diversity}. It also explains why the
+mask's advantage is largest on Mackey--Glass (strong nonlinearity, short memory) and absent on NARMA-10.

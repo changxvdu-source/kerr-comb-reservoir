@@ -1,0 +1,21 @@
+comb  R1 pump line       rms error 0.0724 half-linewidths (|Delta| < 0.5: 0.0724)
+comb  R2 pump + ref      rms error 0.0085 half-linewidths (|Delta| < 0.5: 0.0085)
+comb  R2b pump + ref, degree 6 rms error 0.0032 half-linewidths (|Delta| < 0.5: 0.0032)
+comb  R2c pump + ref, nearest neighbours rms error 0.0100 half-linewidths (|Delta| < 0.5: 0.0100)
+comb  R3 31 lines        rms error 0.0010 half-linewidths (|Delta| < 0.5: 0.0010)
+comb  R4 31 lines + ref  rms error 0.0010 half-linewidths (|Delta| < 0.5: 0.0010)
+   comb: pump line spans 0.29 decades; lines above the floor: 31
+pump  R1 pump line       rms error 0.0692 half-linewidths (|Delta| < 0.5: 0.0692)
+pump  R2 pump + ref      rms error 0.0071 half-linewidths (|Delta| < 0.5: 0.0071)
+pump  R2b pump + ref, degree 6 rms error 0.0026 half-linewidths (|Delta| < 0.5: 0.0026)
+pump  R2c pump + ref, nearest neighbours rms error 0.0088 half-linewidths (|Delta| < 0.5: 0.0088)
+pump  R3 31 lines        rms error 0.0717 half-linewidths (|Delta| < 0.5: 0.0717)
+pump  R4 31 lines + ref  rms error 0.0263 half-linewidths (|Delta| < 0.5: 0.0263)
+   pump: pump line spans 0.37 decades; lines above the floor: 1
+pump_low R1 pump line       rms error 0.0541 half-linewidths (|Delta| < 0.5: 0.0541)
+pump_low R2 pump + ref      rms error 0.0015 half-linewidths (|Delta| < 0.5: 0.0015)
+pump_low R2b pump + ref, degree 6 rms error 0.0015 half-linewidths (|Delta| < 0.5: 0.0015)
+pump_low R2c pump + ref, nearest neighbours rms error 0.0066 half-linewidths (|Delta| < 0.5: 0.0066)
+pump_low R3 31 lines        rms error 0.0562 half-linewidths (|Delta| < 0.5: 0.0562)
+pump_low R4 31 lines + ref  rms error 0.0027 half-linewidths (|Delta| < 0.5: 0.0027)
+   pump_low: pump line spans 0.34 decades; lines above the floor: 1

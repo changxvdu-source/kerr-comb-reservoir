@@ -1,0 +1,6 @@
+group,chosen_trial,chosen_pr,chosen_mean_abs_corr,draws,median_pr,median_mean_abs_corr
+comb_uniform,67,2.1661476300028175,0.5841355234954482,0,nan,nan
+comb_static,46,2.3429565290694834,0.5828658806821384,0,nan,nan
+comb_amplitude,37,2.3745949127178605,0.5650128735901776,0,nan,nan
+comb_phase,65,2.1848384686753626,0.604301593977136,0,nan,nan
+comb_mask,102,2.0161130386761537,0.6453883462607749,0,nan,nan

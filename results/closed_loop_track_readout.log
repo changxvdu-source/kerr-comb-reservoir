@@ -1,0 +1,18 @@
+comb_mask: chosen draw 27 of 64, 233 mW, Q 1.1e+06, 6 readout taps, validation NMSE 1.33e-02
+mask_drop: chosen draw 14 of 64, 164 mW, Q 6.7e+05, 3 readout taps, validation NMSE 5.28e-03
+mask_slow2: chosen draw 26 of 64, 136 mW, Q 7.2e+05, 3 readout taps, validation NMSE 1.05e-03
+no control             open_loop_test_nmse nan   within_tolerance 0.0423   rms_miss 0.916   mean_control 0   tracking_nmse 3.02   largest_miss 2.17   restarts 0
+exact model            open_loop_test_nmse 0   within_tolerance 1   rms_miss 4.61e-17   mean_control 0.225   tracking_nmse 7.64e-33   largest_miss 1.11e-16   restarts 0
+linear predictor       open_loop_test_nmse 0.931   within_tolerance 0.0505   rms_miss 0.529   mean_control 0.173   tracking_nmse 1.01   largest_miss 1.84   restarts 265
+ESN, 31 nodes          open_loop_test_nmse 0.00392   within_tolerance 0.996   rms_miss 0.0139   mean_control 0.225   tracking_nmse 0.000696   largest_miss 0.0767   restarts 0
+ring comb_mask, no noise open_loop_test_nmse 0.00703   within_tolerance 0.996   rms_miss 0.0137   mean_control 0.222   tracking_nmse 0.000673   largest_miss 0.117   restarts 0
+ring comb_mask, PIN detectors open_loop_test_nmse 0.0139   within_tolerance 0.778   rms_miss 0.0416   mean_control 0.22   tracking_nmse 0.00622   largest_miss 0.213   restarts 0
+ring comb_mask, pre-amplifier open_loop_test_nmse 0.0135   within_tolerance 0.76   rms_miss 0.0429   mean_control 0.221   tracking_nmse 0.00662   largest_miss 0.23   restarts 0
+ring mask_drop, no noise open_loop_test_nmse 0.00344   within_tolerance 1   rms_miss 0.00406   mean_control 0.225   tracking_nmse 5.94e-05   largest_miss 0.0481   restarts 0
+ring mask_drop, PIN detectors open_loop_test_nmse 0.00851   within_tolerance 0.955   rms_miss 0.025   mean_control 0.225   tracking_nmse 0.00226   largest_miss 0.134   restarts 0
+ring mask_drop, pre-amplifier open_loop_test_nmse 0.00871   within_tolerance 0.923   rms_miss 0.0282   mean_control 0.225   tracking_nmse 0.00286   largest_miss 0.131   restarts 0
+ring mask_slow2, no noise open_loop_test_nmse 0.00292   within_tolerance 1   rms_miss 0.00255   mean_control 0.225   tracking_nmse 2.33e-05   largest_miss 0.011   restarts 0
+ring mask_slow2, PIN detectors open_loop_test_nmse 0.00366   within_tolerance 1   rms_miss 0.0111   mean_control 0.226   tracking_nmse 0.00044   largest_miss 0.06   restarts 0
+ring mask_slow2, pre-amplifier open_loop_test_nmse 0.00367   within_tolerance 1   rms_miss 0.0111   mean_control 0.226   tracking_nmse 0.000446   largest_miss 0.0494   restarts 0
+
+saved results\closed_loop_track_readout.csv and .png

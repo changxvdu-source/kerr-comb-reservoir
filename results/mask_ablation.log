@@ -1,0 +1,16 @@
+
+=== mackey_glass_h10   cross-run test NMSE, geometric mean over 3 series, noise: realistic   (columns: comb lines x readout taps)
+                        31x1      31x8          min..max 31x8  fine 31x8 consist.     SER   point chosen on series 0 for 31x8
+linear AR (best)    2.08e-01  2.08e-01
+ESN, same size      2.69e-02  3.54e-04
+with new noise after the choice (31x8, mean of 6 pairs of runs per series):   ESN 3.14e-04
+comb_uniform        3.94e-02  4.92e-03       3.3e-03..6.8e-03        nan    0.953     nan   Q 1.8e+06, 52 mW, zeta 0.2, depth 0.81   new noise 4.93e-03 (pairs differ by 13%)
+comb_static         9.47e-03  5.93e-04       3.4e-04..8.5e-04        nan    0.998     nan   Q 2.0e+06, 178 mW, zeta 0.3, depth 0.90   new noise 6.62e-04 (pairs differ by 11%)
+comb_amplitude      7.85e-03  1.50e-03       1.2e-03..2.0e-03        nan    0.993     nan   Q 2.3e+06, 59 mW, zeta 0.4, depth 0.75   new noise 1.31e-03 (pairs differ by 10%)
+comb_phase          4.19e-03  3.06e-04       2.5e-04..3.4e-04        nan    0.997     nan   Q 2.3e+06, 31 mW, zeta 0.8, depth 0.88   new noise 2.80e-04 (pairs differ by 13%)
+comb_mask4          2.81e-02  1.80e-03       1.3e-03..2.7e-03        nan    0.674     nan   Q 3.5e+06, 64 mW, zeta 0.2, depth 0.74   new noise 1.89e-03 (pairs differ by 15%)
+comb_mask8          8.69e-03  1.58e-03       1.4e-03..1.9e-03        nan    0.926     nan   Q 3.9e+06, 24 mW, zeta 0.6, depth 0.22   new noise 1.56e-03 (pairs differ by 13%)
+comb_mask           2.79e-03  4.28e-04       4.2e-04..4.3e-04        nan    0.997     nan   Q 1.7e+06, 55 mW, zeta 0.5, depth 0.09   new noise 4.26e-04 (pairs differ by 11%)
+comb_mask32         5.05e-03  2.13e-04       1.8e-04..2.7e-04        nan    0.999     nan   Q 1.6e+06, 110 mW, zeta 0.5, depth 0.52   new noise 2.31e-04 (pairs differ by 14%)
+
+saved results\mask_ablation_trials.csv, _summary.csv and .png; spectra cached in results/encodings_spectra

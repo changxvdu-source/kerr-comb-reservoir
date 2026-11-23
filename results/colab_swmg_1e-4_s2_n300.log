@@ -1,0 +1,4 @@
+mackey_glass_h10 realistic series 2 {'ESN 300': '7.23e-08', 'NG-RC': '2.29e-01'}
+  mackey_glass_h10   realistic ESN 300  NMSE 7.225e-08
+  mackey_glass_h10   realistic NG-RC    NMSE 2.291e-01
+saved results/swmg_1e-4_s2_n300.csv

@@ -1,0 +1,8 @@
+comb_mask series 0 {1: '6.20e-03', 2: '6.04e-03', 4: '8.29e-03', 8: '9.60e-03'}
+comb_mask series 1 {1: '6.16e-03', 2: '7.84e-03', 4: '8.93e-03', 8: '8.60e-03'}
+comb_mask series 2 {1: '5.19e-03', 2: '6.02e-03', 4: '7.78e-03', 8: '9.11e-03'}
+  comb_mask   1 rings (31 lines): 5.83e-03  SER 1.67e-04
+  comb_mask   2 rings (62 lines): 6.58e-03  SER 1.89e-04
+  comb_mask   4 rings (124 lines): 8.32e-03  SER 2.67e-04
+  comb_mask   8 rings (248 lines): 9.10e-03  SER 7.22e-04
+saved results/mr_ce.csv

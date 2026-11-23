@@ -1,0 +1,14 @@
+comb_mask: chosen draw 5 of 64, 97 mW, Q 6.5e+05, 3 readout taps, validation NMSE 8.52e-03
+mask_slow2: chosen draw 26 of 64, 136 mW, Q 7.2e+05, 3 readout taps, validation NMSE 5.11e-04
+no control             open_loop_test_nmse nan   within_tolerance 0.074   rms_miss 0.808   mean_control 0   rms_miss_while_held 0.0282   losses_per_1000_steps 53.1   restarts 0
+exact model            open_loop_test_nmse 0   within_tolerance 0.996   rms_miss 0.0485   mean_control 0.00518   rms_miss_while_held 0.000713   losses_per_1000_steps 0.375   restarts 0
+linear predictor       open_loop_test_nmse nan   within_tolerance 0.997   rms_miss 0.037   mean_control 0.251   rms_miss_while_held 0.016   losses_per_1000_steps 1.75   restarts 0
+ESN, 31 nodes          open_loop_test_nmse 0.00079   within_tolerance 0.995   rms_miss 0.0509   mean_control 0.241   rms_miss_while_held 0.0158   losses_per_1000_steps 1.62   restarts 0
+ring comb_mask, no noise open_loop_test_nmse 0.000307   within_tolerance 0.996   rms_miss 0.0506   mean_control 0.00595   rms_miss_while_held 0.00082   losses_per_1000_steps 0.375   restarts 0
+ring comb_mask, PIN detectors open_loop_test_nmse 0.0128   within_tolerance 0.837   rms_miss 0.143   mean_control 0.529   rms_miss_while_held 0.0248   losses_per_1000_steps 98.6   restarts 0
+ring comb_mask, pre-amplifier open_loop_test_nmse 0.0109   within_tolerance 0.954   rms_miss 0.0629   mean_control 0.4   rms_miss_while_held 0.0217   losses_per_1000_steps 39.4   restarts 0
+ring mask_slow2, no noise open_loop_test_nmse 0.000214   within_tolerance 0.996   rms_miss 0.0486   mean_control 0.00889   rms_miss_while_held 0.000771   losses_per_1000_steps 0.375   restarts 0
+ring mask_slow2, PIN detectors open_loop_test_nmse 0.00061   within_tolerance 0.995   rms_miss 0.0516   mean_control 0.174   rms_miss_while_held 0.00935   losses_per_1000_steps 0.375   restarts 0
+ring mask_slow2, pre-amplifier open_loop_test_nmse 0.000543   within_tolerance 0.996   rms_miss 0.0497   mean_control 0.176   rms_miss_while_held 0.00949   losses_per_1000_steps 0.375   restarts 0
+
+saved results/closed_loop_hold_jitter0.03.csv and .png

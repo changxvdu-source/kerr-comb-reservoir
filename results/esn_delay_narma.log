@@ -1,0 +1,19 @@
+narma10 series 0: chosen d=9, test 1.032e-01
+narma10 series 1: chosen d=9, test 9.800e-03
+narma10 series 2: chosen d=9, test 2.334e-02
+
+=== narma10, noise realistic, ESN 31 nodes, 12 taps, geometric mean over 3 series, 6 new noise realisations each
+delay chosen on validation (d = [9, 9, 9]): test NMSE 2.869e-02
+  d =  0: 1.534e-01
+  d =  1: 1.808e-01
+  d =  2: 1.510e-01
+  d =  3: 1.262e-01
+  d =  4: 1.444e-01
+  d =  5: 1.092e-01
+  d =  6: 1.050e-01
+  d =  7: 6.116e-02
+  d =  8: 4.379e-02
+  d =  9: 2.869e-02
+  d = 10: 1.815e-01
+  d = 11: 2.018e-01
+  d = 12: 2.098e-01

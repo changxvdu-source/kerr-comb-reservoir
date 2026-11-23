@@ -1,0 +1,2 @@
+linewidth_hz,series,trial,q_total,p_total_mw,jitter_rms,test_nmse,candidates,screen_q_of_top
+1000000.0,0,123,1202021.700486836,273.74483301079107,0.15680624858288075,0.0017672056378033683,56,1.2e+06 1.9e+06 2.7e+06 2.2e+06 1.6e+06

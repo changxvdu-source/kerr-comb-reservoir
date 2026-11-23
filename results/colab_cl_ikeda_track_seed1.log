@@ -1,0 +1,16 @@
+/content/comb/combrc/lle.py:405: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  half = torch.exp(lop * (self.h / 2))
+comb_mask: chosen draw 27 of 64, 233 mW, Q 1.1e+06, 3 readout taps, validation NMSE 3.93e-01
+mask_slow2: chosen draw 26 of 64, 136 mW, Q 7.2e+05, 3 readout taps, validation NMSE 3.97e-01
+no control             open_loop_test_nmse nan   within_tolerance 0.0533   rms_miss 0.718   mean_control 0   tracking_nmse 1.85   largest_miss 2   restarts 0
+exact model            open_loop_test_nmse 0   within_tolerance 1   rms_miss 2.19e-17   mean_control 0.195   tracking_nmse 1.73e-33   largest_miss 2.22e-16   restarts 0
+linear predictor       open_loop_test_nmse 0.942   within_tolerance 0.0565   rms_miss 0.788   mean_control 0.151   tracking_nmse 2.24   largest_miss 2.31   restarts 5.72e+03
+ESN, 31 nodes          open_loop_test_nmse 0.284   within_tolerance 0.238   rms_miss 0.269   mean_control 0.179   tracking_nmse 0.26   largest_miss 1.51   restarts 0
+ring comb_mask, no noise open_loop_test_nmse 0.418   within_tolerance 0.217   rms_miss 0.354   mean_control 0.196   tracking_nmse 0.452   largest_miss 3.13   restarts 62
+ring comb_mask, PIN detectors open_loop_test_nmse 0.35   within_tolerance 0.184   rms_miss 0.328   mean_control 0.181   tracking_nmse 0.388   largest_miss 3.19   restarts 30
+ring comb_mask, pre-amplifier open_loop_test_nmse 0.339   within_tolerance 0.187   rms_miss 0.305   mean_control 0.2   tracking_nmse 0.336   largest_miss 3.38   restarts 6
+ring mask_slow2, no noise open_loop_test_nmse 0.285   within_tolerance 0.202   rms_miss nan   mean_control nan   tracking_nmse nan   largest_miss nan   restarts 0
+ring mask_slow2, PIN detectors open_loop_test_nmse 0.348   within_tolerance 0.0699   rms_miss nan   mean_control nan   tracking_nmse nan   largest_miss nan   restarts 4
+ring mask_slow2, pre-amplifier open_loop_test_nmse 0.316   within_tolerance 0.101   rms_miss nan   mean_control nan   tracking_nmse nan   largest_miss nan   restarts 11
+
+saved results/cl_ikeda_track_seed1.csv and .png

@@ -1,0 +1,14 @@
+comb_mask {'group': 'comb_mask', 'trial': 45, 'p_total_mW': '2.32e+01', 'q_total': '6.05e+06', 'gamma_L': '1.65e-05', 'detected_uW_per_line': '1.68e+02', 'detected_photons_per_line_per_symbol': '1.31e+06', 'drop_fraction': '2.72e-01', 'none': '1.26e-05', 'rin': '1.87e-05', 'detuning': '5.73e-05', 'field': '2.48e-05', 'shot': '6.77e-05', 'optical': '7.75e-05', 'optical + shot': '1.51e-04'}
+mask_sin {'group': 'mask_sin', 'trial': 0, 'p_total_mW': '5.44e+00', 'q_total': '2.16e+06', 'gamma_L': '7.14e-04', 'detected_uW_per_line': '2.10e+01', 'detected_photons_per_line_per_symbol': '1.64e+05', 'drop_fraction': '9.70e-02', 'none': '1.03e-05', 'rin': '1.61e-05', 'detuning': '7.43e-05', 'field': '2.86e-05', 'shot': '7.07e-05', 'optical': '9.25e-05', 'optical + shot': '1.40e-04'}
+mask_bright {'group': 'mask_bright', 'trial': 248, 'p_total_mW': '1.94e+02', 'q_total': '9.49e+05', 'gamma_L': '1.65e-05', 'detected_uW_per_line': '7.48e+02', 'detected_photons_per_line_per_symbol': '5.83e+06', 'drop_fraction': '4.27e-02', 'none': '5.30e-06', 'rin': '1.12e-05', 'detuning': '5.11e-05', 'field': '1.67e-05', 'shot': '5.30e-05', 'optical': '7.92e-05', 'optical + shot': '1.45e-04'}
+mask_drop {'group': 'mask_drop', 'trial': 250, 'p_total_mW': '1.14e+02', 'q_total': '2.50e+06', 'gamma_L': '1.65e-05', 'detected_uW_per_line': '1.46e+03', 'detected_photons_per_line_per_symbol': '1.14e+07', 'drop_fraction': '4.23e-01', 'none': '3.23e-06', 'rin': '6.24e-06', 'detuning': '4.83e-05', 'field': '1.53e-05', 'shot': '2.53e-05', 'optical': '6.96e-05', 'optical + shot': '9.21e-05'}
+mask_slow2 {'group': 'mask_slow2', 'trial': 32, 'p_total_mW': '1.45e+01', 'q_total': '5.01e+06', 'gamma_L': '1.65e-05', 'detected_uW_per_line': '1.94e+02', 'detected_photons_per_line_per_symbol': '3.03e+06', 'drop_fraction': '2.26e-01', 'none': '3.50e-06', 'rin': '5.70e-06', 'detuning': '2.97e-05', 'field': '9.60e-06', 'shot': '2.09e-05', 'optical': '4.17e-05', 'optical + shot': '6.46e-05'}
+
+cross-run test NMSE (31x8), geometric mean over 3 series, 6 new run pairs each
+group                  none            rin       detuning          field           shot        optical optical + shot   uW/line  photons/line
+comb_mask          1.26e-05       1.87e-05       5.73e-05       2.48e-05       6.77e-05       7.75e-05       1.51e-04    168.25      1.31e+06
+mask_sin           1.03e-05       1.61e-05       7.43e-05       2.86e-05       7.07e-05       9.25e-05       1.40e-04     21.05      1.64e+05
+mask_bright        5.30e-06       1.12e-05       5.11e-05       1.67e-05       5.30e-05       7.92e-05       1.45e-04    747.74      5.83e+06
+mask_drop          3.23e-06       6.24e-06       4.83e-05       1.53e-05       2.53e-05       6.96e-05       9.21e-05   1463.09      1.14e+07
+mask_slow2         3.50e-06       5.70e-06       2.97e-05       9.60e-06       2.09e-05       4.17e-05       6.46e-05    194.02      3.03e+06
+saved results/floor_breakdown.csv

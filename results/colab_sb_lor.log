@@ -1,0 +1,8 @@
+lorenz_h10 realistic series 0 {'ESN 31': '4.10e-03', 'ESN 100': '1.39e-03', 'ESN 300': '2.17e-03', 'NG-RC': '3.34e-01'}
+lorenz_h10 realistic series 1 {'ESN 31': '6.22e-03', 'ESN 100': '2.00e-03', 'ESN 300': '2.66e-03', 'NG-RC': '4.18e-01'}
+lorenz_h10 realistic series 2 {'ESN 31': '6.90e-03', 'ESN 100': '6.73e-03', 'ESN 300': '3.68e-03', 'NG-RC': '4.31e-01'}
+  lorenz_h10         realistic ESN 31   NMSE 5.606e-03
+  lorenz_h10         realistic ESN 100  NMSE 2.656e-03
+  lorenz_h10         realistic ESN 300  NMSE 2.770e-03
+  lorenz_h10         realistic NG-RC    NMSE 3.919e-01
+saved results/sb_lor.csv

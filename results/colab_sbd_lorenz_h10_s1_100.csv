@@ -1,0 +1,4 @@
+task,noise,model,test_nmse,ser,chosen
+lorenz_h10,realistic,ESN 31,0.003968316106226549,nan,"(0.8, 1.0, 0)"
+lorenz_h10,realistic,ESN 100 + delay,0.00043786977820709394,nan,"(0.95, 1.0, 0, 1)"
+lorenz_h10,realistic,NG-RC,0.37811236975521384,nan,"(8, 1)"

@@ -1,0 +1,5 @@
+task,noise,model,test_nmse,ser,chosen
+fiber_pam4_17km,realistic,ESN 31,0.017873625326712272,0.0004,"(0.5, 0.3, 2)"
+fiber_pam4_17km,realistic,ESN 100,0.01860883397067279,0.001,"(0.5, 0.1, 0)"
+fiber_pam4_17km,realistic,ESN 300,0.01813633208754067,0.0008,"(0.5, 0.1, 0)"
+fiber_pam4_17km,realistic,NG-RC,1.0057741067070307,0.7581666666666665,"(2, 1)"

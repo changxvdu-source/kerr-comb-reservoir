@@ -1,0 +1,8 @@
+mask_drop trial 211: 178 mW, jitter 1.0% of the half-linewidth, correlation 1.0 symbol(s)
+/content/comb/combrc/lle.py:405: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1504.)
+  half = torch.exp(lop * (self.h / 2))
+series 1: lines 1.58e-04   + jitter 1.57e-04   + jitter x lines 1.68e-04   no jitter 5.24e-05
+lines              1.58e-04   (1.00x better than the plain readout)
++ jitter           1.57e-04   (1.01x better than the plain readout)
++ jitter x lines   1.68e-04   (0.94x better than the plain readout)
+no jitter          5.24e-05   (3.01x better than the plain readout)
