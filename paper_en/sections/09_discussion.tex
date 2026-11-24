@@ -28,7 +28,7 @@ photons reach the detectors as well, requiring better detectors or an optical am
 limited by the $Q$ needed for the Kerr nonlinearity to about $1~\mathrm{GBd}$. At $1~\mathrm{GBd}$ and $180~\mathrm{mW}$ the optical
 energy per symbol is about $180~\mathrm{pJ}$, before the wall-plug efficiency of the laser. Thirty-one receivers with roughly 10-bit
 converters at $1~\mathrm{GSa/s}$ (Section~\ref{sec:quant}) add an amount of the same order or larger, whereas a 31-node ESN with 8 taps
-needs on the order of $10^{3}$ multiply--accumulate operations per symbol, which digital hardware performs at well below a nanojoule.
+needs on the order of $10^{3}$ multiply--accumulate operations per symbol, which digital hardware performs at well below a nanojoule~\cite{horowitz2014}.
 This order-of-magnitude estimate does not favour the resonator either, so an energy argument, like an accuracy argument, would need a
 setting where the signal is optical to begin with and the readout is weighted optically with a single converter.
 
@@ -47,7 +47,7 @@ states less than the readouts used originally. The gap of two to three orders of
 
 \emph{Noise model.} The detuning jitter is defined relative to the linewidth (Section~\ref{sec:noise-model}), so high-$Q$ points see a
 smaller absolute frequency noise than a fixed laser would give; Section~\ref{sec:laser} uses absolute spectra only for the best ring.
-We chose the detector noise from datasheets ($0.3~\mu\mathrm{W}$ per line, in the middle of the 0.13 to $0.63~\mu\mathrm{W}$ of
+We chose the detector noise from datasheets ($0.3~\upmu\mathrm{W}$ per line, in the middle of the 0.13 to $0.63~\upmu\mathrm{W}$ of
 1-GHz-class InGaAs PIN receivers).
 
 \emph{Unmodelled physics.} The LLE used here has no thermal, Raman or mode-crossing terms. At 20 to $180~\mathrm{mW}$ a silica resonator
@@ -68,7 +68,7 @@ the ESN's input weights got the same budget, its recurrent matrix and the resona
 which, if anything, favours the resonator. Results are geometric means over three series with six new pairs each; we report the
 run-to-run spread but no formal significance tests, and treat ratios below about 1.5 as ties.
 
-\emph{Readout.} The readout quantization was computed only for the best single ring and one calibration scheme
+\emph{Readout.} The readout quantisation was computed only for the best single ring and one calibration scheme
 (Section~\ref{sec:quant}); a readout weighted in the optical domain was not simulated.
 
 \subsection{What the resonator computes: a structured polynomial kernel}\label{sec:kernel}
@@ -87,23 +87,19 @@ lines linearly), but at the operating points the Kerr correction is of order one
 than the numbers.
 
 In machine-learning terms this is projection, multiplication and a linear combination, the skeleton of linear
-attention~\cite{katharopoulos2020} or of a polynomial (next-generation) reservoir~\cite{gauthier2021,wang2025ngrc}, with a structured,
+attention~\cite{vaswani2017,katharopoulos2020} or of a polynomial (next-generation) reservoir~\cite{gauthier2021,wang2025ngrc}, with a structured,
 low-rank kernel and no softmax. A recent experiment uses a Kerr cavity as the nonlinear weighting of transformer
 attention~\cite{williams2026}, with the query-key products computed digitally; in the masked microresonator the products themselves
 are formed optically. Input delay lines (Section~\ref{sec:bidir}) are the means to let these products act across time; whether this
 structure can be made a useful trainable layer, rather than a fixed reservoir, is open.
 
-\subsection{Directions that did not work out}
+\subsection{Negative results}
 
-Looking for an advantage of the resonator over software, we also tried two directions that we report briefly so that others need
-not repeat them. In closed-loop control (Appendix~\ref{app:closedloop}) the resonator predicts the Hénon map and a controller acts on
+Looking for an advantage of the resonator over software, we also tried the following. In closed-loop control (Appendix~\ref{app:closedloop}) the resonator predicts the Hénon map and a controller acts on
 the prediction; the resonator works in the loop, with decision quality set by the prediction noise, and is slightly ahead of the ESN
 and NG-RC only when the software input noise is $3\times10^{-3}$, no longer below about $2.4\times10^{-3}$. A shared reference ring
 that measures the common-mode detuning jitter for subtraction gains only 2\% even when ideal (Section~\ref{sec:reference}).
-Two further exploratory directions (a resonator controlling another Kerr resonator, and detuning sensing with the comb) gave no
-advantage attributable to the Kerr nonlinearity; they are documented with their scripts in the code repository and are not part of
-the claims of this paper.
 
 These results agree with Section~\ref{sec:software}: in accuracy, what the resonators studied here reach is close to a small software
-reservoir with quantization noise. Whether an advantage exists at the physical layer (a signal that is already optical, latency,
+reservoir with quantisation noise. Whether an advantage exists at the physical layer (a signal that is already optical, latency,
 energy with optical weighting) is not tested here and remains an open question.

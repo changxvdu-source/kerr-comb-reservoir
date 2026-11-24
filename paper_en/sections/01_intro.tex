@@ -2,8 +2,9 @@
 
 Reservoir computing trains only a linear readout: the input drives a fixed nonlinear dynamical system that unfolds the input
 history into high-dimensional features~\cite{jaeger2001,jaeger2004}. Because the dynamical system itself is not trained, it is
-well suited to physical hardware~\cite{tanaka2019}, and photonics is one of the most studied platforms~\cite{vandersande2017},
-from delay systems with a single nonlinear node~\cite{appeltant2011} to passive silicon chips~\cite{vandoorne2014}.
+well suited to physical hardware~\cite{tanaka2019}, and photonics is one of the most studied platforms~\cite{vandersande2017,shastri2021},
+from delay systems with a single nonlinear node~\cite{appeltant2011,larger2012,paquot2012,brunner2013} to passive silicon
+chips~\cite{vandoorne2014}.
 Frequency-multiplexed schemes use the frequency components of light as nodes, obtaining tens of features from one optical path;
 programmable spectral filters then set input and output weights per frequency
 component~\cite{butschek2020,lupo2021,lupo2023}. Optical next-generation reservoir computing follows a related
@@ -11,11 +12,12 @@ idea~\cite{cox2024,wang2025ngrc}.
 
 Kerr microresonators are natural candidates for such schemes. Four-wave mixing transfers pump power to tens of comb lines,
 providing a strong on-chip nonlinearity, and the line spacing is wide enough to demultiplex and detect the lines one by
-one~\cite{kippenberg2018,pasquazi2018}. Several Kerr-cavity reservoirs have been proposed recently, in microresonators and in fibre cavities (Table~\ref{tab:related}): a chaotic
+one~\cite{kippenberg2018,pasquazi2018}; microcombs already serve as multi-wavelength sources for photonic neural-network
+accelerators~\cite{xu2021,feldmann2021}. Several Kerr-cavity reservoirs have been proposed recently, in microresonators and in fibre cavities (Table~\ref{tab:related}): a chaotic
 comb whose pump power is modulated~\cite{shishavan2025}, a single soliton whose pump detuning is modulated~\cite{cuevas2025}, a
-cavity soliton whose pump phase is modulated~\cite{arabieh2026soliton}, and a frequency-multiplexed fibre cavity driven by a
+cavity soliton~\cite{leo2010} whose pump phase is modulated~\cite{arabieh2026soliton}, and a frequency-multiplexed fibre cavity driven by a
 synchronous pulse train~\cite{arabieh2026pulse}. In all of them the signal enters through a single degree of freedom of the drive.
-In the chaotic regime the comb lines grow out of noise through modulation instability (MI), so the same input can give different
+In the chaotic regime the comb lines grow out of noise through modulation instability (MI)~\cite{haelterman1992}, so the same input can give different
 outputs in two runs, which violates the consistency a reservoir needs~\cite{uchida2004,jaeger2001}
 (Section~\ref{sec:mechanism}). In the soliton regime the output is reproducible, but the device must stay inside the soliton
 existence range~\cite{herr2014}, which limits how strongly the input may perturb it.
@@ -40,7 +42,7 @@ this work & random complex weight per input line & coherently seeded Kerr comb &
 \end{table}
 
 Per-line spectral weighting is therefore not new in itself~\cite{butschek2020,lupo2021}, and driving Kerr cavities with pulse
-trains or combs is known~\cite{obrzud2017}; to our knowledge, driving a Kerr resonator with many random-phase coherent input lines
+trains, seeded or multi-tone pumps is known~\cite{obrzud2017,papp2013,hansson2014}; to our knowledge, driving a Kerr resonator with many random-phase coherent input lines
 that sit on its resonances has not been studied as a reservoir computer. A second gap is the comparison with software. The works
 above differ in how operating points are selected, on which noise realisations results are reported and how much noise the software
 baseline receives, and we find that the last of these alone can reverse the conclusion of the comparison
@@ -62,7 +64,7 @@ We study these questions with simulations. Our contributions are:
       half of the floor is detuning jitter, which a linear readout given the exact jitter sequence did not remove, so the laser
       linewidth must be a few kilohertz or less for our device; readout-side changes lower the error by about a factor of two.
 \item \emph{A software calibration} (Section~\ref{sec:software}): the best resonator found matches a 31-node echo state network (ESN)
-      fed through a converter with about 7 effective bits, and software stays ahead when the resonator's readout is quantized too.
+      fed through a converter with about 7 effective bits, and software stays ahead when the resonator's readout is quantised too.
 \item \emph{Two directions and an optimised mask} (Section~\ref{sec:bidir}): the signal and the jitter appear to act through the
       same variable, the effective detuning, and none of the operating points we examined avoids the jitter; driving the two
       directions of one ring with inverted signals, reading out both (62 lines) and optimising the mask lowers the error 21-fold

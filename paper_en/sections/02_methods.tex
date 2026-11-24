@@ -34,7 +34,7 @@ drop-port power, logarithmic detection and linear readout; dashed arrows mark wh
 \label{fig:scheme}
 \end{figure}
 
-The intracavity field is described by the mean-field Lugiato--Lefever equation (LLE)~\cite{lugiato1987,coen2013}.
+The intracavity field is described by the mean-field Lugiato--Lefever equation (LLE)~\cite{lugiato1987,coen2013,chembo2013}.
 With the round-trip number $n=t/t_R$ as slow time, the field amplitude $\tilde E_\mu$ of longitudinal mode $\mu$ (counted from the
 pump), with angular frequency offset $\omega_\mu=2\pi\,\mathrm{FSR}\,\mu$, obeys
 \begin{equation}
@@ -118,8 +118,8 @@ validation part from $\{10^{-8},10^{-6},10^{-4},10^{-2},1\}$. Section~\ref{sec:m
       resonator, and a full re-selection under a fixed laser is left for future work;
 \item intracavity field noise at the vacuum level: half a photon per mode and loss channel;
 \item shot noise, with each reading integrated over one symbol ($1~\mathrm{ns}$);
-\item detector electronic noise of $0.3~\mu\mathrm{W}$ per line (rms, referred to optical power). For 1-GHz-class InGaAs p-i-n (PIN)
-      photodiode receivers the datasheet noise-equivalent power corresponds to $0.13$ to $0.63~\mu\mathrm{W}$ per line, so $0.3~\mu\mathrm{W}$
+\item detector electronic noise of $0.3~\upmu\mathrm{W}$ per line (rms, referred to optical power). For 1-GHz-class InGaAs p-i-n (PIN)
+      photodiode receivers the datasheet noise-equivalent power corresponds to $0.13$ to $0.63~\upmu\mathrm{W}$ per line, so $0.3~\upmu\mathrm{W}$
       is mid-range.
 \end{itemize}
 Amplified-spontaneous-emission beat noise and detector quantum efficiency are not modelled. Section~\ref{sec:noise} breaks down
@@ -160,7 +160,7 @@ independent noise (cross-run NMSE). The consistency of two runs $a$ and $b$ driv
 the correlation coefficient between their (log-compressed, untapped) features, $C=\frac{1}{31}\sum_\mu
 \mathrm{corr}_t\big(x^{(a)}_{\mu,t},x^{(b)}_{\mu,t}\big)$, skipping lines that do not vary~\cite{uchida2004}.
 
-Operating points are chosen in two steps, so that a point that was merely lucky is not picked: for each encoding we draw 256
+Operating points are chosen in two steps, to avoid selecting a point whose low error is due to a favourable noise realisation: for each encoding we draw 256
 random operating points, run each once (a pair of runs) and keep the 16 best on validation error; these 16 are run on three new
 pairs, and the one with the lowest mean validation error is chosen; we report its mean test error on six further new pairs.
 Every setting is repeated on three independent series and the geometric mean is reported.

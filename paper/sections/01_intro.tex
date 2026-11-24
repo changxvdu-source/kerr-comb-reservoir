@@ -1,15 +1,15 @@
 \section{引言}\label{sec:intro}
 
 储备池计算只训练一个线性读出层，把输入送进一个固定的非线性动力系统，让它把输入的历史展开成高维特征~\cite{jaeger2001,jaeger2004}。
-因为动力系统本身不需要训练，它很适合用物理器件实现~\cite{tanaka2019}，光学是其中研究最多的方向之一~\cite{vandersande2017}，
-从单个非线性节点加延迟环的系统~\cite{appeltant2011}到无源硅光芯片~\cite{vandoorne2014}都有实现。
+因为动力系统本身不需要训练，它很适合用物理器件实现~\cite{tanaka2019}，光学是其中研究最多的方向之一~\cite{vandersande2017,shastri2021}，
+从单个非线性节点加延迟环的系统~\cite{appeltant2011,larger2012,paquot2012,brunner2013}到无源硅光芯片~\cite{vandoorne2014}都有实现。
 频率复用的方案把光的各个频率分量当作节点，用一条光路同时得到几十个特征，并用可编程谱滤波器给每个频率分量设定输入和输出权重~\cite{butschek2020,lupo2021,lupo2023}；
 光学的下一代储备池计算也沿着相近的思路发展~\cite{cox2024,wang2025ngrc}。
 
-Kerr 微环是这类方案的自然候选：它的四波混频把泵浦的能量转移到几十根梳齿上，提供强的片上非线性，梳齿间隔又宽到可以逐根解复用读出~\cite{kippenberg2018,pasquazi2018}。
+Kerr 微环是这类方案的自然候选：它的四波混频把泵浦的能量转移到几十根梳齿上，提供强的片上非线性，梳齿间隔又宽到可以逐根解复用读出~\cite{kippenberg2018,pasquazi2018}；微梳也已用作光子神经网络加速器的多波长光源~\cite{xu2021,feldmann2021}。
 近两年已有几种 Kerr 腔储备池方案，分别基于微腔和光纤腔（表~\ref{tab:related}）：调制泵浦功率、工作在混沌区的光梳~\cite{shishavan2025}，调制泵浦失谐、工作在单孤子态~\cite{cuevas2025}，
-调制泵浦相位、工作在腔孤子态~\cite{arabieh2026soliton}，以及用同步脉冲串驱动的频率复用光纤腔~\cite{arabieh2026pulse}。
-它们的信号都只通过驱动的一个自由度进入器件。在混沌区，梳齿由调制不稳定性从噪声中长出来，同样的输入两次给出的输出可能不同，
+调制泵浦相位、工作在腔孤子态~\cite{leo2010,arabieh2026soliton}，以及用同步脉冲串驱动的频率复用光纤腔~\cite{arabieh2026pulse}。
+它们的信号都只通过驱动的一个自由度进入器件。在混沌区，梳齿由调制不稳定性~\cite{haelterman1992}从噪声中长出来，同样的输入两次给出的输出可能不同，
 不满足储备池需要的一致性~\cite{uchida2004,jaeger2001}（第~\ref{sec:mechanism}~节）；在孤子区，输出可以重复，但器件要保持在孤子存在区间内~\cite{herr2014}，输入能施加的扰动也因此受限。
 
 \begin{table}[htbp]
@@ -31,7 +31,7 @@ Butschek、Lupo 等~\cite{butschek2020,lupo2021,lupo2023} & 梳齿上的谱权�
 \end{tabular}
 \end{table}
 
-所以逐梳齿的谱加权本身并不新~\cite{butschek2020,lupo2021}，用脉冲或光梳驱动 Kerr 腔也已有研究~\cite{obrzud2017}；
+所以逐梳齿的谱加权本身并不新~\cite{butschek2020,lupo2021}，用脉冲、种子光或多频泵浦驱动 Kerr 腔也已有研究~\cite{obrzud2017,papp2013,hansson2014}；
 据我们所知，用许多随机相位、落在谐振上的相干输入梳齿驱动 Kerr 微腔，还没有作为储备池计算机研究过。第二个空白是和软件的比较：
 上述工作在选工作点的方式、报告所用的噪声实现、给软件基线的噪声上各不相同，我们发现仅最后一项就能让比较的结论翻转（第~\ref{sec:software}~节）。因此以下问题仍不清楚：
 \emph{在现实噪声下 Kerr 微梳储备池表现如何、受什么限制、在统一协议下和软件相比处在什么位置}。

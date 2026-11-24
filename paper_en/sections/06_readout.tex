@@ -22,7 +22,7 @@ they reach $1.55\times10^{-4}$ and $1.58\times10^{-4}$, about 2 times better tha
 Table~\ref{tab:encodings}, selected with PIN detectors, has $Q=6\times10^{6}$ and $19~\mathrm{mW}$; the ideal-detector point of
 Section~\ref{sec:breakdown} has $23~\mathrm{mW}$); slower symbols select a point with $Q=5\times10^{6}$. We call the stronger-drop-coupling
 point \emph{the best single ring} and use $1.55\times10^{-4}$ as its reference error; it is the device of Sections~\ref{sec:reference},
-\ref{sec:laser} and~\ref{sec:quant}, where evaluations with other noise realisations give $1.5$ to $1.6\times10^{-4}$.
+\ref{sec:laser} and~\ref{sec:quant}, where evaluations with other noise realisations give $1.5\times10^{-4}$ to $1.6\times10^{-4}$.
 Against the ESN with the same readout dimension, both tie with it or are slightly better when the ESN's input noise is
 $3\times10^{-3}$ (the ESN reaches $1.9\times10^{-4}$ to $3.2\times10^{-4}$ depending on the random reservoir); below an input noise of
 about $2.5\times10^{-3}$ the ESN is better (Section~\ref{sec:software}).
@@ -43,7 +43,7 @@ $14~\mathrm{kHz}$; the slow-symbol point has a higher $Q$, and the same jitter c
 about $470~\mathrm{Hz}$). The two changes differ in what they ask of the laser. Stronger drop coupling gains photons through a lower
 $Q$ and more power, so for a given laser its relative jitter is smaller than at the plain mask's point ($Q=6\times10^{6}$, where 1\%
 corresponds to only about $160~\mathrm{Hz}$); slower symbols rely on a higher $Q$ and longer symbols, and their requirement is about 3
-times tighter than that of the stronger-drop-coupling point. With lasers of tens of kilohertz or more, the jitter eats up the benefit
+times tighter than that of the stronger-drop-coupling point. With lasers of tens of kilohertz or more, the jitter cancels the benefit
 of both (Table~\ref{tab:laser}).
 
 \subsection{Where the memory comes from}\label{sec:memory}
@@ -66,7 +66,7 @@ Reading out several rings with different masks and delays together, with four ti
 single ring with a delay line from $0.083$ to $0.037$), three series $\times$ six new pairs, 1, 2, 4 and 8 rings give $0.037$,
 $0.013$, $0.011$ and $0.012$: four rings tie with a 100-node ESN with the same delay line ($0.010$); 100- and 300-node ESNs without a
 delay line give $0.015$ and $0.012$ at this training length (and $0.041$ and $0.032$ at the standard length of
-Section~\ref{sec:software}). On Lorenz prediction ten steps ahead, which needs a long memory, the same approach goes from
+Section~\ref{sec:software}). On prediction of the Lorenz system~\cite{lorenz1963} ten steps ahead, which needs a long memory, the same approach goes from
 $1.3\times10^{-2}$ for one ring to $2.6\times10^{-3}$ for eight, still about 2.5 times worse than a 100-node ESN with a delay line
 ($1.05\times10^{-3}$).
 
@@ -84,8 +84,8 @@ $1.7\times10^{-4}$ to $2.4\times10^{-5}$, seven times, and the jitter-free error
 penalty stays at about 3. The same readout helps the 31-node ESN (input noise $3\times10^{-3}$) only from $2.7\times10^{-4}$ to
 $1.8\times10^{-4}$. Placed on the 31-node ESN's error-versus-input-noise curve with the same quadratic readout, the ring moves from
 an input noise of about $1.7\times10^{-3}$ to about $2.3\times10^{-4}$, i.e.\ about three bits by the conversion of
-Section~\ref{sec:software}. Most of this survives quantization of the 31 readings
-(logarithmic front end; the ESN's quantized input is given dithered copies so that it too sees several noise realisations): the ring is
+Section~\ref{sec:software}. Most of this survives quantisation of the 31 readings
+(logarithmic front end; the ESN's quantised input is given dithered copies so that it too sees several noise realisations): the ring is
 1.5 to 1.6 times better than the ESN at 6 and 7 bits, ties at 8 to 10 bits and is 2.2 times worse at 12 bits.
 
 The advantage disappears when the readout's memory is extended. With 16 or 32 taps instead of 8, and products also between

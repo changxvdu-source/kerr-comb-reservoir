@@ -3,7 +3,7 @@
 All operating points so far come from random search. The simulator is differentiable (Section~\ref{sec:lle}), so the device
 parameters and the mask can also be treated as trainable and optimised along the gradient of the task error. A differentiable LLE
 has been used to inverse-design comb spectra~\cite{chuchalin2026}; here the objective is the error of a computing task, with noise
-inside the optimisation. This section tests whether this beats random search. The answer: gradient fine-tuning reliably improves
+inside the optimisation. This section tests whether this beats random search. In short, gradient fine-tuning reliably improves
 its starting point, but ties with an enlarged random search that costs far less computation, so for our problem it cannot replace
 random search and is at most a refinement after it.
 

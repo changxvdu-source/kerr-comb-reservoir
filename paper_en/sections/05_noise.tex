@@ -4,7 +4,7 @@ Realistic noise raises the Mackey--Glass error of the spectral-phase mask from $
 about 180 (Table~\ref{tab:encodings}). Section~\ref{sec:mechanism} showed that the mask operates in the coherently seeded regime, so
 its error comes from noise, not from non-reproducible dynamics. This section separates the five noise sources to answer three
 questions: which of them set the floor; whether a more nonlinear material or more power lowers it; and whether it can be removed
-in the readout. The answer: about half of the floor comes from detuning jitter and half from shot noise. The first half does not
+in the readout. In short, about half of the floor comes from detuning jitter and half from shot noise. The first half does not
 depend on the photon number; the second falls with more photons, but then the first half quickly dominates, so neither
 Si$_3$N$_4$ nor more power helps much. A linear readout given the exact jitter sequence removes only 2\% of the error, so the jitter
 has to be suppressed at the source, which sets a requirement on the laser linewidth.
@@ -14,19 +14,19 @@ has to be suppressed at the source, which sets a requirement on the laser linewi
 To separate the detectors from the noise inside the device, we first assume ideal detectors (no electronic noise, shot noise only),
 choose the best of 256 random operating points with the protocol of Section~\ref{sec:protocol}, and switch on one noise source at a
 time at that point (Fig.~\ref{fig:noise}a). The point uses $23~\mathrm{mW}$ in total, a loaded $Q$ of $6\times10^{6}$, and about
-$170~\mu\mathrm{W}$ per line at the detector, i.e.\ about $1.3\times10^{6}$ photons per symbol.
+$170~\upmu\mathrm{W}$ per line at the detector, i.e.\ about $1.3\times10^{6}$ photons per symbol.
 Its error without noise is $1.3\times10^{-5}$. With only the laser intensity noise it is $1.9\times10^{-5}$, nearly unchanged; with
 only the intracavity vacuum noise $2.5\times10^{-5}$; with only the detuning jitter $5.7\times10^{-5}$; with only shot noise
 $6.8\times10^{-5}$. The three optical sources together give $7.8\times10^{-5}$, and adding shot noise gives $1.5\times10^{-4}$.
 The floor with ideal detectors is therefore about $1.3\times10^{-4}$ (after re-selecting among 256 points), about half from
 detuning jitter and half from shot noise, with the vacuum noise secondary and the laser intensity noise negligible.
 
-With realistic PIN detectors ($0.3~\mu\mathrm{W}$ electronic noise per line) the same procedure selects a point at
+With realistic PIN detectors ($0.3~\upmu\mathrm{W}$ electronic noise per line) the same procedure selects a point at
 $3.4\times10^{-4}$, another factor of about 2.5. The effect of the detectors shows most clearly in an earlier, smaller search (32
 candidates per encoding, selection on a single run): with all noise on and detector noise of $0.03$, $0.1$, $0.3$ and
-$0.6~\mu\mathrm{W}$ the error is $2.7\times10^{-4}$, $4.1\times10^{-4}$, $1.0\times10^{-3}$ and $2.2\times10^{-3}$, roughly linear in
-the detector noise above $0.1~\mu\mathrm{W}$; an optical amplifier with $10~\mathrm{dB}$ or $20~\mathrm{dB}$ gain and a
-$5~\mathrm{dB}$ noise figure in front of the $0.3~\mu\mathrm{W}$ detectors brings it to $3.3\times10^{-4}$ and $3.1\times10^{-4}$,
+$0.6~\upmu\mathrm{W}$ the error is $2.7\times10^{-4}$, $4.1\times10^{-4}$, $1.0\times10^{-3}$ and $2.2\times10^{-3}$, roughly linear in
+the detector noise above $0.1~\upmu\mathrm{W}$; an optical amplifier with $10~\mathrm{dB}$ or $20~\mathrm{dB}$ gain and a
+$5~\mathrm{dB}$ noise figure in front of the $0.3~\upmu\mathrm{W}$ detectors brings it to $3.3\times10^{-4}$ and $3.1\times10^{-4}$,
 close to the $2.4\times10^{-4}$ with optical and shot noise only. These numbers cannot be compared directly with
 Table~\ref{tab:encodings} (fewer candidates, different selection); we use them only for the trend: electronic detector noise can be
 removed with an optical amplifier, and what remains is the floor above.
@@ -139,7 +139,7 @@ $1~\mathrm{MHz}$ lock leaves the $100~\mathrm{kHz}$ row nearly unchanged, and on
 corner) without any lock moves the $1.6~\mathrm{kHz}$ row from $1.3\times10^{-4}$ to $1.8\times10^{-4}$.
 Second, our 1\% jitter model (correlation $e^{-1}$ between neighbouring symbols) gives $1.60\times10^{-4}$ at this point, about 25\%
 more pessimistic than white frequency noise of the same rms ($1.27\times10^{-4}$), so at this point the main results are slightly
-conservative. (The same point evaluated with other noise realisations gives $1.5$ to $1.6\times10^{-4}$; we use $1.55\times10^{-4}$
+conservative. (The same point evaluated with other noise realisations gives $1.5\times10^{-4}$ to $1.6\times10^{-4}$; we use $1.55\times10^{-4}$
 from Section~\ref{sec:readout} as its reference value.)
 Third, changing the operating point does not avoid the requirement: at $1.6~\mathrm{kHz}$ and $16~\mathrm{kHz}$ re-selection returns
 the original point; at $100~\mathrm{kHz}$ two series move to a point with $Q=2.5\times10^{6}$ and the error improves by about 1.3

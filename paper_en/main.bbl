@@ -1,4 +1,4 @@
-\begin{thebibliography}{42}
+\begin{thebibliography}{60}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -17,6 +17,7 @@ H.~Jaeger and H.~Haas.
 \newblock Harnessing nonlinearity: predicting chaotic systems and saving energy
   in wireless communication.
 \newblock \emph{Science}, 304:\penalty0 78--80, 2004.
+\newblock \doi{10.1126/science.1091277}.
 
 \bibitem[Tanaka et~al.(2019)Tanaka, Yamane, H{\'e}roux, Nakane, Kanazawa,
   Takeda, Numata, Nakano, and Hirose]{tanaka2019}
@@ -33,6 +34,13 @@ G.~Van~der Sande, D.~Brunner, and M.~C. Soriano.
 \newblock \emph{Nanophotonics}, 6\penalty0 (3):\penalty0 561--576, 2017.
 \newblock \doi{10.1515/nanoph-2016-0132}.
 
+\bibitem[Shastri et~al.(2021)Shastri, Tait, Ferreira~de Lima,
+  et~al.]{shastri2021}
+B.~J. Shastri, A.~N. Tait, T.~Ferreira~de Lima, et~al.
+\newblock Photonics for artificial intelligence and neuromorphic computing.
+\newblock \emph{Nature Photonics}, 15:\penalty0 102--114, 2021.
+\newblock \doi{10.1038/s41566-020-00754-y}.
+
 \bibitem[Appeltant et~al.(2011)Appeltant, Soriano, Van~der Sande, Danckaert,
   Massar, Dambre, Schrauwen, Mirasso, and Fischer]{appeltant2011}
 L.~Appeltant, M.~C. Soriano, G.~Van~der Sande, J.~Danckaert, S.~Massar,
@@ -41,6 +49,31 @@ L.~Appeltant, M.~C. Soriano, G.~Van~der Sande, J.~Danckaert, S.~Massar,
   system.
 \newblock \emph{Nature Communications}, 2:\penalty0 468, 2011.
 \newblock \doi{10.1038/ncomms1476}.
+
+\bibitem[Larger et~al.(2012)Larger, Soriano, Brunner, Appeltant, Guti{\'e}rrez,
+  Pesquera, Mirasso, and Fischer]{larger2012}
+L.~Larger, M.~C. Soriano, D.~Brunner, L.~Appeltant, J.~M. Guti{\'e}rrez,
+  L.~Pesquera, C.~R. Mirasso, and I.~Fischer.
+\newblock Photonic information processing beyond {Turing}: an optoelectronic
+  implementation of reservoir computing.
+\newblock \emph{Optics Express}, 20\penalty0 (3):\penalty0 3241, 2012.
+\newblock \doi{10.1364/OE.20.003241}.
+
+\bibitem[Paquot et~al.(2012)Paquot, Duport, Smerieri, Dambre, Schrauwen,
+  Haelterman, and Massar]{paquot2012}
+Y.~Paquot, F.~Duport, A.~Smerieri, J.~Dambre, B.~Schrauwen, M.~Haelterman, and
+  S.~Massar.
+\newblock Optoelectronic reservoir computing.
+\newblock \emph{Scientific Reports}, 2:\penalty0 287, 2012.
+\newblock \doi{10.1038/srep00287}.
+
+\bibitem[Brunner et~al.(2013)Brunner, Soriano, Mirasso, and
+  Fischer]{brunner2013}
+D.~Brunner, M.~C. Soriano, C.~R. Mirasso, and I.~Fischer.
+\newblock Parallel photonic information processing at gigabyte per second data
+  rates using transient states.
+\newblock \emph{Nature Communications}, 4:\penalty0 1364, 2013.
+\newblock \doi{10.1038/ncomms2368}.
 
 \bibitem[Vandoorne et~al.(2014)Vandoorne, Mechet, Van~Vaerenbergh, Fiers,
   Morthier, Verstraeten, Schrauwen, Dambre, and Bienstman]{vandoorne2014}
@@ -69,6 +102,7 @@ A.~Lupo, E.~Picco, M.~Zajnulina, and S.~Massar.
 \newblock Deep photonic reservoir computer based on frequency multiplexing with
   fully analog connection between layers.
 \newblock \emph{Optica}, 10:\penalty0 1478--1485, 2023.
+\newblock \doi{10.1364/OPTICA.489501}.
 
 \bibitem[Cox et~al.(2025)Cox, Murray, Hart, and Redding]{cox2024}
 N.~Cox, J.~Murray, J.~Hart, and B.~Redding.
@@ -100,6 +134,21 @@ A.~Pasquazi, M.~Peccianti, L.~Razzari, D.~J. Moss, S.~Coen, M.~Erkintalo, Y.~K.
 \newblock \emph{Physics Reports}, 729:\penalty0 1--81, 2018.
 \newblock \doi{10.1016/j.physrep.2017.08.004}.
 
+\bibitem[Xu et~al.(2021)Xu, Tan, Corcoran, et~al.]{xu2021}
+X.~Xu, M.~Tan, B.~Corcoran, et~al.
+\newblock 11 {TOPS} photonic convolutional accelerator for optical neural
+  networks.
+\newblock \emph{Nature}, 589:\penalty0 44--51, 2021.
+\newblock \doi{10.1038/s41586-020-03063-0}.
+
+\bibitem[Feldmann et~al.(2021)Feldmann, Youngblood, Karpov,
+  et~al.]{feldmann2021}
+J.~Feldmann, N.~Youngblood, M.~Karpov, et~al.
+\newblock Parallel convolutional processing using an integrated photonic tensor
+  core.
+\newblock \emph{Nature}, 589:\penalty0 52--58, 2021.
+\newblock \doi{10.1038/s41586-020-03070-1}.
+
 \bibitem[Shaabani~Shishavan et~al.(2025)Shaabani~Shishavan, Manuylovich,
   Kamalian-Kopae, and Perego]{shishavan2025}
 N.~Shaabani~Shishavan, E.~Manuylovich, M.~Kamalian-Kopae, and A.~M. Perego.
@@ -116,6 +165,14 @@ J.~Cuevas, Y.~Hu, B.~Shi, J.~Liu, K.~Minoshima, and N.~Kuse.
 \newblock \emph{Nanophotonics}, 14\penalty0 (18):\penalty0 3063--3073, 2025.
 \newblock \doi{10.1515/nanoph-2025-0260}.
 
+\bibitem[Leo et~al.(2010)Leo, Coen, Kockaert, Gorza, Emplit, and
+  Haelterman]{leo2010}
+F.~Leo, S.~Coen, P.~Kockaert, S.-P. Gorza, P.~Emplit, and M.~Haelterman.
+\newblock Temporal cavity solitons in one-dimensional {Kerr} media as bits in
+  an all-optical buffer.
+\newblock \emph{Nature Photonics}, 4:\penalty0 471--476, 2010.
+\newblock \doi{10.1038/nphoton.2010.120}.
+
 \bibitem[Arabieh et~al.(2026{\natexlab{a}})Arabieh, Lupo, Gorza, and
   Massar]{arabieh2026soliton}
 A.~A. Arabieh, A.~Lupo, S.-P. Gorza, and S.~Massar.
@@ -130,6 +187,14 @@ A.~A. Arabieh, S.-P. Gorza, and S.~Massar.
 \newblock Frequency-multiplexed photonic reservoir computing with a
   synchronously pulse-driven optical cavity.
 \newblock arXiv:2609.12212, 2026{\natexlab{b}}.
+
+\bibitem[Haelterman et~al.(1992)Haelterman, Trillo, and
+  Wabnitz]{haelterman1992}
+M.~Haelterman, S.~Trillo, and S.~Wabnitz.
+\newblock Dissipative modulation instability in a nonlinear dispersive ring
+  cavity.
+\newblock \emph{Optics Communications}, 91:\penalty0 401--407, 1992.
+\newblock \doi{10.1016/0030-4018(92)90367-Z}.
 
 \bibitem[Uchida et~al.(2004)Uchida, McAllister, and Roy]{uchida2004}
 A.~Uchida, R.~McAllister, and R.~Roy.
@@ -151,16 +216,37 @@ E.~Obrzud, S.~Lecomte, and T.~Herr.
 \newblock \emph{Nature Photonics}, 11:\penalty0 600--607, 2017.
 \newblock \doi{10.1038/nphoton.2017.140}.
 
+\bibitem[Papp et~al.(2013)Papp, Del'Haye, and Diddams]{papp2013}
+S.~B. Papp, P.~Del'Haye, and S.~A. Diddams.
+\newblock Parametric seeding of a microresonator optical frequency comb.
+\newblock \emph{Optics Express}, 21\penalty0 (15):\penalty0 17615, 2013.
+\newblock \doi{10.1364/OE.21.017615}.
+
+\bibitem[Hansson and Wabnitz(2014)]{hansson2014}
+T.~Hansson and S.~Wabnitz.
+\newblock Bichromatically pumped microresonator frequency combs.
+\newblock \emph{Physical Review A}, 90:\penalty0 013811, 2014.
+\newblock \doi{10.1103/PhysRevA.90.013811}.
+
 \bibitem[Lugiato and Lefever(1987)]{lugiato1987}
 L.~A. Lugiato and R.~Lefever.
 \newblock Spatial dissipative structures in passive optical systems.
 \newblock \emph{Physical Review Letters}, 58:\penalty0 2209--2211, 1987.
+\newblock \doi{10.1103/PhysRevLett.58.2209}.
 
 \bibitem[Coen et~al.(2013)Coen, Randle, Sylvestre, and Erkintalo]{coen2013}
 S.~Coen, H.~G. Randle, T.~Sylvestre, and M.~Erkintalo.
 \newblock Modeling of octave-spanning {K}err frequency combs using a
   generalized mean-field {L}ugiato--{L}efever model.
 \newblock \emph{Optics Letters}, 38:\penalty0 37--39, 2013.
+\newblock \doi{10.1364/OL.38.000037}.
+
+\bibitem[Chembo and Menyuk(2013)]{chembo2013}
+Y.~K. Chembo and C.~R. Menyuk.
+\newblock Spatiotemporal {Lugiato-Lefever} formalism for {Kerr}-comb generation
+  in whispering-gallery-mode resonators.
+\newblock \emph{Physical Review A}, 87:\penalty0 053852, 2013.
+\newblock \doi{10.1103/PhysRevA.87.053852}.
 
 \bibitem[Hult(2007)]{hult2007}
 J.~Hult.
@@ -168,6 +254,7 @@ J.~Hult.
   simulating supercontinuum generation in optical fibers.
 \newblock \emph{Journal of Lightwave Technology}, 25:\penalty0 3770--3775,
   2007.
+\newblock \doi{10.1109/JLT.2007.909373}.
 
 \bibitem[Mackey and Glass(1977)]{mackey1977}
 M.~C. Mackey and L.~Glass.
@@ -188,6 +275,7 @@ A.~F. Atiya and A.~G. Parlos.
 D.~J. Gauthier, E.~Bollt, A.~Griffith, and W.~A.~S. Barbosa.
 \newblock Next generation reservoir computing.
 \newblock \emph{Nature Communications}, 12:\penalty0 5564, 2021.
+\newblock \doi{10.1038/s41467-021-25801-2}.
 
 \bibitem[Luko{\v{s}}evi{\v{c}}ius(2012)]{lukosevicius2012}
 M.~Luko{\v{s}}evi{\v{c}}ius.
@@ -195,6 +283,13 @@ M.~Luko{\v{s}}evi{\v{c}}ius.
 \newblock In \emph{Neural Networks: Tricks of the Trade}, volume 7700 of
   \emph{Lecture Notes in Computer Science}, pages 659--686. Springer, 2012.
 \newblock \doi{10.1007/978-3-642-35289-8_36}.
+
+\bibitem[Bertschinger and Natschl{\"a}ger(2004)]{bertschinger2004}
+N.~Bertschinger and T.~Natschl{\"a}ger.
+\newblock Real-time computation at the edge of chaos in recurrent neural
+  networks.
+\newblock \emph{Neural Computation}, 16:\penalty0 1413--1436, 2004.
+\newblock \doi{10.1162/089976604323057443}.
 
 \bibitem[Dambre et~al.(2012)Dambre, Verstraeten, Schrauwen, and
   Massar]{dambre2012}
@@ -215,6 +310,13 @@ W.~Jin, Q.-F. Yang, L.~Chang, B.~Shen, et~al.
   ultra-high-{Q} microresonators.
 \newblock \emph{Nature Photonics}, 15:\penalty0 346--353, 2021.
 \newblock \doi{10.1038/s41566-021-00761-7}.
+
+\bibitem[Lorenz(1963)]{lorenz1963}
+E.~N. Lorenz.
+\newblock Deterministic nonperiodic flow.
+\newblock \emph{Journal of the Atmospheric Sciences}, 20:\penalty0 130--141,
+  1963.
+\newblock \doi{10.1175/1520-0469(1963)020<0130:DNF>2.0.CO;2}.
 
 \bibitem[Chuchalin and Tikan(2026)]{chuchalin2026}
 A.~Chuchalin and A.~Tikan.
@@ -239,13 +341,26 @@ R.~H. Walden.
 \newblock Infiniium {UXR}-series oscilloscopes.
 \newblock Brochure 7121-1092.
 
+\bibitem[Kaplan and Meystre(1982)]{kaplan1982}
+A.~E. Kaplan and P.~Meystre.
+\newblock Directionally asymmetrical bistability in a symmetrically pumped
+  nonlinear ring interferometer.
+\newblock \emph{Optics Communications}, 40:\penalty0 229--232, 1982.
+\newblock \doi{10.1016/0030-4018(82)90267-X}.
+
 \bibitem[Del~Bino et~al.(2017)Del~Bino, Silver, Stebbings, and
   Del'Haye]{delbino2017}
-Leonardo Del~Bino, Jonathan~M. Silver, Sarah~L. Stebbings, and Pascal Del'Haye.
+L.~Del~Bino, J.~M. Silver, S.~L. Stebbings, and P.~Del'Haye.
 \newblock Symmetry breaking of counter-propagating light in a nonlinear
   resonator.
 \newblock \emph{Scientific Reports}, 7:\penalty0 43142, 2017.
 \newblock \doi{10.1038/srep43142}.
+
+\bibitem[Yang et~al.(2017)Yang, Yi, Yang, and Vahala]{yang2017}
+Q.-F. Yang, X.~Yi, K.~Y. Yang, and K.~Vahala.
+\newblock Counter-propagating solitons in microresonators.
+\newblock \emph{Nature Photonics}, 11:\penalty0 560--564, 2017.
+\newblock \doi{10.1038/nphoton.2017.117}.
 
 \bibitem[{Coherent}()]{coherent_waveshaper}
 {Coherent}.
@@ -269,6 +384,13 @@ N.~M. Kondratiev, V.~E. Lobanov, A.~V. Cherenkov, A.~S. Voloshin, N.~G. Pavlov,
 \newblock \emph{Optics Express}, 25:\penalty0 28167, 2017.
 \newblock \doi{10.1364/OE.25.028167}.
 
+\bibitem[Horowitz(2014)]{horowitz2014}
+M.~Horowitz.
+\newblock Computing's energy problem (and what we can do about it).
+\newblock In \emph{2014 IEEE International Solid-State Circuits Conference
+  Digest of Technical Papers (ISSCC)}, pages 10--14, 2014.
+\newblock \doi{10.1109/ISSCC.2014.6757323}.
+
 \bibitem[Carmon et~al.(2004)Carmon, Yang, and Vahala]{carmon2004}
 T.~Carmon, L.~Yang, and K.~J. Vahala.
 \newblock Dynamical thermal behavior and thermal self-stability of
@@ -285,18 +407,32 @@ M.~Karpov, H.~Guo, A.~Kordts, V.~Brasch, M.~H.~P. Pfeiffer, M.~Zervas,
 \newblock \emph{Physical Review Letters}, 116:\penalty0 103902, 2016.
 \newblock \doi{10.1103/PhysRevLett.116.103902}.
 
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017}
+A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
+  {\L}.~Kaiser, and I.~Polosukhin.
+\newblock Attention is all you need.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~30, 2017.
+
 \bibitem[Katharopoulos et~al.(2020)Katharopoulos, Vyas, Pappas, and
   Fleuret]{katharopoulos2020}
-Angelos Katharopoulos, Apoorv Vyas, Nikolaos Pappas, and Fran{\c{c}}ois
-  Fleuret.
+A.~Katharopoulos, A.~Vyas, N.~Pappas, and F.~Fleuret.
 \newblock Transformers are {RNNs}: Fast autoregressive transformers with linear
   attention.
 \newblock In \emph{Proceedings of the 37th International Conference on Machine
   Learning}, volume 119 of \emph{PMLR}, pages 5156--5165, 2020.
 
 \bibitem[Williams et~al.(2026)Williams, Jin, and Papp]{williams2026}
-Lindell~M. Williams, Yan Jin, and Scott~B. Papp.
-\newblock A generative pre-trained transformer with {Kerr}-soliton attention,
-  2026.
+L.~M. Williams, Y.~Jin, and S.~B. Papp.
+\newblock A generative pre-trained transformer with {Kerr}-soliton attention.
+\newblock arXiv:2605.24124, 2026.
+
+\bibitem[H{\'e}non(1976)]{henon1976}
+M.~H{\'e}non.
+\newblock A two-dimensional mapping with a strange attractor.
+\newblock \emph{Communications in Mathematical Physics}, 50:\penalty0 69--77,
+  1976.
+\newblock \doi{10.1007/BF01608556}.
 
 \end{thebibliography}
