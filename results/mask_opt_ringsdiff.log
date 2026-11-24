@@ -1,0 +1,11 @@
+[   411 s] generation 0: best 2.78e-05, elite worst 4.09e-05
+[   654 s] generation 1 (sigma 0.300): best 2.17e-05, elite worst 3.16e-05
+[   868 s] generation 2 (sigma 0.225): best 1.77e-05, elite worst 2.75e-05
+[  1221 s] generation 3 (sigma 0.169): best 1.56e-05, elite worst 2.10e-05
+[  2017 s] generation 4 (sigma 0.127): best 1.02e-05, elite worst 1.55e-05
+[  2372 s] generation 5 (sigma 0.095): best 1.24e-05, elite worst 1.48e-05
+[  2719 s] generation 6 (sigma 0.071): best 1.21e-05, elite worst 1.39e-05
+[  2852 s] choice on series 0-2: 1.26e-05 (validation)
+[  3185 s] optimised mask on held-out series 3-5: 1.14e-05 with jitter, 5.33e-06 without
+[  3521 s] original  mask on held-out series 3-5: 4.02e-05 with jitter, 1.67e-05 without
+[  3521 s] saved results/mask_opt_ringsdiff.csv

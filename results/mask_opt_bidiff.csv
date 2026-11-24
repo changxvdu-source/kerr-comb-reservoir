@@ -1,0 +1,5 @@
+mask,jitter,test_nmse_heldout_series_3_5
+optimised,jitter,7.335947970265238e-06
+optimised,no jitter,4.420205209660759e-06
+original,jitter,1.6556409788666076e-05
+original,no jitter,7.2735071223347314e-06

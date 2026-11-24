@@ -12,8 +12,8 @@ resonator equivalent to''.
 
 Figure~\ref{fig:software} shows the test error of 31-, 100- and 300-node ESNs (and of NG-RC~\cite{gauthier2021} for the closed-loop
 task) against input noise, with the same protocol as the resonator (Section~\ref{sec:protocol}); the best resonators of the previous
-sections are drawn as horizontal reference lines. The top axis converts input noise to effective bits of an analog-to-digital
-converter: if the full scale spans the input range, $N$-bit quantization noise has an rms of $2^{-N}/\sqrt{12}$, so $10^{-4}$,
+sections are drawn as horizontal reference lines. The top axis converts input noise to the effective number of bits (ENOB) of an
+analog-to-digital converter (ADC): if the full scale spans the input range, $N$-bit quantization noise has an rms of $2^{-N}/\sqrt{12}$, so $10^{-4}$,
 $3\times10^{-4}$, $10^{-3}$ and $3\times10^{-3}$ correspond to about 11.5, 9.9, 8.2 and 6.6 bits.
 
 \begin{figure}[htbp]
@@ -48,10 +48,12 @@ bounded control based on the prediction. When tracking a commanded trajectory, t
 tracking error of $4.5\times10^{-4}$ (mean over four training records; $4.4\times10^{-4}$ for the first record shown in
 Appendix~\ref{app:closedloop}); the error of the software predictors is set entirely by their input noise and crosses the
 resonator at about $2.4\times10^{-3}$, and at $10^{-3}$ the 31-node ESN and NG-RC reach $8.6\times10^{-5}$ and $7.5\times10^{-5}$,
-about 5 times better. Holding the unstable fixed point needs only linear feedback, so the software's modelling capacity is not the
-limit, which makes it the cleanest calibration: the crossing is at about $1.7\times10^{-3}$.
+about 5 times better. A second closed-loop task, holding the unstable fixed point of the Hénon map (Appendix~\ref{app:closedloop}), needs only linear
+feedback, so the software's modelling capacity is not the limit there, which makes it the cleanest calibration: its crossing is at
+about $1.7\times10^{-3}$ (not shown in Fig.~\ref{fig:software}).
 
-The three directly comparable tasks agree: the best single ring matches a 31-node ESN with input noise of about $1.7\times10^{-3}$ to
+The three directly comparable tasks (Mackey--Glass, trajectory tracking and holding the fixed point; on channel equalisation the
+curves do not cross) agree: the best single ring matches a 31-node ESN with input noise of about $1.7\times10^{-3}$ to
 $2.5\times10^{-3}$, i.e.\ by the conversion above an ADC with about \emph{7 effective bits} (6.9 to 7.4). The ESN curves are medians of
 three random reservoirs, and the reservoir-to-reservoir spread (a factor of about 1.7 at $3\times10^{-3}$) moves these crossings by
 roughly half a bit. The conversion assumes that the full scale spans the input range $[0,1]$; ENOB as specified for converters refers
@@ -130,3 +132,5 @@ a converter with about 7 effective bits}. This is a statement about one device c
 readout (31 drop-port lines, logarithm, linear ridge regression) and one noise model, not a bound for all microcomb reservoirs. The
 evaluation protocol is part of it: a single noise realisation is optimistic by 10 to 30\%, results in the chaotic regime are not
 reproducible, and the input noise given to software reverses the comparison, so we give whole curves rather than one point.
+Section~\ref{sec:bidir} raises the resonator by about one bit with a second set of modes and an optimised mask, against software that
+is optimised in the same way.

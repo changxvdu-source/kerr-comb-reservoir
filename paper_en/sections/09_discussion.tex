@@ -16,7 +16,7 @@ phase-stable; we did not simulate its noise.
 
 The requirement on the source follows from Section~\ref{sec:laser}: the intrinsic linewidth of the pump laser relative to the
 resonance must be below a few kilohertz. This rules out ordinary DFB lasers ($100~\mathrm{kHz}$ to $1~\mathrm{MHz}$) and calls for a
-narrow-linewidth laser or self-injection locking~\cite{shen2020,jin2021}. Slow frequency drift (much longer than one symbol) must be
+narrow-linewidth laser or self-injection locking~\cite{liang2015,kondratiev2017,shen2020,jin2021}. Slow frequency drift (much longer than one symbol) must be
 held by a lock to within about 0.3\% of the half-linewidth; otherwise the trained readout fails as the device drifts (in the
 closed-loop experiment of Appendix~\ref{app:closedloop}, a slow drift of 1\% already makes the tracking error 2.4 times worse).
 
@@ -40,9 +40,10 @@ logarithmic readout, so it does not tell how much of the remaining nonlinearity 
 detection, and it covers two encodings and two tasks.
 
 \emph{Comparison with the literature schemes.} The single-pump encodings are our implementations in a common device and protocol, not
-reproductions: the original papers do not give all of the cavity length, the $Q$ split and the sampling interval, the empty-cavity
+reproductions: the original papers do not give all of the cavity length and the split of $Q$ between intrinsic and coupling losses,
+the empty-cavity
 groups do not reach the detuning of the original chaotic scheme ($\zeta\approx5$), and a logarithmic 31-line readout may suit soliton
-states less than the readouts used originally. The one-to-two-orders-of-magnitude gap should be read as ``in our implementation''.
+states less than the readouts used originally. The gap of two to three orders of magnitude to the single-pump encodings should be read as ``in our implementation''.
 
 \emph{Noise model.} The detuning jitter is defined relative to the linewidth (Section~\ref{sec:noise-model}), so high-$Q$ points see a
 smaller absolute frequency noise than a fixed laser would give; Section~\ref{sec:laser} uses absolute spectra only for the best ring.
@@ -51,11 +52,17 @@ We chose the detector noise from datasheets ($0.3~\mu\mathrm{W}$ per line, in th
 
 \emph{Unmodelled physics.} The LLE used here has no thermal, Raman or mode-crossing terms. At 20 to $180~\mathrm{mW}$ a silica resonator
 shows thermo-optic shifts and thermal bistability~\cite{carmon2004}, and input-dependent average power would cause slow detuning drift
-that a lock must follow; Raman scattering can shift or destabilise combs in silica at these powers~\cite{karpov2016}; avoided mode
+that a lock must follow; Raman scattering can shift or destabilise soliton combs at such powers (shown in Si$_3$N$_4$
+microresonators~\cite{karpov2016}); avoided mode
 crossings would distort individual lines. The input side is idealised as well: the 17-line input comb must match the resonator's
 dispersion-shifted resonances (several megahertz apart from equidistance at $|\mu|=8$) and its FSR drift, the two branches of the
 mask form an interferometer whose relative phase must be stable, and the modulator's transfer function, driver noise and bandwidth are
 not modelled. Each of these adds noise or drift on top of the floor discussed here.
+
+\emph{Two directions and optimised masks.} The two-direction model (Section~\ref{sec:bidir}) neglects backscattering, which couples
+the directions linearly in real resonators and would mix the inverted signals; the two directions also need their own stable input
+combs and drop-port demultiplexers. The masks were optimised on one task and one operating point per scheme, with a fixed budget;
+the ESN's input weights got the same budget, its recurrent matrix and the resonator's physics none.
 
 \emph{Software baseline and statistics.} The ESN was searched over fewer hyper-parameters than the resonator (Section~\ref{sec:tasks}),
 which, if anything, favours the resonator. Results are geometric means over three series with six new pairs each; we report the
@@ -63,6 +70,28 @@ run-to-run spread but no formal significance tests, and treat ratios below about
 
 \emph{Readout.} The readout quantization was computed only for the best single ring and one calibration scheme
 (Section~\ref{sec:quant}); a readout weighted in the optical domain was not simulated.
+
+\subsection{What the resonator computes: a structured polynomial kernel}\label{sec:kernel}
+
+Expanding Eq.~\eqref{eq:lle} in the Kerr coefficient makes the computation explicit. Without the Kerr term each input line is a
+first-order filter of the signal: its complex amplitude $a_\mu$ is a constant plus
+$c_\mu w_\mu\sum_{s\ge0}\rho_\mu^{\,s}(u_{t-s}-\tfrac12)$, where $c_\mu$ is the line's response to a constant drive over one symbol, the
+mask
+weight $w_\mu$ sets the amplitude and phase and the resonance pole $\rho_\mu$ (decay and rotation per symbol, set by the line's
+detuning and dispersion) sets the time kernel. Each line is thus a complex linear projection of the input history. The Kerr term adds
+products $a_ja_ka_l^*$ of these projections with $j+k-l=\mu$, and after square-law detection the readout sees quadratic and
+higher forms $\sum_{s,s'}A_\mu(s,s')\,u_{t-s}u_{t-s'}$, with kernels $A_\mu$ in the span of the separable terms
+$\rho_j^{\,s}(\rho_k^*)^{s'}$ and with the pairs $(j,k)$ fixed by energy conservation; only their weights depend on the mask. At reduced
+power the simulations follow this expansion (generated lines scale as the cube of the input power, the Kerr correction of the driven
+lines linearly), but at the operating points the Kerr correction is of order one, so the expansion describes the structure rather
+than the numbers.
+
+In machine-learning terms this is projection, multiplication and a linear combination, the skeleton of linear
+attention~\cite{katharopoulos2020} or of a polynomial (next-generation) reservoir~\cite{gauthier2021,wang2025ngrc}, with a structured,
+low-rank kernel and no softmax. A recent experiment uses a Kerr cavity as the nonlinear weighting of transformer
+attention~\cite{williams2026}, with the query-key products computed digitally; in the masked microresonator the products themselves
+are formed optically. Input delay lines (Section~\ref{sec:bidir}) are the means to let these products act across time; whether this
+structure can be made a useful trainable layer, rather than a fixed reservoir, is open.
 
 \subsection{Directions that did not work out}
 

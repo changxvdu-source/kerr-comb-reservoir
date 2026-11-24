@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -56,6 +56,7 @@ K.~Vandoorne, P.~Mechet, T.~Van~Vaerenbergh, M.~Fiers, G.~Morthier,
 L.~Butschek, A.~Akrout, E.~Dimitriadou, A.~Lupo, M.~Haelterman, and S.~Massar.
 \newblock Photonic reservoir computer based on frequency multiplexing.
 \newblock \emph{Optics Letters}, 47:\penalty0 782--785, 2022.
+\newblock \doi{10.1364/OL.451087}.
 
 \bibitem[Lupo et~al.(2021)Lupo, Butschek, and Massar]{lupo2021}
 A.~Lupo, L.~Butschek, and S.~Massar.
@@ -69,15 +70,17 @@ A.~Lupo, E.~Picco, M.~Zajnulina, and S.~Massar.
   fully analog connection between layers.
 \newblock \emph{Optica}, 10:\penalty0 1478--1485, 2023.
 
-\bibitem[Cox et~al.(2024)Cox, Murray, Hart, and Redding]{cox2024}
+\bibitem[Cox et~al.(2025)Cox, Murray, Hart, and Redding]{cox2024}
 N.~Cox, J.~Murray, J.~Hart, and B.~Redding.
 \newblock Photonic frequency multiplexed next-generation reservoir computer.
-\newblock arXiv:2411.09624, 2024.
+\newblock \emph{APL Photonics}, 10:\penalty0 036122, 2025.
+\newblock \doi{10.1063/5.0248952}.
 
-\bibitem[Wang et~al.(2025)Wang, Hu, Gigan, et~al.]{wang2025ngrc}
-H.~Wang, J.~Hu, S.~Gigan, et~al.
+\bibitem[Wang et~al.(2025)Wang, Hu, Baek, Tsuchiyama, Joly, Liu, and
+  Gigan]{wang2025ngrc}
+H.~Wang, J.~Hu, Y.~Baek, K.~Tsuchiyama, M.~Joly, Q.~Liu, and S.~Gigan.
 \newblock Optical next generation reservoir computing.
-\newblock \emph{Light: Science \& Applications}, 2025.
+\newblock \emph{Light: Science \& Applications}, 14:\penalty0 245, 2025.
 \newblock \doi{10.1038/s41377-025-01927-6}.
 
 \bibitem[Kippenberg et~al.(2018)Kippenberg, Gaeta, Lipson, and
@@ -118,7 +121,8 @@ J.~Cuevas, Y.~Hu, B.~Shi, J.~Liu, K.~Minoshima, and N.~Kuse.
 A.~A. Arabieh, A.~Lupo, S.-P. Gorza, and S.~Massar.
 \newblock Cavity solitons as a nonlinear substrate for photonic neuromorphic
   computing.
-\newblock arXiv:2602.18110, 2026{\natexlab{a}}.
+\newblock \emph{Optics Express}, 34:\penalty0 24768, 2026{\natexlab{a}}.
+\newblock \doi{10.1364/OE.595963}.
 
 \bibitem[Arabieh et~al.(2026{\natexlab{b}})Arabieh, Gorza, and
   Massar]{arabieh2026pulse}
@@ -235,10 +239,35 @@ R.~H. Walden.
 \newblock Infiniium {UXR}-series oscilloscopes.
 \newblock Brochure 7121-1092.
 
+\bibitem[Del~Bino et~al.(2017)Del~Bino, Silver, Stebbings, and
+  Del'Haye]{delbino2017}
+Leonardo Del~Bino, Jonathan~M. Silver, Sarah~L. Stebbings, and Pascal Del'Haye.
+\newblock Symmetry breaking of counter-propagating light in a nonlinear
+  resonator.
+\newblock \emph{Scientific Reports}, 7:\penalty0 43142, 2017.
+\newblock \doi{10.1038/srep43142}.
+
 \bibitem[{Coherent}()]{coherent_waveshaper}
 {Coherent}.
 \newblock {WaveShaper} 1000a programmable optical processor.
 \newblock Datasheet.
+
+\bibitem[Liang et~al.(2015)Liang, Ilchenko, Eliyahu, Savchenkov, Matsko,
+  Seidel, and Maleki]{liang2015}
+W.~Liang, V.~S. Ilchenko, D.~Eliyahu, A.~A. Savchenkov, A.~B. Matsko,
+  D.~Seidel, and L.~Maleki.
+\newblock Ultralow noise miniature external cavity semiconductor laser.
+\newblock \emph{Nature Communications}, 6:\penalty0 7371, 2015.
+\newblock \doi{10.1038/ncomms8371}.
+
+\bibitem[Kondratiev et~al.(2017)Kondratiev, Lobanov, Cherenkov, Voloshin,
+  Pavlov, Koptyaev, and Gorodetsky]{kondratiev2017}
+N.~M. Kondratiev, V.~E. Lobanov, A.~V. Cherenkov, A.~S. Voloshin, N.~G. Pavlov,
+  S.~Koptyaev, and M.~L. Gorodetsky.
+\newblock Self-injection locking of a laser diode to a high-{Q} {WGM}
+  microresonator.
+\newblock \emph{Optics Express}, 25:\penalty0 28167, 2017.
+\newblock \doi{10.1364/OE.25.028167}.
 
 \bibitem[Carmon et~al.(2004)Carmon, Yang, and Vahala]{carmon2004}
 T.~Carmon, L.~Yang, and K.~J. Vahala.
@@ -255,5 +284,19 @@ M.~Karpov, H.~Guo, A.~Kordts, V.~Brasch, M.~H.~P. Pfeiffer, M.~Zervas,
   optical microresonator.
 \newblock \emph{Physical Review Letters}, 116:\penalty0 103902, 2016.
 \newblock \doi{10.1103/PhysRevLett.116.103902}.
+
+\bibitem[Katharopoulos et~al.(2020)Katharopoulos, Vyas, Pappas, and
+  Fleuret]{katharopoulos2020}
+Angelos Katharopoulos, Apoorv Vyas, Nikolaos Pappas, and Fran{\c{c}}ois
+  Fleuret.
+\newblock Transformers are {RNNs}: Fast autoregressive transformers with linear
+  attention.
+\newblock In \emph{Proceedings of the 37th International Conference on Machine
+  Learning}, volume 119 of \emph{PMLR}, pages 5156--5165, 2020.
+
+\bibitem[Williams et~al.(2026)Williams, Jin, and Papp]{williams2026}
+Lindell~M. Williams, Yan Jin, and Scott~B. Papp.
+\newblock A generative pre-trained transformer with {Kerr}-soliton attention,
+  2026.
 
 \end{thebibliography}

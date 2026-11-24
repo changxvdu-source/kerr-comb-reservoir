@@ -1,0 +1,23 @@
+series 0, 8 bits done
+series 0, 10 bits done
+series 1, 8 bits done
+series 1, 10 bits done
+series 2, 8 bits done
+series 2, 10 bits done
+
+=== 8 bits: test NMSE (ring / ESN / ESN-to-ring ratio)
+K=4 taps= 8:  linear   2.01e-04 / 1.52e-04 / 0.75   quad     5.40e-05 / 8.85e-05 / 1.64   quad-lag 3.18e-05 / 6.01e-05 / 1.89
+K=4 taps=16:  linear   5.17e-05 / 1.57e-05 / 0.30   quad     2.25e-05 / 1.29e-05 / 0.57   quad-lag 1.58e-05 / 1.17e-05 / 0.74
+K=4 taps=32:  linear   2.40e-05 / 9.20e-06 / 0.38   quad     1.42e-05 / 7.88e-06 / 0.55   quad-lag 1.16e-05 / 7.80e-06 / 0.67
+K=8 taps= 8:  linear   1.96e-04 / 1.57e-04 / 0.80   quad     4.81e-05 / 9.43e-05 / 1.96   quad-lag 2.68e-05 / 6.38e-05 / 2.38
+K=8 taps=16:  linear   4.87e-05 / 1.73e-05 / 0.36   quad     1.97e-05 / 1.37e-05 / 0.69   quad-lag 1.30e-05 / 1.19e-05 / 0.92
+K=8 taps=32:  linear   2.23e-05 / 8.91e-06 / 0.40   quad     1.18e-05 / 7.43e-06 / 0.63   quad-lag 8.86e-06 / 7.13e-06 / 0.81
+
+=== 10 bits: test NMSE (ring / ESN / ESN-to-ring ratio)
+K=4 taps= 8:  linear   1.33e-04 / 8.37e-05 / 0.63   quad     2.77e-05 / 3.55e-05 / 1.29   quad-lag 1.42e-05 / 2.32e-05 / 1.64
+K=4 taps=16:  linear   3.12e-05 / 2.62e-06 / 0.08   quad     1.05e-05 / 1.80e-06 / 0.17   quad-lag 6.38e-06 / 1.53e-06 / 0.24
+K=4 taps=32:  linear   1.30e-05 / 1.18e-06 / 0.09   quad     6.63e-06 / 9.50e-07 / 0.14   quad-lag 4.68e-06 / 8.70e-07 / 0.19
+K=8 taps= 8:  linear   1.29e-04 / 8.45e-05 / 0.65   quad     2.53e-05 / 3.81e-05 / 1.51   quad-lag 1.22e-05 / 2.45e-05 / 2.01
+K=8 taps=16:  linear   2.87e-05 / 2.79e-06 / 0.10   quad     9.07e-06 / 1.81e-06 / 0.20   quad-lag 5.09e-06 / 1.48e-06 / 0.29
+K=8 taps=32:  linear   1.17e-05 / 1.08e-06 / 0.09   quad     5.31e-06 / 9.02e-07 / 0.17   quad-lag 3.48e-06 / 8.22e-07 / 0.24
+saved results/nonlinear_readout_limits.csv

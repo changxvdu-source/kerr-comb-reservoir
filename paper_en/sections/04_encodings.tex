@@ -11,7 +11,8 @@ without noise, and Fig.~\ref{fig:encodings} plots the same numbers.
 \centering
 \includegraphics[width=\linewidth]{fig4_encodings}
 \caption{Test error of the eight encodings on the three tasks (Table~\ref{tab:encodings}; new runs, geometric mean over three series).
-Filled points: realistic noise, with bars of $\pm1$ relative standard deviation between pairs of new runs; open points: no noise.
+Filled points: realistic noise, with bars of $\pm1$ relative standard deviation between pairs of new runs (bars smaller than the
+marker are hidden); open points: no noise.
 Blue: single-pump encodings starting from an empty cavity; orange: single-pump encodings starting from a single soliton; green:
 input combs (uniform modulation and spectral-phase mask). Dashed: ESN with the same readout dimension (input noise
 $3\times10^{-3}$, one random reservoir); dotted: best linear autoregression (both under realistic noise).
@@ -67,13 +68,15 @@ removing the ESN's input noise entirely improves it by only about 7\%.
 In symbol error rate (six new runs of 5000 test symbols per series, 90\,000 symbols over three series) the mask reaches
 $1.9\times10^{-4}$ (17 errors), the uniform comb $1.0\times10^{-4}$ (9), the power encoding $3.9\times10^{-4}$ (35) and the ESN
 $1.1\times10^{-5}$ (1; 95\% Poisson interval up to $6\times10^{-5}$). The mask and the uniform comb cannot be separated by this
-statistic; all comb encodings and the ESN are far below the common hard-decision FEC threshold of $3.8\times10^{-3}$.
+statistic; all comb encodings and the ESN are far below the symbol error rate of about $7.6\times10^{-3}$ that corresponds, for Gray-coded
+four-level symbols, to the bit error rate of $3.8\times10^{-3}$ commonly used as the threshold of hard-decision forward error
+correction (FEC) with 7\% overhead.
 
 \subsection{NARMA-10: where a single ring does not work}
 
 NARMA-10 needs a memory of about ten symbols, whereas the resonator's own memory is its photon lifetime, a few symbols at most.
 With a single resonator the mask ($0.16$ without noise, $0.19$ with realistic noise) only ties with linear autoregression ($0.19$),
-slightly better than the uniform comb and the single-pump encodings but 1.5 to 1.8 times worse than the ESN ($0.11$). We report this
+slightly better than the uniform comb and the single-pump encodings but 1.5 to 1.7 times worse than the ESN ($0.11$). We report this
 as a negative case. Memory can be added from outside: with a delayed copy of the signal on the input lines (an input delay line)
 and several rings with different masks read out together, NARMA-10 drops to $0.011$, on par with a 100-node ESN with the same delay
 line ($0.010$; Section~\ref{sec:memory}).
@@ -121,7 +124,8 @@ generated; the input power still sets the signal-to-noise ratio at the detectors
 \centering
 \caption{Linear-cavity control. Test error (NMSE) with the Kerr term ($\gamma=0.016~\mathrm{W^{-1}m^{-1}}$, from
 Table~\ref{tab:encodings}) and without it ($\gamma=0$), under the same protocol. Channel equalisation under realistic noise uses the
-standard test length here, so its Kerr values differ slightly from Table~\ref{tab:encodings}.}
+standard test length here, so its Kerr values differ slightly from Table~\ref{tab:encodings}. Ratios quoted in the text are computed
+from unrounded values.}
 \label{tab:linear}
 \footnotesize\setlength{\tabcolsep}{4pt}
 \begin{tabular}{lcccc}

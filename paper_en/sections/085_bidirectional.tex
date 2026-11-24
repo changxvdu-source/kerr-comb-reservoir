@@ -1,0 +1,128 @@
+\section{Driving both directions of the ring}\label{sec:bidir}
+
+Section~\ref{sec:sweetspot} shows that the signal and the detuning jitter act on the single-direction ring through the same
+variable, the effective detuning. A ring has a second set of modes that shares this detuning: the counter-propagating ones. Pumped
+from the same laser, both directions see the same detuning jitter and source intensity noise, while the signal can be put on their
+difference. This section tests whether that helps.
+
+\subsection{Model}
+
+Each direction carries its own intracavity field. Counter-propagating fields walk through each other once per round trip, so each
+sees the other only through its round-trip-averaged power (cross-phase modulation, factor 2):
+\begin{equation}
+\frac{\mathrm{d}E_X}{\mathrm{d}n} = \hat{L}E_X + i\gamma L\left(|E_X|^2 + 2\langle|E_Y|^2\rangle\right)E_X + \sqrt{\theta_1}\,E_{\mathrm{in},X},
+\qquad (X,Y)\in\{(\mathrm{cw},\mathrm{ccw}),(\mathrm{ccw},\mathrm{cw})\},
+\label{eq:bidir}
+\end{equation}
+where $E_X(\tau)$ is the fast-time field of direction $X$, $\hat L$ acts on its Fourier components as the linear terms (loss, detuning,
+dispersion) of Eq.~\eqref{eq:lle}, and $\langle|E_Y|^2\rangle=t_R^{-1}\int_0^{t_R}|E_Y|^2\,\mathrm{d}\tau$ is the round-trip-averaged power
+of the other direction; the coherent symmetry breaking of
+counter-propagating light in Kerr resonators~\cite{delbino2017} follows from this coupling. We neglect backscattering. The detuning
+jitter and the source intensity noise are common to both directions; the quantum field noise and the detection noise are
+independent. Each direction leaves through its own drop port (Fig.~\ref{fig:bidir}a), so $2\times31$ lines are detected ($62\times8$ readout features). In the
+schemes that use both directions the power of the operating point is split equally between them. With the counter-propagating field
+switched off the simulation reproduces the single-direction simulator exactly (identical outputs without noise).
+
+We compare, on the same random operating points of the mask group with stronger drop coupling:
+\emph{one direction} (31 or 62 lines read; the latter matches the feature count of the two-direction schemes);
+\emph{two directions, inverted signal} (the counter-propagating direction carries the same mask with $u\to1-u$);
+\emph{two directions, signal on one side} (the counter-propagating direction carries the mask with a constant symbol);
+\emph{two directions, independent masks}; and, as a control for the coupling, \emph{two separate rings, inverted signal} (the drives
+of the inverted scheme on two uncoupled rings fed from one laser: same features, same common noise, no cross-phase modulation).
+
+\subsection{Random search}
+
+Table~\ref{tab:bidir}(a) uses 768 random operating points per scheme (the same points for all), with the protocol of
+Table~\ref{tab:encodings}: choice among the best eight of the first run pair on three new pairs, report on three new pairs on each of
+three series, with and without the detuning jitter. Inverting the signal in the second channel is what matters: two separate rings
+driven this way are four times better than one ring read out with the same number of lines, and the two directions of one ring are a
+further 1.7 times better. Putting the signal on one side only gives no gain ($2.0\times10^{-4}$ on a smaller search of 192 points,
+where one direction reaches $1.6\times10^{-4}$), and independent masks in the two directions give little ($1.4\times10^{-4}$). Good
+two-direction points are rare: among the 768 points, 8 reach a single-pair validation error below $10^{-4}$ (two separate rings: 4;
+one direction: none), and two smaller searches of 192 points each found $2.4\times10^{-5}$ and $1.8\times10^{-4}$ for the
+two-direction scheme, against $8.0\times10^{-5}$ and $7.7\times10^{-5}$ for two separate rings.
+
+\begin{table}[htbp]
+\centering
+\caption{Two-direction drive, Mackey--Glass, realistic noise, test NMSE with and without the detuning jitter (geometric mean over
+three series). (a) Best of 768 random operating points per scheme (the same points), protocol of Table~\ref{tab:encodings}.
+(b) Best mask at a fixed operating point after random search (512 masks) and an evolution strategy (six generations of 240 children
+around the 16 best), chosen on series 0--2 and reported on series 3--5, which were not used in the search or the choice; ``random''
+is the operating point's original random mask on the same held-out series.}
+\label{tab:bidir}
+\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{(a) random search} & \multicolumn{2}{c}{(b) optimised mask, held-out series} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+scheme & with jitter & without & random mask & optimised (without jitter) \\
+\midrule
+one direction, 31 lines & $1.7\times10^{-4}$ & $8.6\times10^{-5}$ & -- & -- \\
+one direction, 62 lines & $1.4\times10^{-4}$ & $4.7\times10^{-5}$ & $1.9\times10^{-4}$ & $3.3\times10^{-5}$ ($1.4\times10^{-5}$) \\
+two separate rings, inverted signal & $3.6\times10^{-5}$ & $1.7\times10^{-5}$ & $4.0\times10^{-5}$ & $1.1\times10^{-5}$ ($5.3\times10^{-6}$) \\
+two directions, inverted signal & $\mathbf{2.1\times10^{-5}}$ & $\mathbf{9.4\times10^{-6}}$ & $1.7\times10^{-5}$ & $\mathbf{7.3\times10^{-6}}$ ($4.4\times10^{-6}$) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The gain does not come from rejecting the common jitter: the jitter penalty (error with jitter over error without) is 2 to 3 for
+every scheme. It comes from better computation, i.e.\ lower error without jitter. A plausible mechanism is the cross-phase term of
+Eq.~\eqref{eq:bidir}: it shifts the detuning of every line of one direction by the round-trip-averaged power of the other, which with an
+inverted signal responds to the input with the opposite sign. The signal therefore acts on the effective detuning through two paths of
+opposite sign, a global, input-dependent gating term that adds products between the two directions' features. We have not separated
+this further.
+
+\subsection{Robustness and the role of the mask}
+
+Around the best two-direction point of the first search (Table~\ref{tab:bidir}(a) uses a different point from the larger search) we
+varied one parameter at a time, each on two pairs of new runs on three series ($2.5\times10^{-5}$ at the point itself). The error stays
+between $1.7$ and $3.8\times10^{-5}$ for a normalised detuning from 1.5 to 2.1 (it rises steeply beyond 2.2, to about $10^{-3}$), for 0.8 to 1.1 times the power, for a
+modulation depth of at least 0.9 times the original, for a side-line power fraction within $\pm0.2$, and for an input coupling
+$\log_{10}\Qone$ from $-0.1$ to $+0.2$ around its value. The operating point is therefore a broad region, not a narrow
+peak. The mask is not interchangeable: with the same physical parameters, 16 other random masks give $9.8\times10^{-5}$ to
+$8.7\times10^{-3}$. This suggests that good points are rare mainly because good masks are rare.
+
+Since the mask is written by a programmable spectral shaper, it can be chosen like a trained parameter. Table~\ref{tab:bidir}(b) gives
+each scheme the same optimisation budget at its best operating point (detuning moved to 1.73 for the two-direction scheme, inside the
+plateau above). Optimisation helps every scheme, by 2.3 to 5.7 times on the held-out series, and narrows the gaps: two separate rings
+are 2.9 times better than one direction, and the two directions of one ring a further 1.55 times, on the threshold that we treat as a
+tie. The best result, $7.3\times10^{-6}$ with jitter, is 21 times below the best single ring of Section~\ref{sec:readout}
+($1.55\times10^{-4}$). This factor combines several changes and should not be read as the effect of the second direction alone: the
+readout doubles (62 instead of 31 lines), the mask is optimised, the second direction is driven, and the evaluation uses held-out series
+with fewer run pairs. Like for like, the two directions are 4.5 times better than one direction with the same readout size and the
+same mask optimisation, and 1.55 times better than two separate rings.
+
+\subsection{Input delay lines: moving time to frequency}
+
+Feeding the input lines with the signal delayed by different amounts puts several past symbols into the resonator at once, so that
+four-wave mixing forms products across time (Section~\ref{sec:kernel}). We delayed the lines $|\mu|=3$--4, 5--6 and 7--8 by one,
+two and three steps of $s$ symbols ($|\mu|=1$--2 undelayed) and repeated the random search (192 points, same points for all). For one
+direction (62 lines) the error falls from $2.4\times10^{-4}$ ($s=0$) to $1.0\times10^{-4}$ ($s=1$) and $6.1\times10^{-5}$ ($s=2$);
+for two directions with inverted signal only from $2.1\times10^{-5}$ to $1.6\times10^{-5}$ and $1.7\times10^{-5}$. Delay lines thus
+supply much of what the single direction lacks, while the two-direction scheme gains little from them.
+
+\subsection{Against equally optimised software}\label{sec:bidir-software}
+
+A fair comparison has to give the software the same optimisation. We optimised the input weights and biases of a 62-node ESN (its
+counterpart of the mask; the recurrent matrix stays fixed, as the resonator's physics does) with the same procedure and budget, at
+four levels of input noise, and report on the same held-out series. The optimised ESN reaches $1.7\times10^{-7}$, $6.6\times10^{-7}$,
+$6.5\times10^{-6}$ and $4.5\times10^{-5}$ at input noise $10^{-4}$, $3\times10^{-4}$, $10^{-3}$ and $3\times10^{-3}$ (random input
+weights: $2.5\times10^{-6}$, $5.5\times10^{-6}$, $2.2\times10^{-5}$ and $8.7\times10^{-5}$). The best two-direction ring
+($7.3\times10^{-6}$) therefore matches the equally optimised ESN of the same readout dimension at an input noise of about $10^{-3}$,
+i.e.\ about 8 effective bits by the conversion of Section~\ref{sec:software}, one bit more than the best single ring with a random
+mask. At 9 to 10 bits, the resolution of converters at these rates, the ESN is 3 to 11 times better. Two directions, mask
+optimisation and delay lines narrow the gap to software of the same size, but do not close it
+(Fig.~\ref{fig:bidir}b).
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{fig10_bidirectional}
+\caption{Two-direction drive. (a) Scheme: one laser and input comb feed two mask branches carrying the signal $u$ and the inverted
+signal $1-u$ into the clockwise (cw) and counter-clockwise (ccw) directions of one ring, coupled by cross-phase modulation (XPM); each
+direction leaves through its own drop port and 31 lines are detected per direction. The control drives two separate rings with the
+same two branches. (b) Test error on the held-out series 3--5 against the input noise of a 62-node ESN, with random (dashed) and
+optimised (solid) input weights; horizontal lines: the optimised one-direction ring (62 lines), two separate rings and the
+two-direction ring (Table~\ref{tab:bidir}(b), with jitter). Top axis: equivalent ADC bits, $2^{-N}/\sqrt{12}$.}
+\label{fig:bidir}
+\end{figure}

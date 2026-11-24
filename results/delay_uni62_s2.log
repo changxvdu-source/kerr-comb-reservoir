@@ -1,0 +1,3 @@
+[   729 s] stage 1 uni: 192 points
+[  1091 s] uni62      trial 507: test 6.10e-05 with jitter, 3.24e-05 without (penalty 1.88)
+saved results/delay_uni62_s2.csv

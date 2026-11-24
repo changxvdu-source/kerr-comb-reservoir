@@ -1,0 +1,42 @@
+1200 configurations, ts 0.3, taps 32
+series 0 jitter done
+series 0 no jitter done
+series 1 jitter done
+series 1 no jitter done
+series 2 jitter done
+series 2 no jitter done
+
+best per mode (linear readout, with jitter):
+  uni        D  3.50 F2  6.0 m 0.3: 1.64e-01 (no jitter 1.58e-01, penalty 1.04)
+  uni        D  3.00 F2  4.0 m 0.3: 1.66e-01 (no jitter 1.65e-01, penalty 1.01)
+  uni        D  2.50 F2  3.0 m 0.1: 1.98e-01 (no jitter 1.82e-01, penalty 1.09)
+  bi-common  D  3.50 F2  3.0 m 0.3: 5.51e-02 (no jitter 3.77e+01, penalty 0.00)
+  bi-common  D  3.50 F2  8.0 m 0.3: 1.29e-01 (no jitter 4.62e+00, penalty 0.03)
+  bi-common  D  2.00 F2  3.0 m 0.3: 1.44e-01 (no jitter 1.42e+00, penalty 0.10)
+  bi-diff    D  1.50 F2 12.0 m 0.3: 7.80e-03 (no jitter 7.90e-03, penalty 0.99)
+  bi-diff    D  1.00 F2  8.0 m 0.3: 8.08e-03 (no jitter 7.91e-03, penalty 1.02)
+  bi-diff    D  1.00 F2 12.0 m 0.3: 8.81e-03 (no jitter 8.42e-03, penalty 1.05)
+  bi-one     D  1.00 F2 12.0 m 0.3: 6.72e-03 (no jitter 6.22e-03, penalty 1.08)
+  bi-one     D  1.00 F2  8.0 m 0.3: 7.82e-03 (no jitter 7.30e-03, penalty 1.07)
+  bi-one     D  1.50 F2 12.0 m 0.3: 8.37e-03 (no jitter 7.89e-03, penalty 1.06)
+  two-rings-diff D  1.00 F2  1.0 m 0.3: 2.21e-02 (no jitter 1.95e-02, penalty 1.13)
+  two-rings-diff D  2.00 F2  2.0 m 0.3: 2.59e-02 (no jitter 2.37e-02, penalty 1.09)
+  two-rings-diff D  1.50 F2  2.0 m 0.3: 3.27e-02 (no jitter 2.86e-02, penalty 1.14)
+
+best per mode (quad readout, with jitter):
+  uni        D  3.50 F2  6.0 m 0.3: 1.61e-01 (no jitter 1.53e-01, penalty 1.05)
+  uni        D  3.00 F2  4.0 m 0.3: 1.63e-01 (no jitter 1.60e-01, penalty 1.02)
+  uni        D  2.50 F2  3.0 m 0.1: 1.93e-01 (no jitter 1.76e-01, penalty 1.10)
+  bi-common  D  3.50 F2  3.0 m 0.3: 3.44e-02 (no jitter 2.67e+01, penalty 0.00)
+  bi-common  D  3.50 F2  8.0 m 0.3: 8.92e-02 (no jitter 2.60e+01, penalty 0.00)
+  bi-common  D  2.00 F2  3.0 m 0.3: 8.97e-02 (no jitter 6.71e+00, penalty 0.01)
+  bi-diff    D  1.00 F2 12.0 m 0.3: 5.24e-03 (no jitter 4.85e-03, penalty 1.08)
+  bi-diff    D  1.00 F2  8.0 m 0.3: 6.61e-03 (no jitter 6.12e-03, penalty 1.08)
+  bi-diff    D  0.50 F2 12.0 m 0.3: 7.84e-03 (no jitter 7.75e-03, penalty 1.01)
+  bi-one     D  1.00 F2 12.0 m 0.3: 5.47e-03 (no jitter 4.83e-03, penalty 1.13)
+  bi-one     D  1.00 F2  8.0 m 0.3: 7.44e-03 (no jitter 6.82e-03, penalty 1.09)
+  bi-one     D  1.00 F2  6.0 m 0.3: 8.28e-03 (no jitter 7.96e-03, penalty 1.04)
+  two-rings-diff D  1.00 F2  1.0 m 0.3: 1.74e-02 (no jitter 1.64e-02, penalty 1.06)
+  two-rings-diff D  2.00 F2  2.0 m 0.3: 2.39e-02 (no jitter 2.09e-02, penalty 1.14)
+  two-rings-diff D  1.50 F2  1.0 m 0.3: 2.94e-02 (no jitter 8.86e-03, penalty 3.32)
+saved results/colab_cp_ts03_std.csv

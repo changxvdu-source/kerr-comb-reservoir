@@ -1,0 +1,3 @@
+weights,size,input_noise,test_heldout_3_5
+optimised,62,0.0003,6.630659993704122e-07
+original,62,0.0003,5.458628563654859e-06

@@ -1,0 +1,17 @@
+78 grid points around mask_drop trial 211 (zeta 0.91, 178 mW)
+series 0 jitter done
+series 0 no jitter done
+series 1 jitter done
+series 1 no jitter done
+series 2 jitter done
+series 2 no jitter done
+best points with jitter:
+  zeta  0.80    178 mW  jitter 1.28e-04  no jitter 6.43e-05  penalty 1.99
+  zeta  0.60    178 mW  jitter 1.38e-04  no jitter 7.50e-05  penalty 1.85
+  zeta  0.20    266 mW  jitter 1.41e-04  no jitter 8.79e-05  penalty 1.61
+  zeta  1.00    178 mW  jitter 1.51e-04  no jitter 4.33e-05  penalty 3.48
+  zeta  1.20    178 mW  jitter 1.70e-04  no jitter 6.20e-05  penalty 2.74
+  zeta  0.40    178 mW  jitter 1.76e-04  no jitter 9.14e-05  penalty 1.92
+  zeta  0.00    266 mW  jitter 1.84e-04  no jitter 1.23e-04  penalty 1.50
+  zeta  1.40    178 mW  jitter 1.95e-04  no jitter 6.29e-05  penalty 3.10
+saved results/jitter_sweet_spot.csv

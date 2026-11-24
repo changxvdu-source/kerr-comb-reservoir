@@ -1,0 +1,11 @@
+[   408 s] generation 0: best 1.66e-05, elite worst 2.86e-05
+[   627 s] generation 1 (sigma 0.300): best 1.45e-05, elite worst 2.16e-05
+[   844 s] generation 2 (sigma 0.225): best 1.06e-05, elite worst 1.71e-05
+[  1062 s] generation 3 (sigma 0.169): best 8.66e-06, elite worst 1.48e-05
+[  1269 s] generation 4 (sigma 0.127): best 8.73e-06, elite worst 1.25e-05
+[  1472 s] generation 5 (sigma 0.095): best 7.23e-06, elite worst 9.62e-06
+[  1680 s] generation 6 (sigma 0.071): best 6.12e-06, elite worst 9.15e-06
+[  1740 s] choice on series 0-2: 8.38e-06 (validation)
+[  1851 s] optimised mask on held-out series 3-5: 7.34e-06 with jitter, 4.42e-06 without
+[  1952 s] original  mask on held-out series 3-5: 1.66e-05 with jitter, 7.27e-06 without
+[  1952 s] saved results/mask_opt_bidiff.csv

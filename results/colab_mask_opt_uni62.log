@@ -1,0 +1,11 @@
+[   434 s] generation 0: best 8.41e-05, elite worst 1.32e-04
+[   565 s] generation 1 (sigma 0.300): best 5.41e-05, elite worst 8.28e-05
+[   696 s] generation 2 (sigma 0.225): best 3.65e-05, elite worst 7.09e-05
+[   827 s] generation 3 (sigma 0.169): best 3.18e-05, elite worst 6.29e-05
+[   959 s] generation 4 (sigma 0.127): best 3.42e-05, elite worst 5.55e-05
+[  1090 s] generation 5 (sigma 0.095): best 2.83e-05, elite worst 4.34e-05
+[  1221 s] generation 6 (sigma 0.071): best 2.67e-05, elite worst 3.87e-05
+[  1277 s] choice on series 0-2: 3.30e-05 (validation)
+[  1380 s] optimised mask on held-out series 3-5: 3.26e-05 with jitter, 1.35e-05 without
+[  1482 s] original  mask on held-out series 3-5: 1.85e-04 with jitter, 1.06e-04 without
+[  1482 s] saved results/colab_mask_opt_uni62.csv

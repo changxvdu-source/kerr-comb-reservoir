@@ -1,0 +1,3 @@
+[   230 s] stage 1 rings-diff: 768 points
+[   339 s] rings-diff trial 1059: test 3.58e-05 with jitter, 1.71e-05 without (penalty 2.10)
+saved results/colab_big_ringsdiff.csv

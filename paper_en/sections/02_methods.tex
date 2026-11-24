@@ -49,7 +49,8 @@ $\mathcal F_\mu$ takes the $\mu$-th Fourier component with the convention $E(\ta
 $\alpha_i$ is the intrinsic power loss per round trip, $\theta_1$ and $\theta_2$ are the power coupling ratios of the two ports,
 $\alpha=(\alpha_i+\theta_1+\theta_2)/2$ is the field loss per round trip (the half-linewidth), and $\delta_0$ is the pump detuning
 from resonance. We use the normalised detuning $\zeta=\delta_0/\alpha$ (in half-linewidths).
-The loaded quality factor is $Q=\omega_0 t_R/(2\alpha)$, and the drop-port power of line $\mu$ is $P_\mu=\theta_2|\tilde E_\mu|^{2}$.
+The loaded quality factor is $Q=\omega_0 t_R/(2\alpha)$, where $\omega_0=2\pi\nu_0$ is the pump's angular optical frequency
+($\nu_0\approx193.4~\mathrm{THz}$ at $1550~\mathrm{nm}$), and the drop-port power of line $\mu$ is $P_\mu=\theta_2|\tilde E_\mu|^{2}$.
 
 Equation~\eqref{eq:lle} is integrated with the fourth-order Runge--Kutta method in the interaction picture
 (RK4IP)~\cite{hult2007}, which uses only fast Fourier transforms and pointwise operations, so gradients with respect to all device
@@ -79,10 +80,10 @@ Experimentally this corresponds to splitting an input comb into a static branch 
 shows that what matters is the randomness of the line phases, so the shapers need only set phases.
 
 \paragraph{Single-pump encodings (our implementations of literature schemes).}
-A single CW pump whose power $P[1+d(u_t-\tfrac12)]$, detuning $\zeta+d(u_t-\tfrac12)$ or phase $\exp[i d(u_t-\tfrac12)]$ is
+A single pump laser, operated as a continuous wave (CW), whose power $P[1+d(u_t-\tfrac12)]$, detuning $\zeta+d(u_t-\tfrac12)$ or phase $\exp[i d(u_t-\tfrac12)]$ is
 modulated by the signal, inspired by Refs.~\cite{shishavan2025}, \cite{cuevas2025} and \cite{arabieh2026soliton} respectively.
-These are our implementations in the common device and protocol, not reproductions of the original set-ups, whose cavity lengths,
-$Q$ splits and sampling intervals are not all given. Each comes in two groups. Starting from an empty cavity, $\zeta\in[-1,4]$
+These are our implementations in the common device and protocol, not reproductions of the original set-ups, whose cavity lengths
+and splits of $Q$ between intrinsic and coupling losses are not all given. Each comes in two groups. Starting from an empty cavity, $\zeta\in[-1,4]$
 and $P\in[10,300]~\mathrm{mW}$ as for the mask, with $d\in[0.05,1]$ for power and $d$ log-uniform in $[10^{-1.3},10^{0.5}]$ for
 detuning and phase. Starting from a single soliton, $\Qone\in[10^{6.5},10^{7.2}]$, $P\in[30,300]~\mathrm{mW}$ and $\zeta$ is
 drawn inside the soliton existence range (from 2 to its upper limit), with $d\in[0.02,0.5]$ for power, $d$ log-uniform in
@@ -117,8 +118,8 @@ validation part from $\{10^{-8},10^{-6},10^{-4},10^{-2},1\}$. Section~\ref{sec:m
       resonator, and a full re-selection under a fixed laser is left for future work;
 \item intracavity field noise at the vacuum level: half a photon per mode and loss channel;
 \item shot noise, with each reading integrated over one symbol ($1~\mathrm{ns}$);
-\item detector electronic noise of $0.3~\mu\mathrm{W}$ per line (rms, referred to optical power). For 1-GHz-class InGaAs PIN
-      receivers the datasheet noise-equivalent power corresponds to $0.13$ to $0.63~\mu\mathrm{W}$ per line, so $0.3~\mu\mathrm{W}$
+\item detector electronic noise of $0.3~\mu\mathrm{W}$ per line (rms, referred to optical power). For 1-GHz-class InGaAs p-i-n (PIN)
+      photodiode receivers the datasheet noise-equivalent power corresponds to $0.13$ to $0.63~\mu\mathrm{W}$ per line, so $0.3~\mu\mathrm{W}$
       is mid-range.
 \end{itemize}
 Amplified-spontaneous-emission beat noise and detector quantum efficiency are not modelled. Section~\ref{sec:noise} breaks down
@@ -130,11 +131,11 @@ Three benchmark tasks:
 (1) ten-step prediction of the Mackey--Glass series~\cite{mackey1977} (delay 17, feedback and decay rates 0.2 and 0.1, exponent 10,
 sampling interval 1);
 (2) nonlinear channel equalisation~\cite{jaeger2004}: four-level symbols pass linear inter-symbol interference, a cubic
-polynomial nonlinearity and additive noise at $28~\mathrm{dB}$ SNR, and the symbol sent two steps earlier is recovered from the
+polynomial nonlinearity and additive noise at a signal-to-noise ratio (SNR) of $28~\mathrm{dB}$, and the symbol sent two steps earlier is recovered from the
 received signal (we report the symbol error rate besides the NMSE);
 (3) NARMA-10~\cite{atiya2000}, which needs a memory of about ten symbols.
-Appendix~\ref{app:fibre} adds a realistic fibre-link task (28~GBd PAM-4 over 17~km of standard single-mode fibre, intensity
-modulation and direct detection).
+Appendix~\ref{app:fibre} adds a realistic fibre-link task ($28~\mathrm{GBd}$ four-level pulse-amplitude modulation, PAM-4, over
+$17~\mathrm{km}$ of standard single-mode fibre with intensity modulation and direct detection, IM/DD).
 
 There are two software baselines. One is an echo state network (ESN)~\cite{jaeger2001} with 31 $\tanh$ nodes, matching the
 resonator's readout dimension, whose readout sees the same delay taps and whose spectral radius (0.5 to 1.1) and input scaling

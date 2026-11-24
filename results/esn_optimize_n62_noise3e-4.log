@@ -1,0 +1,12 @@
+[     4 s] ESN 62 nodes, input noise 3e-04: radius 1.1, input scale 1.0
+[    87 s] generation 0: best 1.31e-06, elite worst 2.74e-06
+[   110 s] generation 1 (sigma 0.300): best 9.82e-07, elite worst 1.69e-06
+[   133 s] generation 2 (sigma 0.225): best 7.39e-07, elite worst 1.08e-06
+[   161 s] generation 3 (sigma 0.169): best 1.15e-06, elite worst 1.55e-06
+[   189 s] generation 4 (sigma 0.127): best 7.30e-07, elite worst 8.60e-07
+[   217 s] generation 5 (sigma 0.095): best 6.61e-07, elite worst 7.26e-07
+[   244 s] generation 6 (sigma 0.071): best 8.79e-07, elite worst 9.39e-07
+[   253 s] choice on series 0-2: 7.54e-07 (validation)
+[   254 s] optimised input weights on held-out series 3-5: 6.63e-07
+[   256 s] original  input weights on held-out series 3-5: 5.46e-06
+[   256 s] saved results/esn_optimize_n62_noise3e-04.csv

@@ -15,14 +15,14 @@ intracavity noise. Panel~(a) uses the parameters of the original chaotic-comb sc
 $Q=10^{7}$, normalised detuning about 5; note that this point lies outside the detuning range of our random search, see
 Section~\ref{sec:encodings-def}): the power of the generated line $\mu=3$ is completely different in the two runs, with a correlation
 of only $0.08$, and a readout trained on such features gives an NMSE of about 1 on the other run. Panels~(b) and~(c) show an
-operating point of the spectral-phase mask (the point chosen in the noise-floor study of Section~\ref{sec:noise},
-$23~\mathrm{mW}$, loaded $Q=6\times10^{6}$). For an input line ($\mu=3$, panel b) reproducibility is expected, since the line is
+operating point of the spectral-phase mask (the point chosen with ideal detectors in the noise-floor study of
+Section~\ref{sec:noise}, $23~\mathrm{mW}$, loaded $Q=6\times10^{6}$). For an input line ($\mu=3$, panel b) reproducibility is expected, since the line is
 driven directly; the relevant test is a line that exists only through four-wave mixing ($\mu=12$, panel c, outside the input lines
 $|\mu|\le8$). Its two runs coincide as well, with correlation $1.00$, at a power about ten times lower than the input line.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.8\linewidth]{fig3_two_runs}
+\includegraphics{fig3_two_runs}
 \caption{The same input sequence fed into the same device twice; the runs differ only in the initial intracavity noise (solid and
 dashed). Drop-port power over the first 300 symbols, no other noise.
 (a) Parameters of the original chaotic-comb scheme (single CW pump, $325~\mathrm{mW}$, loaded $Q=10^{7}$, normalised detuning
@@ -42,14 +42,14 @@ errors in the map, $1.8\times10^{-6}$ and $3.3\times10^{-4}$, happen to round to
 
 Without noise 74\% of the points have a consistency above $0.99$: the coherently seeded regime. The inconsistent points (consistency
 below $0.5$, 16\%) lie beyond the solid contour in Fig.~\ref{fig:operating-map}a, at high power and high $Q$ (above about
-$150~\mathrm{mW}$ at the highest $Q$ and above about $1~\mathrm{W}$ at $Q_{\mathrm{ext},1}\approx2\times10^{6}$), where modulation
+$150~\mathrm{mW}$ at the highest $Q$ and above about $1~\mathrm{W}$ at $\Qone\approx2\times10^{6}$), where modulation
 instability overwhelms the seed and the comb returns to chaos. The error rises well before consistency is lost (between the two
 contours), so high error and inconsistency are not the same thing. The lowest errors lie inside the coherently seeded regime, close
 to the chaotic one: all points within a factor of three of the best error fall between $6$ and $79~\mathrm{mW}$ and
 $\Qone=10^{6.1}$ to $10^{6.85}$, in line with the common experience that more nonlinearity helps until reproducibility is lost.
 
 Realistic noise adds a third region. At low power many lines reach the detectors with powers comparable to the detector noise, the
-readings drown in it, and the consistency drops as well (below the lower dashed contour in Fig.~\ref{fig:operating-map}b); the share
+readings are dominated by it, and the consistency drops as well (below the lower dashed contour in Fig.~\ref{fig:operating-map}b); the share
 of points with consistency above $0.99$ falls from 74\% to 29\%. The usable points are squeezed between the two regions: the points
 within a factor of three of the best error form a diagonal band in the power--$Q$ plane ($9$ to $336~\mathrm{mW}$) that tilts
 towards lower power as $Q$ increases, because a higher $Q$ needs less power for the same nonlinearity. The chaotic region is at nearly
@@ -63,8 +63,8 @@ noise.
 runs per grid point). The other parameters are fixed while the input coupling $\Qone$ and the total input power are scanned (17 steps
 each); colour is the test error (darker is better). Dashed and solid contours: run-to-run consistency of $0.99$ and $0.5$; star:
 lowest error. (a) No noise: beyond the solid contour (high power, high $Q$) lies the non-reproducible chaotic regime. (b) Realistic
-noise, PIN detectors: below the lower dashed contour the readings drown in detector noise, and the usable points form a band between
-the two regions.}
+noise, PIN detectors: below the lower dashed contour the readings are dominated by detector noise, and the usable points form a band
+between the two regions. Test errors above 1 and failed runs are shown as 1; runs without a defined consistency count as 0.}
 \label{fig:operating-map}
 \end{figure}
 

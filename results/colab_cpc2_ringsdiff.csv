@@ -1,0 +1,2 @@
+scheme,trial,p_total_mw,zeta,q_ext1,stage1_best_val,test_jitter,test_no_jitter,jitter_penalty,per_series_jitter,per_series_no_jitter
+rings-diff,192,206.73340136496796,0.8192547826552374,1578867.7562943639,7.610741002317703e-05,7.69455731773048e-05,3.31590632470859e-05,2.320499002156431,8.186e-05 7.909e-05 7.036e-05,3.288e-05 3.268e-05 3.392e-05

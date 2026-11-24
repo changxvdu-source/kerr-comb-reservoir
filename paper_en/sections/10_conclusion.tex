@@ -5,8 +5,8 @@ limits it, and how it compares with software.
 
 First, the encoding matters. Giving every line of an input comb a random complex weight before it enters the resonator yields a
 coherently seeded regime in which the output is set by the input rather than by start-up noise. Under the same physical conditions and
-selection budget this spectral-phase mask beats our implementations of single-pump encodings and a uniformly modulated comb by one to
-two orders of magnitude on Mackey--Glass prediction, is comparable with the uniform comb on channel equalisation, and does not help
+selection budget this spectral-phase mask beats a uniformly modulated comb by one to two orders of magnitude and our implementations
+of single-pump encodings by two to three on Mackey--Glass prediction, is comparable with the uniform comb on channel equalisation, and does not help
 NARMA-10 with a single resonator. The randomness of the line phases matters more than per-line amplitudes, so one modulator and two
 spectral shapers suffice. A linear-cavity control shows that on Mackey--Glass most of this gain comes from the
 Kerr dynamics, whereas on channel equalisation detection of the interfering input lines supplies the nonlinearity and the Kerr term
@@ -14,8 +14,8 @@ adds nothing.
 
 Second, the floor is set by noise, about half of it at the source. With ideal detectors about half of the error floor comes from
 detuning jitter and half from shot noise; Si$_3$N$_4$ or more power does not lower it, and the readout-side changes (stronger drop
-coupling, slower symbols) lower it in part. A linear readout cannot remove the jitter even with the exact jitter sequence, and another
-operating point does not avoid it, so the intrinsic laser linewidth must be a few kilohertz or less for our device; an ordinary
+coupling, slower symbols) lower it in part. A linear readout given the exact jitter sequence did not remove the jitter, and
+re-selecting the operating point did not avoid it, so the intrinsic laser linewidth must be a few kilohertz or less for our device; an ordinary
 $100~\mathrm{kHz}$ laser makes the best ring 5 to 6 times worse than with a $1.6~\mathrm{kHz}$ laser. Memory has to come from external
 delay lines and readout taps.
 
@@ -24,6 +24,12 @@ converter with about 7 effective bits, while converters at the resonator's rate 
 quantization of the resonator's 31 readings included, an ESN quantized only at its input is better at every depth from 6 to 12 bits.
 Reading 16 rings together lowers the error about 19 times, but large software reservoirs with lower input noise catch up as well. The
 comparison is sensitive to the input noise given to software, so we report whole curves and suggest that future work do the same.
+
+Fourth, the signal and the jitter appear to act through the same variable, the effective detuning, and none of the operating points
+we examined avoids the jitter. Driving the two directions of one ring with inverted signals (we attribute the gain, tentatively, to the
+cross-phase coupling), reading out both directions and optimising the mask lower the error to $7.3\times10^{-6}$, 21 times below the
+best single-direction ring and 4.5 times below one direction read out and optimised in the same way; against a 62-node ESN whose input weights get the same
+optimisation this is about 8 effective bits, one bit more than before but still below the converters available at this rate.
 
 Within the design space explored, the case for a Kerr-microcomb reservoir therefore does not rest on computing accuracy. Whether it can
 rest on the physical layer (a signal that is optical to begin with, avoided digitisation, latency or energy with optical weighting) is

@@ -1,0 +1,4 @@
+[   275 s] stage 1 uni: 192 points
+[   537 s] uni31      trial  95: test 2.91e-04 with jitter, 1.96e-04 without (penalty 1.48)
+[   719 s] uni62      trial 160: test 1.65e-04 with jitter, 4.46e-05 without (penalty 3.70)
+saved results/colab_cpc_uni.csv

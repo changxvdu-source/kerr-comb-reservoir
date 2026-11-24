@@ -1,0 +1,3 @@
+[   519 s] stage 1 bi-one: 192 points
+[   722 s] bi-one     trial 154: test 2.00e-04 with jitter, 1.20e-04 without (penalty 1.66)
+saved results/colab_cpc_bione.csv

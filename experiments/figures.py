@@ -5,7 +5,7 @@
 
 Style: one validated categorical palette (blue, orange, aqua; checked with the data-viz validator for
 colour-blind separation, all pairs), thin marks, hairline grid, one y-axis per panel, legends whenever
-two or more series share a panel. Sizes follow journal columns: 3.4 in single, 7.0 in double.
+two or more series share a panel. Sizes follow the text: 3.4 in single, 6.3 in double; no lettering below 7 pt at final size; TrueType fonts.
 """
 import csv
 import math
@@ -26,15 +26,16 @@ OUT = os.path.join(ROOT, "figures")
 BLUE, ORANGE, AQUA = "#2a78d6", "#eb6834", "#1baf7a"
 INK, INK2, MUTED, GRID = "#0b0b0b", "#52514e", "#8a8984", "#e4e3df"
 SEQ = ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"]
-SINGLE, DOUBLE = 3.4, 7.0
+SINGLE, DOUBLE = 3.4, 6.3       # double = the text width of the arXiv layout, so figures are placed at 1:1
 
 plt.rcParams.update({
     "font.family": "DejaVu Sans", "font.size": 7.5, "axes.titlesize": 8, "axes.labelsize": 7.5,
-    "xtick.labelsize": 7, "ytick.labelsize": 7, "legend.fontsize": 6.5, "axes.edgecolor": MUTED,
+    "xtick.labelsize": 7, "ytick.labelsize": 7, "legend.fontsize": 7, "axes.edgecolor": MUTED,
     "axes.labelcolor": INK, "xtick.color": INK2, "ytick.color": INK2, "text.color": INK,
     "axes.spines.top": False, "axes.spines.right": False, "axes.linewidth": 0.6,
     "axes.grid": True, "grid.color": GRID, "grid.linewidth": 0.5, "axes.axisbelow": True,
     "lines.linewidth": 1.4, "legend.frameon": False, "savefig.dpi": 300, "figure.dpi": 150,
+    "pdf.fonttype": 42, "ps.fonttype": 42,
 })
 
 GROUP_LABEL = {"power": "power", "detuning": "detuning", "phase": "phase", "power_soliton": "power\n(soliton)",
@@ -117,9 +118,9 @@ def fig1():
     def box(x, y, w, h, text, sub=None):
         ax.add_patch(FancyBboxPatch((x - w / 2, y - h / 2), w, h, boxstyle="round,pad=0.02,rounding_size=0.12",
                                     facecolor="#f4f3f0", edgecolor=INK2, linewidth=0.8, zorder=3))
-        ax.text(x, y + (0.13 if sub else 0), text, ha="center", va="center", fontsize=6.6, zorder=4)
+        ax.text(x, y + (0.13 if sub else 0), text, ha="center", va="center", fontsize=7, zorder=4)
         if sub:
-            ax.text(x, y - 0.2, sub, ha="center", va="center", fontsize=5.6, color=INK2, zorder=4)
+            ax.text(x, y - 0.2, sub, ha="center", va="center", fontsize=7, color=INK2, zorder=4)
 
     def wire(points, color=OPT, arrow=True, lw=1.3):
         for (x0, y0), (x1, y1) in zip(points[:-1], points[1:]):
@@ -130,45 +131,45 @@ def fig1():
 
     # source and comb
     box(0.85, 2.6, 1.3, 0.75, "CW laser", "1550 nm")
-    box(2.75, 2.6, 1.45, 0.75, "200 GHz comb", "FSR-locked")
-    wire([(1.5, 2.6), (2.03, 2.6)])
+    box(2.85, 2.6, 1.75, 0.75, "200 GHz comb", "FSR-locked")
+    wire([(1.5, 2.6), (1.98, 2.6)])
     # split into two branches
-    wire([(3.48, 2.6), (3.85, 2.6), (3.85, 3.65), (4.6, 3.65)], arrow=False)
-    wire([(3.85, 2.6), (3.85, 1.55), (4.6, 1.55)])
-    box(5.4, 1.55, 1.55, 0.72, "modulator", "one MZM")
-    box(7.2, 3.65, 1.6, 0.72, "spectral shaper", r"static: $b_\mu$, $\mu\neq0$")
-    box(7.2, 1.55, 1.6, 0.72, "spectral shaper", r"signal: $w_\mu$, pump")
-    wire([(4.6, 3.65), (6.4, 3.65)])
-    wire([(6.18, 1.55), (6.4, 1.55)])
+    wire([(3.73, 2.6), (3.95, 2.6), (3.95, 3.65), (4.6, 3.65)], arrow=False)
+    wire([(3.95, 2.6), (3.95, 1.55), (4.35, 1.55)])
+    box(5.1, 1.55, 1.5, 0.72, "modulator", "one MZM")
+    box(7.0, 3.65, 2.1, 0.72, "spectral shaper", r"static: $b_\mu$, $\mu\neq0$")
+    box(7.0, 1.55, 2.1, 0.72, "spectral shaper", r"signal: $w_\mu$, pump")
+    wire([(4.6, 3.65), (5.95, 3.65)])
+    wire([(5.85, 1.55), (5.95, 1.55)])
     # signal into the modulator
-    ax.text(5.4, 0.55, "input u(t)", ha="center", va="center", fontsize=6.6, color=INK)
-    wire([(5.4, 0.72), (5.4, 1.19)], color=ELEC, lw=1.1)
+    ax.text(5.1, 0.55, "input u(t)", ha="center", va="center", fontsize=7, color=INK)
+    wire([(5.1, 0.72), (5.1, 1.19)], color=ELEC, lw=1.1)
     # recombine
-    wire([(8.0, 3.65), (8.55, 3.65), (8.55, 2.75)])
-    wire([(8.0, 1.55), (8.55, 1.55), (8.55, 2.45)])
+    wire([(8.05, 3.65), (8.55, 3.65), (8.55, 2.75)])
+    wire([(8.05, 1.55), (8.55, 1.55), (8.55, 2.45)])
     ax.add_patch(Circle((8.55, 2.6), 0.13, facecolor="white", edgecolor=INK2, linewidth=0.8, zorder=3))
-    ax.text(8.55, 2.95 + 0.9, "", fontsize=6)
+    ax.text(8.55, 2.95 + 0.9, "", fontsize=7)
     # ring: input bus (top), drop bus (bottom)
     rx, ry, rr = 10.0, 2.6, 0.55
     wire([(8.68, 2.6), (9.0, 2.6), (9.0, 3.25), (11.2, 3.25)], arrow=True)
-    ax.text(11.25, 3.25, "through", ha="left", va="center", fontsize=5.8, color=INK2)
+    ax.text(11.25, 3.25, "through", ha="left", va="center", fontsize=7, color=INK2)
     ax.add_patch(Circle((rx, ry), rr, facecolor="none", edgecolor=OPT, linewidth=2.2, zorder=3))
-    ax.text(rx, ry, "Kerr\nring", ha="center", va="center", fontsize=6.2, zorder=4)
-    ax.text(rx + rr + 0.15, ry, r"$Q_\mathrm{int}$, $\zeta$", ha="left", va="center", fontsize=5.8, color=INK2)
-    ax.text(10.0, 3.36, r"$Q_{\mathrm{ext},1}$", ha="center", va="bottom", fontsize=5.8, color=INK2)
+    ax.text(rx, ry, "Kerr\nring", ha="center", va="center", fontsize=7, zorder=4)
+    ax.text(rx + rr + 0.15, ry, r"$Q_\mathrm{int}$, $\zeta$", ha="left", va="center", fontsize=7, color=INK2)
+    ax.text(10.0, 3.36, r"$Q_{\mathrm{ext},1}$", ha="center", va="bottom", fontsize=7, color=INK2)
     wire([(10.75, 1.95), (9.25, 1.95)], arrow=False)                       # drop bus under the ring
     wire([(10.75, 1.95), (11.45, 1.95), (11.45, 1.38)])
-    ax.text(10.0, 1.7, r"drop port, $Q_{\mathrm{ext},2}$", ha="center", va="top", fontsize=5.8, color=INK2)
+    ax.text(10.0, 1.7, r"drop port, $Q_{\mathrm{ext},2}$", ha="center", va="top", fontsize=7, color=INK2)
     # demux + photodiodes + readout
     box(11.45, 1.05, 1.2, 0.62, "demux", "31 lines")
     for k in range(5):
         y = 0.25 - 0.0 + k * 0.0
-    box(13.05, 1.05, 1.3, 0.62, "photodiodes", "per line")
-    wire([(12.05, 1.05), (12.38, 1.05)])
-    box(13.05, 2.6, 1.3, 0.75, "readout", "ridge + taps")
-    wire([(13.05, 1.36), (13.05, 2.22)], color=ELEC, lw=1.1)
-    ax.text(13.05, 3.4, "output y(t)", ha="center", va="center", fontsize=6.6)
-    wire([(13.05, 2.98), (13.05, 3.22)], color=ELEC, lw=1.1)
+    box(13.1, 1.05, 1.55, 0.62, "photodiodes", "per line")
+    wire([(12.05, 1.05), (12.32, 1.05)])
+    box(13.1, 2.6, 1.55, 0.75, "readout", "ridge + taps")
+    wire([(13.1, 1.36), (13.1, 2.22)], color=ELEC, lw=1.1)
+    ax.text(13.1, 3.4, "output y(t)", ha="center", va="center", fontsize=7)
+    wire([(13.1, 2.98), (13.1, 3.22)], color=ELEC, lw=1.1)
 
     # insets: input comb with random phases, drop-port spectrum
     def inset(x0, y0, w, h, heights, phases=None, title=""):
@@ -185,7 +186,7 @@ def fig1():
         for side in ("top", "right", "left"):
             ia.spines[side].set_visible(False)
         ia.grid(False)
-        ia.set_title(title, fontsize=5.6, color=INK2, pad=1.5)
+        ia.set_title(title, fontsize=7, color=INK2, pad=1.5)
         ia.patch.set_alpha(0)
     rng = np.random.default_rng(3)
     amps = np.r_[0.55 * np.ones(8), 1.0, 0.55 * np.ones(8)]
@@ -197,7 +198,7 @@ def fig1():
     for i, (color, text) in enumerate(((OPT, "optical path"), (ELEC, "electrical signal"))):
         y = 0.75 - 0.38 * i
         ax.plot([0.3, 0.85], [y, y], color=color, linewidth=1.3)
-        ax.text(0.98, y, text, va="center", fontsize=6, color=INK2)
+        ax.text(0.98, y, text, va="center", fontsize=7, color=INK2)
 
     # panel b: the simulation model as a signal chain, with the points where each noise enters
     bx = fig.add_axes([0, 0, 1, HB / H])
@@ -206,40 +207,40 @@ def fig1():
     bx.axis("off")
     bx.text(0.05, 3.62, "b", fontweight="bold", fontsize=9, ha="left", va="top")
     stages = [  # (x left, width, title, formula lines, note)
-        (0.15, 2.75, "input mask",
+        (0.1, 3.0, "input mask",
          [r"$\tilde E_{\mathrm{in},\mu}=b_\mu+w_\mu\,(u_t-\frac{1}{2})$",
-          r"$\tilde E_{\mathrm{in},0}=\sqrt{P_p[1+2d\,(u_t-\frac{1}{2})]}$"], r"$\mu=\pm1..\pm8$, random $b_\mu, w_\mu$"),
-        (3.12, 3.85, "LLE (512 modes, RK4IP)",
+          r"$\tilde E_{\mathrm{in},0}=\sqrt{P_p[1+2d\,(u_t-\frac{1}{2})]}$"], r"$\mu=\pm1..\pm8$"),
+        (3.3, 3.75, "LLE (512 modes, RK4IP)",
          [r"$\frac{d\tilde E_\mu}{dn}=\left[-\alpha-i\delta_0+i\frac{L\beta_2}{2}\omega_\mu^2\right]\tilde E_\mu$",
           r"$+\,i\gamma L\,\mathcal{F}_\mu\left[|E|^2E\right]+\sqrt{\theta_1}\,\tilde E_{\mathrm{in},\mu}$"], r"$\zeta=\delta_0/\alpha$, one symbol $T=1$ ns"),
-        (7.2, 1.75, "drop port", [r"$P_\mu=\theta_2|\tilde E_\mu|^2$"], r"$\mu=-15..15$"),
-        (9.2, 2.25, "detection", [r"$x_\mu=\log_{10}(\hat P_\mu+P_\mathrm{floor})$"], "31 photodiodes"),
-        (11.7, 2.15, "linear readout", [r"$\hat y_t=\sum_{k=0}^{7}W_k\,\mathbf{x}_{t-k}$"], "ridge regression"),
+        (7.25, 1.65, "drop port", [r"$P_\mu=\theta_2|\tilde E_\mu|^2$"], r"$\mu=-15..15$"),
+        (9.1, 2.5, "detection", [r"$x_\mu=\log_{10}(\hat P_\mu+P_\mathrm{floor})$"], "31 photodiodes"),
+        (11.8, 2.15, "linear readout", [r"$\hat y_t=\sum_{k=0}^{7}W_k\,\mathbf{x}_{t-k}$"], "ridge regression"),
     ]
     yc, hh = 2.25, 1.55
     for i, (x0, w, title, lines, note) in enumerate(stages):
         bx.add_patch(FancyBboxPatch((x0, yc - hh / 2), w, hh, boxstyle="round,pad=0.02,rounding_size=0.12",
                                     facecolor="#f4f3f0", edgecolor=INK2, linewidth=0.8, zorder=3))
-        bx.text(x0 + w / 2, yc + hh / 2 - 0.2, title, ha="center", va="center", fontsize=6.4, zorder=4)
+        bx.text(x0 + w / 2, yc + hh / 2 - 0.2, title, ha="center", va="center", fontsize=7, zorder=4)
         n = len(lines)
         for j, line in enumerate(lines):
             bx.text(x0 + w / 2, yc + 0.08 - (j - (n - 1) / 2) * 0.42, line, ha="center", va="center",
-                    fontsize=6.4, zorder=4)
-        bx.text(x0 + w / 2, yc - hh / 2 + 0.17, note, ha="center", va="center", fontsize=5.3, color=INK2, zorder=4)
+                    fontsize=7, zorder=4)
+        bx.text(x0 + w / 2, yc - hh / 2 + 0.17, note, ha="center", va="center", fontsize=7, color=INK2, zorder=4)
         if i + 1 < len(stages):
             nx = stages[i + 1][0]
             bx.add_patch(FancyArrowPatch((x0 + w + 0.02, yc), (nx - 0.02, yc), arrowstyle="-|>", mutation_scale=7,
                                          color=INK2, linewidth=1.0, zorder=2))
     noises = [  # (x, text) — dashed arrows up into the stage where each noise enters
         (1.52, "laser intensity noise\n(0.1% rms)"),
-        (4.15, "detuning jitter\n(laser frequency noise)"),
-        (5.85, "intracavity\nvacuum noise"),
+        (4.1, "detuning jitter\n(laser freq. noise)"),
+        (6.3, "intracavity\nvacuum noise"),
         (10.32, "shot noise +\ndetector noise ($0.3\\,\\mu$W)"),
     ]
     for x, text in noises:
         bx.add_patch(FancyArrowPatch((x, 0.72), (x, yc - hh / 2 - 0.02), arrowstyle="-|>", mutation_scale=6,
                                      color=MUTED, linewidth=0.9, linestyle=(0, (2, 1.5)), zorder=2))
-        bx.text(x, 0.62, text, ha="center", va="top", fontsize=5.6, color=INK2, linespacing=1.1)
+        bx.text(x, 0.62, text, ha="center", va="top", fontsize=7, color=INK2, linespacing=1.1)
     save(fig, "fig1_scheme")
 
 
@@ -285,7 +286,7 @@ def fig2():
                         Line2D([], [], color=ORANGE, linewidth=1.0, label="consistency 0.5"),
                         Line2D([], [], marker="*", linestyle="", color="white", markeredgecolor=INK, markersize=9,
                                label="lowest error")],
-               loc="upper center", ncol=3, bbox_to_anchor=(0.45, 1.06), fontsize=6.5)
+               loc="upper center", ncol=3, bbox_to_anchor=(0.45, 1.06), fontsize=7)
     save(fig, "fig2_operating_map")
 
 
@@ -350,7 +351,7 @@ def fig4():
         low = min(vals + [float(any_row["baseline_esn_fresh"])] + [v for v in clean.values() if v > 0])
         ax.set_ylim(low / 2.5, max(vals) * 2.5)
         ax.set_xticks(x)
-        ax.set_xticklabels([GROUP_LABEL[g].replace("\n", " ") for g in groups], fontsize=6, rotation=90)
+        ax.set_xticklabels([GROUP_LABEL[g].replace("\n", " ") for g in groups], fontsize=7, rotation=90)
         ax.set_title(title, loc="left")
         ax.grid(axis="x", visible=False)
         panel_tag(ax, tag)
@@ -362,7 +363,7 @@ def fig4():
                         Line2D([], [], color=AQUA, label="input comb", **mk),
                         Line2D([], [], marker="o", linestyle="", markerfacecolor="white", markeredgecolor=INK2,
                                label="no noise"), esn, lin], loc="upper center", ncol=6,
-               bbox_to_anchor=(0.5, 1.07), fontsize=6)
+               bbox_to_anchor=(0.5, 1.07), fontsize=7)
     fig.tight_layout()
     save(fig, "fig4_encodings")
 
@@ -382,7 +383,7 @@ def fig5():
         ax.plot([i - 0.32, i + 0.32], [np.median(v)] * 2, color=INK, linewidth=1.2, zorder=3)
     ax.set_yscale("log")
     ax.set_xticks(range(len(ORDER)))
-    ax.set_xticklabels([GROUP_LABEL[g] for g in ORDER], fontsize=6)
+    ax.set_xticklabels([GROUP_LABEL[g] for g in ORDER], fontsize=7)
     ax.grid(axis="x", visible=False)
     ax.set_ylabel("test NMSE, Mackey-Glass\n(realistic noise)")
     ax.set_xticklabels([GROUP_LABEL[g] for g in ORDER], fontsize=7)
@@ -403,7 +404,7 @@ def fig6():
     ax.set_yscale("log")
     ax.set_yticks([1e-5, 2e-5, 5e-5, 1e-4, 2e-4], [r"$10^{-5}$", r"$2\times10^{-5}$", r"$5\times10^{-5}$", r"$10^{-4}$", r"$2\times10^{-4}$"])
     ax.set_xticks(range(len(vals)))
-    ax.set_xticklabels([n for _, n in names], fontsize=6)
+    ax.set_xticklabels([n for _, n in names], fontsize=7)
     ax.grid(axis="x", visible=False)
     ax.set_ylabel("test NMSE, Mackey-Glass")
     ax.set_title("one noise source at a time, ideal detectors", loc="left")
@@ -439,7 +440,7 @@ def fig6():
     top = ax.secondary_xaxis("top")
     top.set_xticks(x, ["0", "16 Hz", "150 Hz", "1.6 kHz", "14 kHz"])
     top.tick_params(labelsize=6, colors=INK2)
-    top.set_xlabel(r"intrinsic linewidth at the stronger-drop point ($Q=1.9\times10^6$, 1 ns)", fontsize=6, color=INK2)
+    top.set_xlabel(r"intrinsic linewidth at the stronger-drop point ($Q=1.9\times10^6$, 1 ns)", fontsize=7, color=INK2)
     ax.set_ylabel("test NMSE, PIN detectors")
     ax.set_title("readout-side design vs assumed jitter", loc="left")
     ax.legend(loc="center left", bbox_to_anchor=(1.01, 0.5))
@@ -460,9 +461,9 @@ def fig7():
     y = np.arange(len(rows))[::-1]
     for yi, r in zip(y, rows):
         ax.plot([float(r["min_test"]), float(r["max_test"])], [yi, yi], color=BLUE, linewidth=1.2, zorder=2)
-        ax.plot(float(r["test"]), yi, "o", color=BLUE, markersize=5, markeredgecolor="white", zorder=3)
+        ax.plot(float(r["test"]), yi, "o", color=BLUE, markersize=5, markeredgewidth=0, zorder=3)
     ax.set_yticks(y)
-    ax.set_yticklabels([labels.get(r["method"], r["method"]) for r in rows], fontsize=6.5)
+    ax.set_yticklabels([labels.get(r["method"], r["method"]) for r in rows], fontsize=7)
     ax.set_xscale("log")
     ax.set_xticks([2e-4, 5e-4, 1e-3, 2e-3, 5e-3, 1e-2], [r"$2\times10^{-4}$", r"$5\times10^{-4}$", r"$10^{-3}$", r"$2\times10^{-3}$", r"$5\times10^{-3}$", r"$10^{-2}$"])
     ax.minorticks_off()
@@ -498,11 +499,11 @@ def figS4():
         ax.set_xlim(t[0], t[-1] + 1)
         ax.set_ylim(-1.3, 1.3)
         ax.set_yticks([-1, 0, 1])
-        ax.text(1.01, 0.5, label, transform=ax.transAxes, fontsize=6.5, va="center", ha="left", color=INK)
+        ax.text(1.01, 0.5, label, transform=ax.transAxes, fontsize=7, va="center", ha="left", color=INK)
         if i < 2:
             ax.set_xticklabels([])
         if i == 0:
-            ax.set_title("Hénon map, first trial: commanded trajectory (gray line) and the controlled state (dots), "
+            ax.set_title("Hénon map, first trial: commanded trajectory (grey line) and the controlled state (dots), "
                          "PIN detectors", loc="left")
             panel_tag(ax, "a")
         if i == 1:
@@ -519,7 +520,7 @@ def figS4():
     point_plot(ax, range(len(items)), vals, [c for _, _, c in items])
     ax.set_yscale("log")
     ax.set_xticks(range(len(items)))
-    ax.set_xticklabels([n for _, n, _ in items], fontsize=6)
+    ax.set_xticklabels([n for _, n, _ in items], fontsize=7)
     ax.grid(axis="x", visible=False)
     ax.set_ylabel("tracking NMSE")
     ax.set_title("tracking error, one training record (8 trials)", loc="left")
@@ -539,7 +540,7 @@ def figS4():
             if line.startswith("ring mask_slow2, PIN detectors"):
                 return float(re.search(r"tracking_nmse (\S+)", line).group(1))
     esn = float(rows["ESN, 31 nodes"]["tracking_nmse"])
-    for series, color, label in ((white, AQUA, "jitter correlated over 1 symbol"), (drift, ORANGE, "slow drift (1000 symbols)")):
+    for series, color, label in ((white, AQUA, "1-symbol correlation"), (drift, ORANGE, "slow drift, 1000 symbols")):
         xs = sorted(series)
         ax.plot([x * 100 for x in xs], [slow2(series[x]) for x in xs], color=color, marker="o", markersize=4,
                 markeredgecolor="white", markeredgewidth=0.8, label=f"2 ns ring, {label}", zorder=3)
@@ -552,7 +553,8 @@ def figS4():
     ax.set_xlabel("detuning jitter (% of half-linewidth)")
     ax.set_ylabel("tracking NMSE")
     ax.set_title("sensitivity to the detuning jitter", loc="left")
-    ax.legend(loc="upper left")
+    ax.set_ylim(top=4e-2)
+    ax.legend(loc="upper left", bbox_to_anchor=(0.0, 1.0), handlelength=1.8)
     panel_tag(ax, "c")
     save(fig, "figS4_closed_loop")
 
@@ -573,7 +575,7 @@ def figS1():
         ax.legend(loc="upper right")
         ax.set_yscale("log")
         ax.set_xticks(range(len(groups)))
-        ax.set_xticklabels([labels[g] for g in groups], fontsize=6)
+        ax.set_xticklabels([labels[g] for g in groups], fontsize=7)
         ax.grid(axis="x", visible=False)
         ax.set_title(title, loc="left")
         ax.minorticks_off()
@@ -605,11 +607,11 @@ def figS2():
     any_row = rows["comb_mask"]
     ref_line(ax, float(any_row["baseline_esn_fresh_ser"]), "ESN, same size", "--")
     ref_line(ax, float(any_row["baseline_linear_ser"]), "linear equaliser", ":")
-    ref_line(ax, 3.8e-3, "hard-decision FEC limit", "-.")
+    ref_line(ax, 7.6e-3, "FEC threshold (SER for BER $3.8\\times10^{-3}$)", "-.")
     ax.legend(loc="upper right")
     ax.set_yscale("log")
     ax.set_xticks(range(len(items)))
-    ax.set_xticklabels([n for _, n, _ in items], fontsize=5.8)
+    ax.set_xticklabels([n for _, n, _ in items], fontsize=7)
     ax.grid(axis="x", visible=False)
     ax.set_yticks([1e-3, 2e-3, 5e-3, 1e-2, 2e-2], [r"$10^{-3}$", r"$2\times10^{-3}$", r"$5\times10^{-3}$", r"$10^{-2}$", r"$2\times10^{-2}$"])
     ax.set_ylim(1e-3, 2.5e-2)
@@ -642,7 +644,7 @@ def figS3():
         ax.axvspan(len(levels) - 1.3, len(levels) - 0.7, color=GRID, alpha=0.6, zorder=0, linewidth=0)
         ax.set_yscale("log")
         ax.set_xticks(x)
-        ax.set_xticklabels(NOISE_TICKS, fontsize=6)
+        ax.set_xticklabels(NOISE_TICKS, fontsize=7)
         ax.minorticks_off()
         ax.set_xlabel("software input noise (rms)")
         ax.set_ylabel("test NMSE")
@@ -668,7 +670,7 @@ def figS3():
     ax.axvspan(len(levels) - 1.3, len(levels) - 0.7, color=GRID, alpha=0.6, zorder=0, linewidth=0)
     ax.set_yscale("log")
     ax.set_xticks(x)
-    ax.set_xticklabels(NOISE_TICKS, fontsize=6)
+    ax.set_xticklabels(NOISE_TICKS, fontsize=7)
     ax.minorticks_off()
     ax.set_xlabel("software input noise (rms)")
     ax.set_ylabel("tracking NMSE")
@@ -681,7 +683,7 @@ def figS3():
         top = a.secondary_xaxis("top")
         top.set_xticks(np.arange(len(levels)), bits)
         top.tick_params(labelsize=6, colors=INK2)
-        top.set_xlabel("equivalent ADC bits", fontsize=6.5, color=INK2)
+        top.set_xlabel("equivalent ADC bits", fontsize=7, color=INK2)
     # one legend for the three panels: the software models, then the rings (gray reference lines)
     seen = {}
     for a in axes:
@@ -711,7 +713,7 @@ def fig9():
                 markeredgewidth=0.8, label=label, zorder=3)
         for (s, _), xi, yi in zip(pts, x, y) if names else ():
             ax.annotate(f"{s}", (xi, yi), textcoords="offset points", xytext=(0, 5 if names == "rings" else -10),
-                        ha="center", fontsize=6, color=INK2)
+                        ha="center", fontsize=7, color=INK2)
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.minorticks_off()
@@ -725,7 +727,80 @@ def fig9():
     save(fig, "fig9_scaling")
 
 
-FIGURES = {"1": fig1, "2": fig2, "3": fig3, "4": fig4, "5": fig5, "6": fig6, "7": fig7, "9": fig9, "S1": figS1, "S2": figS2, "S3": figS3, "S4": figS4}
+
+# ---- figure 10: two-direction drive ------------------------------------------------------------------------------------
+def fig10():
+    """(a) Scheme of the two-direction drive; (b) optimised schemes against the equally optimised 62-node ESN."""
+    from matplotlib.patches import Circle, FancyArrowPatch, FancyBboxPatch
+    from matplotlib.ticker import FixedLocator, FormatStrFormatter
+    fig = plt.figure(figsize=(DOUBLE, 2.7))
+    gs = fig.add_gridspec(1, 2, width_ratios=[1.15, 1], wspace=0.32)
+    ax = fig.add_subplot(gs[0])
+    ax.set_xlim(-0.3, 11.6)
+    ax.set_ylim(0, 6.6)
+    ax.set_aspect("equal")
+    ax.axis("off")
+
+    def box(x, y, w, h, text, fc="#f3f2ee"):
+        ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.06", fc=fc, ec=MUTED, lw=0.6))
+        ax.text(x + w / 2, y + h / 2, text, ha="center", va="center", fontsize=7)
+
+    def arrow(p, q, color=INK2):
+        ax.add_patch(FancyArrowPatch(p, q, arrowstyle="-|>", mutation_scale=7, lw=0.8, color=color))
+
+    box(0.0, 2.9, 1.9, 1.2, "laser +\ninput\ncomb")
+    box(2.4, 4.6, 2.3, 1.2, "mask\nsignal $u$", fc="#e6f0fb")
+    box(2.4, 1.2, 2.3, 1.2, "mask\nsignal $1-u$", fc="#fbeae3")
+    arrow((1.9, 3.8), (2.5, 5.1))
+    arrow((1.9, 3.2), (2.5, 1.8))
+    ax.add_patch(Circle((6.1, 3.5), 1.05, fill=False, ec=INK, lw=1.2))
+    ax.add_patch(FancyArrowPatch((5.45, 4.3), (6.75, 4.3), connectionstyle="arc3,rad=-0.4", arrowstyle="-|>",
+                                 mutation_scale=7, lw=0.9, color=BLUE))
+    ax.add_patch(FancyArrowPatch((6.75, 2.7), (5.45, 2.7), connectionstyle="arc3,rad=-0.4", arrowstyle="-|>",
+                                 mutation_scale=7, lw=0.9, color=ORANGE))
+    ax.text(6.1, 3.5, "ring\ncw, ccw\nXPM", ha="center", va="center", fontsize=7)
+    arrow((4.6, 5.1), (5.3, 4.2), BLUE)
+    arrow((4.6, 1.8), (5.3, 2.8), ORANGE)
+    box(7.9, 4.6, 3.4, 1.2, "cw drop port\n31 lines", fc="#e6f0fb")
+    box(7.9, 1.2, 3.4, 1.2, "ccw drop port\n31 lines", fc="#fbeae3")
+    arrow((6.95, 4.1), (7.9, 5.1), BLUE)
+    arrow((6.95, 2.9), (7.9, 1.8), ORANGE)
+    ax.text(5.5, 0.35, "one laser: common jitter and intensity noise", ha="center", va="center", fontsize=7, color=INK2)
+    panel_tag(ax, "a")
+
+    ax = fig.add_subplot(gs[1])
+    noises = [1e-4, 3e-4, 1e-3, 3e-3]
+    opt, rnd = [], []
+    for n in noises:
+        val = {r["weights"]: float(r["test_heldout_3_5"]) for r in read(f"esn_optimize_n62_noise{n:.0e}.csv")}
+        opt.append(val["optimised"])
+        rnd.append(val["original"])
+    ax.plot(noises, rnd, color=INK2, marker="s", markersize=3.5, lw=1.0, ls="--", label="ESN, random weights")
+    ax.plot(noises, opt, color=INK, marker="o", markersize=3.5, lw=1.2, label="ESN, optimised weights")
+    rings = [("colab_mask_opt_uni62.csv", "ring, one direction", BLUE, ":"),
+             ("mask_opt_ringsdiff.csv", "two separate rings", AQUA, "-."),
+             ("mask_opt_bidiff.csv", "ring, two directions", ORANGE, "-")]
+    for name, lab, col, ls in rings:
+        v = [float(r["test_nmse_heldout_series_3_5"]) for r in read(name)
+             if r["mask"] == "optimised" and r["jitter"] == "jitter"][0]
+        ax.axhline(v, color=col, ls=ls, lw=1.2, label=lab)
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_ylim(1e-9, 2e-4)
+    ax.set_xlabel("ESN input noise (rms)")
+    ax.set_ylabel("test NMSE, Mackey-Glass")
+    ax.set_xticks(noises, [pow10(n) for n in noises])
+    ax.minorticks_off()
+    top = ax.secondary_xaxis("top", functions=(lambda x: -np.log2(np.sqrt(12) * np.maximum(x, 1e-12)),
+                                               lambda b: 2.0 ** (-b) / np.sqrt(12)))
+    top.xaxis.set_major_locator(FixedLocator([12, 11, 10, 9, 8, 7]))
+    top.xaxis.set_major_formatter(FormatStrFormatter("%d"))
+    top.set_xlabel("equivalent ADC bits")
+    ax.legend(loc="lower right", fontsize=7, handlelength=2.0)
+    panel_tag(ax, "b")
+    save(fig, "fig10_bidirectional")
+
+FIGURES = {"1": fig1, "2": fig2, "3": fig3, "4": fig4, "5": fig5, "6": fig6, "7": fig7, "9": fig9, "S1": figS1, "S2": figS2, "S3": figS3, "S4": figS4, "10": fig10}
 
 if __name__ == "__main__":
     for key in (sys.argv[1:] or FIGURES):

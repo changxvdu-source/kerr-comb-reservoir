@@ -18,8 +18,9 @@ changing the intracavity dynamics:
 Both re-select among 256 random operating points with the protocol of Section~\ref{sec:protocol}. With ideal detectors they lower
 the Mackey--Glass floor from $1.3\times10^{-4}$ to $8.7\times10^{-5}$ and $6.9\times10^{-5}$; with realistic noise (PIN detectors)
 they reach $1.55\times10^{-4}$ and $1.58\times10^{-4}$, about 2 times better than the mask in Table~\ref{tab:encodings}
-($3.3\times10^{-4}$). Stronger drop coupling selects a point with $Q=1.9\times10^{6}$ and $178~\mathrm{mW}$ (the plain mask's point
-has $Q=6\times10^{6}$ and $19~\mathrm{mW}$); slower symbols select a point with $Q=5\times10^{6}$. We call the stronger-drop-coupling
+($3.3\times10^{-4}$). Stronger drop coupling selects a point with $Q=1.9\times10^{6}$ and $178~\mathrm{mW}$ (the plain mask's point of
+Table~\ref{tab:encodings}, selected with PIN detectors, has $Q=6\times10^{6}$ and $19~\mathrm{mW}$; the ideal-detector point of
+Section~\ref{sec:breakdown} has $23~\mathrm{mW}$); slower symbols select a point with $Q=5\times10^{6}$. We call the stronger-drop-coupling
 point \emph{the best single ring} and use $1.55\times10^{-4}$ as its reference error; it is the device of Sections~\ref{sec:reference},
 \ref{sec:laser} and~\ref{sec:quant}, where evaluations with other noise realisations give $1.5$ to $1.6\times10^{-4}$.
 Against the ESN with the same readout dimension, both tie with it or are slightly better when the ESN's input noise is
@@ -47,7 +48,7 @@ of both (Table~\ref{tab:laser}).
 
 \subsection{Where the memory comes from}\label{sec:memory}
 
-The resonator's own memory is its photon lifetime $Q/(2\pi\nu)$ ($1.6$ to $5~\mathrm{ns}$ at the operating points chosen here, i.e.\ a
+The resonator's own memory is its photon lifetime $Q/(2\pi\nu_0)$ ($1.6$ to $5~\mathrm{ns}$ at the operating points chosen here, i.e.\ a
 few symbols), whereas NARMA-10 needs about ten symbols. Under realistic noise, with a readout of 31 lines $\times$ 12 taps, we tried
 both lengthening the resonator's own memory and adding memory from outside (each variant with the protocol of
 Table~\ref{tab:encodings}: 256 random points, three series, six new pairs):
@@ -74,3 +75,21 @@ should add delay lines or readout taps outside, and use several rings with diffe
 (linear memory capacity and information processing capacity~\cite{dambre2012}) would make this quantitative and is left for future
 work. It is consistent with the mask's advantage being largest on Mackey--Glass (strong nonlinearity, short memory) and absent on
 NARMA-10.
+
+\subsection{Nonlinear readouts and longer memory}\label{sec:nonlin-readout}
+
+The readout of the previous sections is linear in the logarithmic line powers. Adding the products of the 31 current line features
+(496 more features) and fitting on four runs with independent noise (instead of one) lowers the best single ring's error from
+$1.7\times10^{-4}$ to $2.4\times10^{-5}$, seven times, and the jitter-free error from $5.3\times10^{-5}$ to $8.9\times10^{-6}$; the jitter
+penalty stays at about 3. The same readout helps the 31-node ESN (input noise $3\times10^{-3}$) only from $2.7\times10^{-4}$ to
+$1.8\times10^{-4}$. Placed on the 31-node ESN's error-versus-input-noise curve with the same quadratic readout, the ring moves from
+an input noise of about $1.7\times10^{-3}$ to about $2.3\times10^{-4}$, i.e.\ about three bits by the conversion of
+Section~\ref{sec:software}. Most of this survives quantization of the 31 readings
+(logarithmic front end; the ESN's quantized input is given dithered copies so that it too sees several noise realisations): the ring is
+1.5 to 1.6 times better than the ESN at 6 and 7 bits, ties at 8 to 10 bits and is 2.2 times worse at 12 bits.
+
+The advantage disappears when the readout's memory is extended. With 16 or 32 taps instead of 8, and products also between
+the current and the previous symbol's features, both improve, the ESN more: at 8 bits they tie (with 32 taps and fitting on eight runs the ring
+reaches $8.9\times10^{-6}$, by coincidence the same value as its jitter-free error above, and the ESN $7.1\times10^{-6}$), and at 10 bits the ESN is 3 to 4 times better ($8.2\times10^{-7}$ against $3.5\times10^{-6}$ with 32 taps).
+Richer readouts therefore lower the ring's error by more than an order of magnitude but do not change its position relative to
+software; we keep the linear 8-tap readout elsewhere so that the results remain comparable.

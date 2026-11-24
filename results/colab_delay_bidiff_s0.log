@@ -1,0 +1,3 @@
+[   739 s] stage 1 bi-diff: 192 points
+[  1045 s] bi-diff    trial 392: test 2.12e-05 with jitter, 9.42e-06 without (penalty 2.25)
+saved results/colab_delay_bidiff_s0.csv
